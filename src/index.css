@@ -1,1 +1,6 @@
+body {
+  font-family: Pretendard;
+  word-break: keep-all;
+}
+
 @import 'tailwindcss';
