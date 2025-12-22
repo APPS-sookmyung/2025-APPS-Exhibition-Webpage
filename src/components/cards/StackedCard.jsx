@@ -3,7 +3,7 @@ import {GoArrowUpRight} from 'react-icons/go';
 
 export default function StackedCard({project}) {
   return (
-    <div className='grid h-138.25 w-99 grid-rows-[auto_1fr_auto] rounded-[20px] bg-white px-6.5 py-9.5'>
+    <div className='grid h-138.25 w-99 grid-rows-[auto_1fr_auto] bg-white px-6.5 py-9.5'>
       {/* 이미지 */}
       <img
         src={project.thumbnail}
@@ -12,8 +12,8 @@ export default function StackedCard({project}) {
         className='h-61 w-full rounded outline-2 outline-neutral-200'
       />
 
-      {/* 텍스트 */}
-      <div className='mt-1 flex flex-col'>
+      {/* 텍스트 - 제목, 설명, 멤버*/}
+      <div className='mt-1 flex cursor-default flex-col'>
         <p className='border-b border-[#D7D7D7] py-2.5 text-2xl leading-7 font-bold text-[#2E61E0]'>
           {project.title}
         </p>

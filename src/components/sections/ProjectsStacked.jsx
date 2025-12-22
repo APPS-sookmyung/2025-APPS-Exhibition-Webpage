@@ -1,17 +1,16 @@
 import {useState} from 'react';
 import PaviconCard from '../cards/PaviconCard';
 import {SlArrowLeft, SlArrowRight} from 'react-icons/sl';
-import StackedCard from '../cards/StackedCard';
+import StackedCardDeck from './StackedCardDeck';
 import {projectInfo as projects} from '../../data/projectInfo';
 
 const ProjectsStacked = () => {
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const selectedProject = projects[selectedIndex];
   const handlePrev = () => {
-    setSelectedIndex((i) => (i === 0 ? projects.length - 1 : i - 1));
+    setSelectedIndex((prev) => (prev - 1 + projects.length) % projects.length);
   };
   const handleNext = () => {
-    setSelectedIndex((i) => (i === projects.length - 1 ? 0 : i + 1));
+    setSelectedIndex((prev) => (prev + 1) % projects.length);
   };
 
   return (
@@ -27,17 +26,17 @@ const ProjectsStacked = () => {
 
         {/* 콘텐츠 */}
         <div className='relative z-10 mx-28 flex items-center justify-between'>
-          <div
-            className='cursor-pointer text-6xl text-white'
+          <button
+            className='z-50 cursor-pointer text-6xl text-white'
             onClick={handlePrev}>
             <SlArrowLeft />
-          </div>
-          <StackedCard project={selectedProject} />
-          <div
-            className='cursor-pointer text-6xl text-white'
+          </button>
+          <StackedCardDeck projects={projects} index={selectedIndex} />
+          <button
+            className='z-50 cursor-pointer text-6xl text-white'
             onClick={handleNext}>
             <SlArrowRight />
-          </div>
+          </button>
         </div>
       </div>
 
