@@ -7,6 +7,7 @@ export const projectInfo = [
     id: 'chattoner',
     title: 'CHAT-TONER',
     type: 'team',
+    platform: 'WEB',
     thumbnail: dummyThumbnail,
     pavicon: dummyPavicon,
     description:
@@ -24,6 +25,7 @@ export const projectInfo = [
     id: 'devsong',
     title: 'DEVSONG',
     type: 'team',
+    platform: 'WEB',
     thumbnail: dummyThumbnail,
     pavicon: dummyPavicon,
     description:
@@ -41,6 +43,7 @@ export const projectInfo = [
     id: 'emory',
     title: 'EMORY',
     type: 'team',
+    platform: 'WEB',
     thumbnail: dummyThumbnail,
     pavicon: dummyPavicon,
     description:
@@ -61,6 +64,7 @@ export const projectInfo = [
     id: 'bday',
     title: 'B-DAY',
     type: 'rookie',
+    platform: 'WEB',
     thumbnail: dummyThumbnail,
     pavicon: dummyPavicon,
     description:
@@ -72,6 +76,7 @@ export const projectInfo = [
     id: 'budgetpilot',
     title: 'BudgetPilot',
     type: 'rookie',
+    platform: 'WEB',
     thumbnail: dummyThumbnail,
     pavicon: dummyPavicon,
     description:
@@ -83,6 +88,7 @@ export const projectInfo = [
     id: 'clip',
     title: 'Clip',
     type: 'rookie',
+    platform: 'WEB',
     thumbnail: dummyThumbnail,
     pavicon: dummyPavicon,
     description:
@@ -94,6 +100,7 @@ export const projectInfo = [
     id: 'commutime',
     title: 'CommuTime',
     type: 'rookie',
+    platform: 'WEB',
     thumbnail: dummyThumbnail,
     pavicon: dummyPavicon,
     description:
@@ -105,6 +112,7 @@ export const projectInfo = [
     id: 'flist',
     title: 'f-list',
     type: 'rookie',
+    platform: 'WEB',
     thumbnail: dummyThumbnail,
     pavicon: dummyPavicon,
     description:
@@ -116,6 +124,7 @@ export const projectInfo = [
     id: 'hellogiraffe',
     title: 'HelloGiraffe',
     type: 'rookie',
+    platform: 'WEB',
     thumbnail: dummyThumbnail,
     pavicon: dummyPavicon,
     description:
@@ -127,6 +136,7 @@ export const projectInfo = [
     id: 'podorush',
     title: 'PodoRush',
     type: 'rookie',
+    platform: 'WEB',
     thumbnail: dummyThumbnail,
     pavicon: dummyPavicon,
     description:
@@ -138,6 +148,7 @@ export const projectInfo = [
     id: 'pouch',
     title: 'Pouch',
     type: 'rookie',
+    platform: 'WEB',
     thumbnail: dummyThumbnail,
     pavicon: dummyPavicon,
     description:
@@ -149,6 +160,7 @@ export const projectInfo = [
     id: 'starlist',
     title: 'starlist',
     type: 'rookie',
+    platform: 'WEB',
     thumbnail: dummyThumbnail,
     pavicon: dummyPavicon,
     description:
@@ -160,6 +172,7 @@ export const projectInfo = [
     id: 'streco',
     title: 'STRECO',
     type: 'rookie',
+    platform: 'WEB',
     thumbnail: dummyThumbnail,
     pavicon: dummyPavicon,
     description:
@@ -171,6 +184,7 @@ export const projectInfo = [
     id: 'ults',
     title: 'ULTS',
     type: 'rookie',
+    platform: 'WEB',
     thumbnail: dummyThumbnail,
     pavicon: dummyPavicon,
     description:
