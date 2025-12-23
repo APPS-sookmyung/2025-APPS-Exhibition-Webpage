@@ -1,6 +1,6 @@
 // src/components/AboutSection.jsx
 import React from 'react';
-import tempImage from '../assets/Temp.svg';
+import tempImage from '../../assets/Temp.svg';
 
 const AboutSection = () => {
   const waveBaseClass = `
