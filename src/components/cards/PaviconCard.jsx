@@ -23,6 +23,6 @@ PaviconCard.propTypes = {
     pavicon: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
     title: PropTypes.string,
   }).isRequired,
-  isSelected: PropTypes.bool,
-  onSelect: PropTypes.func,
+  isSelected: PropTypes.bool.isRequired,
+  onSelect: PropTypes.func.isRequired,
 };
