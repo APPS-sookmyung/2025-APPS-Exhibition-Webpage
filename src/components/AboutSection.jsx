@@ -3,24 +3,18 @@ import React from 'react';
 import tempImage from '../assets/Temp.svg';
 
 const AboutSection = () => {
-  const commonWaveStyle = {
-    backgroundImage: 'radial-gradient(circle, #D060F8 80px, transparent 0)',
-    backgroundSize: '160px 160px',
-    backgroundRepeat: 'repeat-x',
-  };
-
-  const topWavePattern = {
-    ...commonWaveStyle,
-    backgroundPosition: 'center top',
-  };
-
-  const bottomWavePattern = {
-    ...commonWaveStyle,
-    backgroundPosition: 'center bottom',
-  };
+  const waveBaseClass = `
+    absolute left-0 w-full bg-repeat-x
+    h-[40px] bg-[length:80px_80px]
+    md:h-[80px] md:bg-[length:160px_160px]
+  `;
+  const waveImageClass = `
+    bg-[image:radial-gradient(circle,#D060F8_40px,transparent_0)]
+    md:bg-[image:radial-gradient(circle,#D060F8_80px,transparent_0)]
+  `;
 
   return (
-    <section className='relative w-full overflow-hidden bg-[#3936E5] pt-60 pb-20'>
+    <section className='relative w-full overflow-hidden bg-[#3936E5] pt-32 pb-20 md:pt-60'>
       <div className='absolute top-10 left-10 flex flex-col gap-2 opacity-30 md:left-20'>
         <div className='grid grid-cols-3 gap-7 opacity-30'>
           {Array.from({length: 6}).map((_, index) => (
@@ -31,17 +25,16 @@ const AboutSection = () => {
 
       <div className='relative mx-auto w-[90%] bg-[#D060F8] md:w-full md:max-w-[94.6%]'>
         <div
-          className='absolute -top-[80px] left-0 h-[80px] w-full'
-          style={topWavePattern}></div>
+          className={` ${waveBaseClass} ${waveImageClass} -top-[40px] bg-[position:center_top] md:-top-[80px]`}></div>
 
         <div className='p-6 text-center text-white md:p-20'>
           <h3 className='mb-1 text-2xl font-semibold tracking-normal text-[#FFD2D2] md:text-[48px]'>
             ABOUT US
           </h3>
-          <h2 className='pt-8 pb-5 text-5xl leading-none font-extrabold tracking-tight md:text-[120px]'>
+          <h2 className='pt-4 pb-5 text-4xl leading-none font-extrabold tracking-tight md:pt-8 md:text-[120px]'>
             WHAT IS APPS?
           </h2>
-          <div className='-mx-6 my-5 border-t-2 border-dotted border-white md:-mx-20'></div>
+          <div className='-mx-6 my-5 border-t-2 border-dotted border-white/50 md:-mx-20 md:border-white'></div>
           <div className='flex flex-col items-center justify-center gap-10 md:flex-row md:gap-10'>
             <div className='relative shrink-0'>
               <div className='mt-5 h-[180px] w-full max-w-[400px] overflow-hidden rounded-[90px] md:w-[400px]'>
@@ -72,8 +65,7 @@ const AboutSection = () => {
         </div>
 
         <div
-          className='absolute -bottom-[80px] left-0 h-[80px] w-full'
-          style={bottomWavePattern}></div>
+          className={` ${waveBaseClass} ${waveImageClass} -bottom-[40px] bg-[position:center_bottom] md:-bottom-[80px]`}></div>
       </div>
 
       <div className='mt-31 text-center'>
