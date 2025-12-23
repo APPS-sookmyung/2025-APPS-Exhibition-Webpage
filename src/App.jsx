@@ -1,17 +1,6 @@
-import {
-  Route,
-  createBrowserRouter,
-  createRoutesFromElements,
-  RouterProvider,
-} from 'react-router-dom';
+import {useRoutes} from 'react-router-dom';
 import MainPage from './pages/MainPage';
 
-function App() {
-  const router = createBrowserRouter(
-    createRoutesFromElements(<Route path='/' element={<MainPage />} />)
-  );
-
-  return <RouterProvider router={router} />;
+export default function App() {
+  return useRoutes([{path: '/', element: <MainPage />}]);
 }
-
-export default App;
