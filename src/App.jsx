@@ -1,7 +1,12 @@
-import './App.css';
+// src/App.jsx
+import AboutSection from './components/AboutSection';
 
 function App() {
-  return <></>;
+  return (
+    <div>
+      <AboutSection />
+    </div>
+  );
 }
 
 export default App;
