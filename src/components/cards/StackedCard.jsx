@@ -20,9 +20,9 @@ export default function StackedCard({project}) {
         <p className='mb-2 line-clamp-3 py-2.5 text-sm leading-4 font-normal'>
           {project.description}
         </p>
-        <p className='text-xs leading-4 font-semibold text-[#8C8C8C]'>
+        <p className='flex flex-wrap gap-x-2 text-xs leading-4 font-semibold text-[#8C8C8C]'>
           {project.members.map((member) => (
-            <span key={member}>{member + '  '}</span>
+            <span key={member}>{member}</span>
           ))}
         </p>
       </div>

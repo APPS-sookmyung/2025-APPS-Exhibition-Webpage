@@ -12,10 +12,10 @@ const ProjectsViewer = () => {
       <div className='relative'>
         {/* 제목 */}
         <div className='pb-15.5'>
-          <ProjectViewerTitle
-            stackedView={isStackedView}
-            titleText={'TEAM PROJECT'}
-          />
+          <ProjectViewerTitle isMainTitle={true} titleText={'PROJECTS'} />
+          <p className='justify-start text-center text-2xl leading-7 font-semibold tracking-[-0.025em] text-[#C8D6F9]'>
+            APPS 부원들의 개성이 드러나는 다양한 프로젝트를 소개합니다.
+          </p>
         </div>
 
         {/* 스와이프 버튼 */}
