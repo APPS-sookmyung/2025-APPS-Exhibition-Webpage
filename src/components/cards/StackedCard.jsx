@@ -3,24 +3,24 @@ import {GoArrowUpRight} from 'react-icons/go';
 
 export default function StackedCard({project}) {
   return (
-    <div className='grid h-138.25 w-99 grid-rows-[auto_1fr_auto] bg-white px-6.5 py-9.5'>
+    <div className='grid h-115 w-80 grid-rows-[auto_1fr_auto] bg-white px-5 py-8 md:h-138.25 md:w-99 md:px-6.5 md:py-9.5'>
       {/* 이미지 */}
       <img
         src={project.thumbnail}
         alt={project.title}
         draggable={false}
-        className='h-61 w-full rounded outline-2 outline-neutral-200'
+        className='h-45 w-full rounded object-cover outline-2 outline-neutral-200 md:h-61'
       />
 
       {/* 텍스트 - 제목, 설명, 멤버*/}
       <div className='mt-1 flex cursor-default flex-col'>
-        <p className='border-b border-[#D7D7D7] py-2.5 text-2xl leading-7 font-bold text-[#2E61E0]'>
+        <p className='font-base border-b border-[#D7D7D7] py-1.5 text-xl leading-7 text-[#2E61E0] md:py-2.5 md:text-2xl md:font-bold'>
           {project.title}
         </p>
-        <p className='mb-2 line-clamp-3 py-2.5 text-sm leading-4 font-normal'>
+        <p className='mb-2 line-clamp-3 py-2.5 pb-5 text-sm leading-4 font-normal'>
           {project.description}
         </p>
-        <p className='flex flex-wrap gap-x-2 text-xs leading-4 font-semibold text-[#8C8C8C]'>
+        <p className='flex flex-wrap gap-x-2 text-xs leading-4 font-normal text-[#8C8C8C] md:font-semibold'>
           {project.members.map((member) => (
             <span key={member}>{member}</span>
           ))}
@@ -29,8 +29,8 @@ export default function StackedCard({project}) {
 
       {/* 이동 버튼 */}
       <div className='cursor-pointer self-end justify-self-start'>
-        <div className='flex items-center justify-center rounded-full bg-[#D9E3FC] px-5.5 py-1.5'>
-          <p className='text-base leading-5 font-semibold text-blue-600'>
+        <div className='flex items-center justify-center rounded-full bg-[#D9E3FC] px-4 py-1 md:px-5.5 md:py-1.5'>
+          <p className='text-sm leading-5 font-semibold text-blue-600 md:text-base'>
             자세히 보기
           </p>
           <div className='mt-0.5 align-middle text-xl text-[#2E61E0]'>
