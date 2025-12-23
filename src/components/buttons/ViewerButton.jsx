@@ -10,7 +10,7 @@ export default function ViewerButton({stackedView, onChangeView}) {
     : '-translate-x-3 duration-200';
 
   return (
-    <div className='relatvie flex h-15.5 w-34 items-center justify-between rounded-full bg-white px-5'>
+    <div className='relative flex h-15.5 w-34 items-center justify-between rounded-full bg-white px-5'>
       <div
         className={`z-10 cursor-pointer text-[40px] ${gridColor}`}
         onClick={() => onChangeView(false)}>
