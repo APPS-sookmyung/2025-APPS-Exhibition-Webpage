@@ -5,27 +5,29 @@ import tempImage from '../assets/Temp.svg';
 const AboutSection = () => {
   const waveBaseClass = `
     absolute left-0 w-full bg-repeat-x
-    h-[40px] bg-[length:80px_80px]
+    h-[30px] bg-[length:60px_60px]
     md:h-[80px] md:bg-[length:160px_160px]
   `;
   const waveImageClass = `
-    bg-[image:radial-gradient(circle,#D060F8_40px,transparent_0)]
+    bg-[image:radial-gradient(circle,#D060F8_30px,transparent_0)]
     md:bg-[image:radial-gradient(circle,#D060F8_80px,transparent_0)]
   `;
 
   return (
-    <section className='relative w-full overflow-hidden bg-[#3936E5] pt-32 pb-20 md:pt-60'>
-      <div className='absolute top-10 left-10 flex flex-col gap-2 opacity-30 md:left-20'>
-        <div className='grid grid-cols-3 gap-7 opacity-30'>
+    <section className='relative w-full overflow-hidden bg-[#3936E5] pt-40 pb-20 md:pt-60'>
+      <div className='absolute top-6 left-10 flex flex-col gap-2 opacity-30 md:top-10 md:left-20'>
+        <div className='grid grid-cols-3 gap-5 opacity-30 md:gap-7'>
           {Array.from({length: 6}).map((_, index) => (
-            <div key={index} className='h-10 w-10 rounded-full bg-white'></div>
+            <div
+              key={index}
+              className='h-8 w-8 rounded-full bg-white md:h-10 md:w-10'></div>
           ))}
         </div>
       </div>
 
-      <div className='relative mx-auto w-[90%] bg-[#D060F8] md:w-full md:max-w-[94.6%]'>
+      <div className='relative mx-auto w-[94.6%] bg-[#D060F8] md:w-full md:max-w-[94.6%]'>
         <div
-          className={` ${waveBaseClass} ${waveImageClass} -top-[40px] bg-[position:center_top] md:-top-[80px]`}></div>
+          className={` ${waveBaseClass} ${waveImageClass} -top-[30px] bg-[position:center_top] md:-top-[80px]`}></div>
 
         <div className='p-6 text-center text-white md:p-20'>
           <h3 className='mb-1 text-2xl font-semibold tracking-normal text-[#FFD2D2] md:text-[48px]'>
@@ -65,7 +67,7 @@ const AboutSection = () => {
         </div>
 
         <div
-          className={` ${waveBaseClass} ${waveImageClass} -bottom-[40px] bg-[position:center_bottom] md:-bottom-[80px]`}></div>
+          className={` ${waveBaseClass} ${waveImageClass} -bottom-[30px] bg-[position:center_bottom] md:-bottom-[80px]`}></div>
       </div>
 
       <div className='mt-31 text-center'>
