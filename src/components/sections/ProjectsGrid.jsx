@@ -5,6 +5,9 @@ import ProjectViewerTitle from './ProjectViewerTitle';
 export default function ProjectsGrid() {
   return (
     <div>
+      {/* 팀 프로젝트 섹션 제목 */}
+      <ProjectViewerTitle stackedView={false} titleText={'TEAM PROJECT'} />
+
       {/* 팀 프로젝트 */}
       <div className='flex justify-center'>
         <div className='flex w-[87%]'>
