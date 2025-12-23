@@ -1,4 +1,10 @@
+body {
+  font-family: Pretendard;
+  word-break: keep-all;
+}
+
 @import 'tailwindcss';
+
 
 @theme {
   --color-white: #ffffff;
@@ -9,4 +15,20 @@
   --color-Blue: #3936e5;
   --color-purple: #a96efc;
   --color-Primary: #d060f8;
+
+/* 스크롤바 커스텀 */
+.horizontal-scroll::-webkit-scrollbar {
+  height: 7px;
+  padding-top: 2px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+  background: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+
 }

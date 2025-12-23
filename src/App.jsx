@@ -1,11 +1,13 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import ProjectDetail from './pages/ProjectDetailPage';
+import ProjectDetailPage from './pages/ProjectDetailPage';
+import MainPage from './pages/MainPage';
 
 export function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/projects/:slug' element={<ProjectDetail />} />
+        <Route path='/' element={<MainPage />} />
+        <Route path='/projects/:slug' element={<ProjectDetailPage />} />
       </Routes>
     </BrowserRouter>
   );
