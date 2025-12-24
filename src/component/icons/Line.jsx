@@ -1,0 +1,22 @@
+const Line = () => {
+  return (
+    <svg
+      className='mt-4'
+      width='1440'
+      height='2'
+      viewBox='0 0 1440 2'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'>
+      <line
+        y1='1'
+        x2='1440'
+        y2='1'
+        stroke='#E9ECEF'
+        strokeWidth='2'
+        strokeDasharray='2 2'
+      />
+    </svg>
+  );
+};
+
+export default Line;
