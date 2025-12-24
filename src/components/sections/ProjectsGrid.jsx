@@ -4,15 +4,15 @@ import ProjectViewerTitle from './ProjectViewerTitle';
 
 export default function ProjectsGrid() {
   const responsiveClass =
-    'flex flex-col md:grid lg:grid-cols-4 md:grid-cols-3 w-[90%] md:w-[87%] gap-4 place-items-center min-h-screen';
+    'grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-[95%] md:w-[87%] gap-4 place-items-center ';
 
   return (
-    <div>
+    <div className='block'>
       {/* 팀 프로젝트 섹션 제목 */}
       <ProjectViewerTitle stackedView={false} titleText={'TEAM PROJECT'} />
 
       {/* 팀 프로젝트 */}
-      <div className='flex items-center justify-center md:h-130 lg:h-182'>
+      <div className='flex justify-center md:h-130 lg:h-182'>
         <div className={`${responsiveClass}`}>
           {projects
             .filter((project) => project.type === 'team')
