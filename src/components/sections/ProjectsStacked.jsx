@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import PaviconCard from '../cards/PaviconCard';
 import {SlArrowLeft, SlArrowRight} from 'react-icons/sl';
 import StackedCardDeck from './StackedCardDeck';
@@ -12,6 +12,21 @@ const ProjectsStacked = () => {
   const handleNext = () => {
     setSelectedIndex((prev) => (prev + 1) % projects.length);
   };
+
+  useEffect(() => {
+    const handleKeyPress = (e) => {
+      if (e.key === 'ArrowRight') {
+        handleNext();
+      } else if (e.key === 'ArrowLeft') {
+        handlePrev();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyPress);
+    return () => {
+      window.removeEventListener('keydown', handleKeyPress);
+    };
+  }, []);
 
   return (
     <div>
