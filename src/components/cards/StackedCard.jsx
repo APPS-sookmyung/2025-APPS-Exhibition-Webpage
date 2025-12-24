@@ -29,7 +29,7 @@ export default function StackedCard({project}) {
 
       {/* 이동 버튼 */}
       <div className='cursor-pointer self-end justify-self-start'>
-        <div className='flex items-center justify-center rounded-full bg-[#D9E3FC] px-4 py-1 md:px-5.5 md:py-1.5'>
+        <div className='bg-Blue_light flex items-center justify-center rounded-full px-4 py-1 md:px-5.5 md:py-1.5'>
           <p className='text-sm leading-5 font-semibold text-blue-600 md:text-base'>
             자세히 보기
           </p>
