@@ -9,12 +9,12 @@ const AboutSection = () => {
     md:h-[80px] md:bg-[length:160px_160px]
   `;
   const waveImageClass = `
-    bg-[image:radial-gradient(circle,#D060F8_30px,transparent_0)]
-    md:bg-[image:radial-gradient(circle,#D060F8_80px,transparent_0)]
+    bg-[image:radial-gradient(circle,var(--color-Primary)_30px,transparent_0)]
+    md:bg-[image:radial-gradient(circle,var(--color-Primary)_80px,transparent_0)]
   `;
 
   return (
-    <section className='relative w-full overflow-hidden bg-[#3936E5] pt-40 pb-20 md:pt-60'>
+    <section className='bg-Blue relative w-full overflow-hidden pt-40 pb-20 md:pt-60'>
       <div className='absolute top-6 left-10 flex flex-col gap-2 opacity-30 md:top-10 md:left-20'>
         <div className='grid grid-cols-3 gap-5 opacity-30 md:gap-7'>
           {Array.from({length: 6}).map((_, index) => (
@@ -25,12 +25,12 @@ const AboutSection = () => {
         </div>
       </div>
 
-      <div className='relative mx-auto w-[94.6%] bg-[#D060F8] md:w-full md:max-w-[94.6%]'>
+      <div className='bg-Primary relative mx-auto w-[94.6%] md:w-full md:max-w-[94.6%]'>
         <div
           className={` ${waveBaseClass} ${waveImageClass} -top-[30px] bg-[position:center_top] md:-top-[80px]`}></div>
 
         <div className='p-6 text-center text-white md:p-20'>
-          <h3 className='mb-1 text-2xl font-semibold tracking-normal text-[#FFD2D2] md:text-[48px]'>
+          <h3 className='text-red_light mb-1 text-2xl font-semibold tracking-normal md:text-[48px]'>
             ABOUT US
           </h3>
           <h2 className='pt-4 pb-5 text-4xl leading-none font-extrabold tracking-tight md:pt-8 md:text-[120px]'>
@@ -46,7 +46,7 @@ const AboutSection = () => {
                   className='h-full w-full object-cover'
                 />
               </div>
-              <div className='absolute -bottom-4 -left-2 z-10 rounded-full bg-[#DBE4FF] px-6 py-2 text-sm font-extrabold text-[#4B48F5] shadow-md md:text-[24px]'>
+              <div className='bg-Blue_light text-Blue_medium absolute -bottom-4 -left-2 z-10 rounded-full px-6 py-2 text-sm font-extrabold shadow-md md:text-[24px]'>
                 2024 APPS EXH
               </div>
             </div>
@@ -71,7 +71,7 @@ const AboutSection = () => {
       </div>
 
       <div className='mt-31 text-center'>
-        <div className='inline-flex items-center gap-4 text-[20px] font-bold tracking-widest text-[#D9E3FC] md:text-[30px]'>
+        <div className='text-Blue_light inline-flex items-center gap-4 text-[20px] font-bold tracking-widest md:text-[30px]'>
           SINCE 2023
         </div>
       </div>
