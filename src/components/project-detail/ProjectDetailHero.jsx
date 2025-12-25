@@ -58,13 +58,15 @@ export default function ProjectDetailHero({project, links = []}) {
           <button
             type='button'
             aria-label='Share'
-            className='inline-flex h-10 w-10 items-center justify-center'>
+            onClick={handleShare}
+            className='inline-flex h-10 w-10 items-center justify-center cursor-pointer'>
             <Share className='h-10 w-10' />
           </button>
           <button
             type='button'
             aria-label='Exit'
-            className='inline-flex h-10 w-10 items-center justify-center'>
+            onClick={() => navigate('/')}
+            className='inline-flex h-10 w-10 items-center justify-center cursor-pointer'>
             <Exit className='h-10 w-10' />
           </button>
         </div>

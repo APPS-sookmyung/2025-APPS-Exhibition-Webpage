@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import {Link} from 'react-router-dom';
 
 export default function GridCard({project, index}) {
   // 뒷배경 숫자 인덱스 포맷팅
@@ -20,9 +21,17 @@ export default function GridCard({project, index}) {
           {/* 호버 시 나타나는 그림자 */}
           <div className='absolute inset-0 bg-linear-to-b from-black/70 to-black/45' />
           {/* 호버 시 나타나는 버튼 */}
-          <button className='z-10 h-10 w-40 cursor-pointer rounded-full bg-fuchsia-500 text-lg font-bold text-white shadow-lg transition-transform duration-300'>
-            자세히 보기
-          </button>
+          {project.slug ? (
+            <Link
+              to={`/projects/${project.slug}`}
+              className='z-10 h-10 w-40 cursor-pointer rounded-full bg-fuchsia-500 text-lg font-bold text-white shadow-lg transition-transform duration-300 flex items-center justify-center'>
+              자세히 보기
+            </Link>
+          ) : (
+            <button className='z-10 h-10 w-40 cursor-pointer rounded-full bg-fuchsia-500 text-lg font-bold text-white shadow-lg transition-transform duration-300'>
+              자세히 보기
+            </button>
+          )}
         </div>
 
         {/* 제목 */}
@@ -58,6 +67,7 @@ GridCard.propTypes = {
     description: PropTypes.string,
     platform: PropTypes.string,
     members: PropTypes.arrayOf(PropTypes.string),
+    slug: PropTypes.string,
   }).isRequired,
   index: PropTypes.number.isRequired,
 };
