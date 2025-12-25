@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import ProjectDetailHero from '../components/ProjectDetailHero';
-import ProjectDetailBody from '../components/ProjectDetailBody';
+import ProjectDetailHero from '../components/project-detail/ProjectDetailHero';
+import ProjectDetailBody from '../components/project-detail/ProjectDetailBody';
 
 // JSON이 아직 없어서 화면이 깨지지 않도록 기본값으로 설정해둠.
 const FALLBACK_PROJECT = {
