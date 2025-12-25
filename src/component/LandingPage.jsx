@@ -15,15 +15,15 @@ export default function LandingPage() {
             SMWU Programming Club
           </p>
           <div className='font-pretendard relative z-10 mt-5 text-[170px] leading-[0.8] font-bold tracking-[-0.07rem] text-[#FFFFFF]'>
-            <div className='relative flex items-end justify-between'>
-              <h1>APPS</h1>
-              <div className='absolute top-0 right-0 overflow-hidden pb-2'>
-                <div className='animate-marquee translate-x-1024 transform whitespace-nowrap'>
-                  SOOKMYUNG&nbsp;SOOKMYUNG&nbsp;SOOKMYUNG&nbsp;SOOKMYUNG
+            <div className='relative flex w-full items-baseline justify-between pb-4'>
+              <h1 className='shrink-0'>APPS</h1>
+              <div className='ml-90 flex-1 overflow-hidden py-2'>
+                <div className='animate-marquee inline-block whitespace-nowrap'>
+                  <span>SOOKMYUNG</span>
                 </div>
               </div>
             </div>
-            <div className='relative right-1/2 left-1/2 mt-7 -mr-[50vw] -mb-2 -ml-[50vw] w-screen'>
+            <div className='relative right-1/2 left-1/2 mt-2 -mr-[50vw] -mb-2 -ml-[50vw] w-screen'>
               <Line />
             </div>
             <div className='flex flex-nowrap items-center justify-start'>
