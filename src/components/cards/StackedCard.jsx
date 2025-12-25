@@ -3,7 +3,7 @@ import {GoArrowUpRight} from 'react-icons/go';
 
 export default function StackedCard({project}) {
   return (
-    <div className='grid h-115 w-80 grid-rows-[auto_1fr_auto] bg-white px-5 py-8 md:h-138.25 md:w-99 md:px-6.5 md:py-9.5'>
+    <div className='grid h-115 w-full grid-rows-[auto_1fr_auto] bg-white px-5 py-8 md:h-138.25 md:w-99 md:px-6.5 md:py-9.5'>
       {/* 이미지 */}
       <img
         src={project.thumbnail}
@@ -17,7 +17,7 @@ export default function StackedCard({project}) {
         <p className='font-base border-b border-[#D7D7D7] py-1.5 text-xl leading-7 text-[#2E61E0] md:py-2.5 md:text-2xl md:font-bold'>
           {project.title}
         </p>
-        <p className='mb-2 line-clamp-3 py-2.5 pb-5 text-sm leading-4 font-normal'>
+        <p className='mb-2 line-clamp-3 pt-2.5 pb-0.5 text-sm leading-4 font-normal md:line-clamp-4 lg:line-clamp-5'>
           {project.description}
         </p>
         <p className='flex flex-wrap gap-x-2 text-xs leading-4 font-normal text-[#8C8C8C] md:font-semibold'>
