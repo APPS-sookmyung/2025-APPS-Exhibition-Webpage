@@ -31,11 +31,13 @@ export default function LandingPage() {
               <div className='absoulte animate-marquee top-0 right-0 w-full whitespace-nowrap'>
                 SOOKMYUNG&nbsp;SOOKMYUNG&nbsp;SOOKMYUNG&nbsp;SOOKMYUNG
               </div>
-              <h1 className='mt-40 mr-30'>2025</h1>
+              <h1 className='relative z-10 mt-40 mr-30'>2025</h1>
             </div>
           </div>
 
-          <BackIcon />
+          <div className='relative'>
+            <BackIcon className='z-0' />
+          </div>
 
           <div className='absolute right-20 bottom-20 flex items-center gap-5'>
             <WAIcon />

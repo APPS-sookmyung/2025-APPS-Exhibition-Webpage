@@ -3,7 +3,7 @@ import TreeIcon from './icons/TreeIcon';
 
 export default function Header() {
   return (
-    <header className='flex w-full items-center justify-between bg-[#3D6EEE] px-21 py-4'>
+    <header className='flex w-full items-center justify-between bg-[#3D6EEE] px-21 py-3'>
       <div className='itmes-center flex gap-3'>
         <AppsIcon />
         <span className='font-pretendard text-[20px] font-semibold tracking-[-0.025rem] text-[#FFFFFF]'>
