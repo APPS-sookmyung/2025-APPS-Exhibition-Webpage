@@ -1,0 +1,70 @@
+import {motion, useScroll, useTransform} from 'framer-motion';
+import {activitiesData} from '../data/activitiesData';
+import UnionIcon from '../../assets/activities/Union.svg';
+import SimpleIcon from '../../assets/activities/simple-icons_suno.svg';
+import Framec from '../../assets/activities/Frame-c.svg';
+import Frame0 from '../../assets/activities/Frame-0.svg';
+import ActivityCard from './ActivityCard';
+
+export default function Activities() {
+  const {scrollYProgress} = useScroll();
+
+  const x = useTransform(scrollYProgress, [0.2, 0.6], ['0%', '-40%']);
+
+  return (
+    <div className='bg-primary relative w-full overflow-hidden py-20 md:py-32'>
+      <div className='relative z-10 mb-16 text-center md:mb-20'>
+        <h2 className='font-pretendard text-3xl font-semibold tracking-tight text-[#FFFFFF] md:text-5xl'>
+          ACTIVITIES
+        </h2>
+        <p className='font-pretendard mt-4 text-base font-semibold text-[#D9E3FC] md:mt-6 md:text-2xl'>
+          APPS에서 정기적으로 진행하는 다양한 활동들이 있어요
+        </p>
+      </div>
+      <div className='font-pretendard absolute top-24 text-[72px] font-bold text-[#4B48F5] select-none md:top-[120px] md:text-[150px]'>
+        ACTIVITIES
+      </div>
+
+      <motion.div
+        style={{x}}
+        className='no-scrollbar relative z-20 flex items-stretch gap-6 overflow-x-auto px-4 md:gap-8 md:px-8 md:py-3'>
+        {activitiesData.map((card) => (
+          <ActivityCard key={card.id} card={card} />
+        ))}
+      </motion.div>
+
+      <div className='absolute top-12 right-3 z-30 origin-top-right scale-70 sm:scale-90 md:top-15 md:right-40 md:scale-100'>
+        <div className='relative'>
+          <div className='font-pretendard bg-tertiary text-primary h-11 w-45 rounded-full text-center text-lg leading-[2] font-bold tracking-[0.025rem] md:h-13 md:w-60 md:text-2xl'>
+            PROGRAMMING
+          </div>
+          <div className='font-pretendard bg-accent-blue text-primary absolute left-18 mt-3 h-11 w-45 rounded-full text-center text-lg leading-[2] font-bold tracking-[0.025rem] md:h-13 md:w-60 md:text-2xl'>
+            DEVELOP
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <img
+          src={UnionIcon}
+          className='md:-mt-12s absolute z-20 mx-45 -mt-10 scale-75 sm:scale-90 md:mx-53 md:scale-80'
+        />
+      </div>
+
+      <div>
+        <img src={SimpleIcon} className='absolute z-10 -mt-30 ml-250' />
+      </div>
+
+      <div className='md::h-[300px] relative mt-15 h-[380px] w-full overflow-visible'>
+        <img
+          src={Framec}
+          className='absolute top-5 left-0 z-20 w-full md:top-45'
+        />
+        <img
+          src={Frame0}
+          className='absolute top-0 left-0 z-10 w-full md:top-24'
+        />
+      </div>
+    </div>
+  );
+}

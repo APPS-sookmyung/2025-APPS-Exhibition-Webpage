@@ -1,3 +1,5 @@
+import peopleIcon from '../../assets/activities/people.svg';
+
 export const activitiesData = [
   {
     id: 1,
@@ -10,7 +12,7 @@ export const activitiesData = [
   {
     id: 2,
     type: 'image',
-    image: '/images/devtalk1.jpg',
+    image: peopleIcon,
   },
   {
     id: 3,
@@ -23,7 +25,7 @@ export const activitiesData = [
   {
     id: 4,
     type: 'image',
-    image: '/images/devtalk1.jpg',
+    image: peopleIcon,
   },
   {
     id: 5,
@@ -36,6 +38,6 @@ export const activitiesData = [
   {
     id: 6,
     type: 'image',
-    image: '/images/devtalk1.jpg',
+    image: peopleIcon,
   },
 ];
