@@ -3,9 +3,12 @@ import Exit from '../assets/project-detail/Exit.svg?react';
 import Github from '../assets/project-detail/Github.svg?react';
 import Link from '../assets/project-detail/Link.svg?react';
 import {useMemo} from 'react';
+import {useNavigate} from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 export default function ProjectDetailHero({project, links = []}) {
+  const navigate = useNavigate();
+
   const chips = useMemo(() => {
     const typeChip =
       project.projectType === 'TEAM' ? 'TEAM PROJECT' : 'INDIVIDUAL PROJECT';
@@ -15,6 +18,39 @@ export default function ProjectDetailHero({project, links = []}) {
 
     return [typeChip, ...gens];
   }, [project.projectType, project.generation]);
+
+  const handleShare = async () => {
+    const shareData = {
+      title: project.title,
+      text: project.subtitle || project.content,
+      url: window.location.href,
+    };
+
+    try {
+      // Web Share API 지원 여부 확인
+      if (navigator.share) {
+        await navigator.share(shareData);
+      } else {
+        // Web Share API를 지원하지 않으면 클립보드에 복사
+        await navigator.clipboard.writeText(window.location.href);
+        alert('링크가 클립보드에 복사되었습니다!');
+      }
+    } catch (err) {
+      // 사용자가 공유를 취소하거나 에러 발생 시
+      if (err.name !== 'AbortError') {
+        console.error('공유 실패:', err);
+        // 클립보드 복사를 재시도
+        try {
+          await navigator.clipboard.writeText(window.location.href);
+          alert('링크가 클립보드에 복사되었습니다!');
+        } catch (clipboardErr) {
+          console.error('클립보드 복사 실패:', clipboardErr);
+          alert('공유에 실패했습니다.');
+        }
+      }
+    }
+  };
+
   return (
     <section className='bg-Blue_medium w-full overflow-hidden rounded-b-[60px]'>
       <div className='mx-auto flex w-full max-w-[1440px] flex-col gap-[60px] px-6 py-[41px] sm:px-10 lg:px-[120px]'>
@@ -22,13 +58,15 @@ export default function ProjectDetailHero({project, links = []}) {
           <button
             type='button'
             aria-label='Share'
-            className='inline-flex h-10 w-10 items-center justify-center'>
+            onClick={handleShare}
+            className='inline-flex h-10 w-10 items-center justify-center cursor-pointer'>
             <Share className='h-10 w-10' />
           </button>
           <button
             type='button'
             aria-label='Exit'
-            className='inline-flex h-10 w-10 items-center justify-center'>
+            onClick={() => navigate('/')}
+            className='inline-flex h-10 w-10 items-center justify-center cursor-pointer'>
             <Exit className='h-10 w-10' />
           </button>
         </div>

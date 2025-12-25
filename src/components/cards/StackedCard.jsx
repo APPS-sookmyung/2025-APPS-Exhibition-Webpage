@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import {GoArrowUpRight} from 'react-icons/go';
+import {Link} from 'react-router-dom';
 
 export default function StackedCard({project}) {
   return (
@@ -28,16 +29,31 @@ export default function StackedCard({project}) {
       </div>
 
       {/* 이동 버튼 */}
-      <div className='cursor-pointer self-end justify-self-start'>
-        <div className='bg-Blue_light flex items-center justify-center rounded-full px-4 py-1 md:px-5.5 md:py-1.5'>
-          <p className='text-sm leading-5 font-semibold text-blue-600 md:text-base'>
-            자세히 보기
-          </p>
-          <div className='mt-0.5 align-middle text-xl text-[#2E61E0]'>
-            <GoArrowUpRight />
+      {project.slug ? (
+        <Link
+          to={`/projects/${project.slug}`}
+          className='cursor-pointer self-end justify-self-start'>
+          <div className='bg-Blue_light flex items-center justify-center rounded-full px-4 py-1 md:px-5.5 md:py-1.5'>
+            <p className='text-sm leading-5 font-semibold text-blue-600 md:text-base'>
+              자세히 보기
+            </p>
+            <div className='mt-0.5 align-middle text-xl text-[#2E61E0]'>
+              <GoArrowUpRight />
+            </div>
+          </div>
+        </Link>
+      ) : (
+        <div className='cursor-pointer self-end justify-self-start'>
+          <div className='bg-Blue_light flex items-center justify-center rounded-full px-4 py-1 md:px-5.5 md:py-1.5'>
+            <p className='text-sm leading-5 font-semibold text-blue-600 md:text-base'>
+              자세히 보기
+            </p>
+            <div className='mt-0.5 align-middle text-xl text-[#2E61E0]'>
+              <GoArrowUpRight />
+            </div>
           </div>
         </div>
-      </div>
+      )}
     </div>
   );
 }
@@ -48,5 +64,6 @@ StackedCard.propTypes = {
     title: PropTypes.string,
     description: PropTypes.string,
     members: PropTypes.arrayOf(PropTypes.string),
+    slug: PropTypes.string,
   }).isRequired,
 };

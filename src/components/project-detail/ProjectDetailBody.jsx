@@ -13,7 +13,15 @@ export default function ProjectDetailBody({content, features, techStack}) {
       <div className='mt-10 max-w-[1200px]'>
         <h2 className='text-100 text-2xl font-bold'>기능 설명</h2>
         <div className='my-5 w-full border-80 border-t-2 border-dashed' />
-        <p className='text-100 text-5 leading-5 font-medium'>{features}</p>
+        <div className='flex flex-wrap gap-3'>
+          {features.map((feature, index) => (
+            <span
+              key={index}
+              className='bg-Blue_light text-Blue_medium inline-flex items-center rounded-full px-4 py-2 text-sm font-semibold'>
+              {feature}
+            </span>
+          ))}
+        </div>
       </div>
 
       {/* 기술 스택 */}

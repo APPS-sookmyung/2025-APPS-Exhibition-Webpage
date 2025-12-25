@@ -1,21 +1,14 @@
-import PropTypes from 'prop-types';
-import ProjectDetailHero from '../components/project-detail/ProjectDetailHero';
-import ProjectDetailBody from '../components/project-detail/ProjectDetailBody';
+import {useParams} from 'react-router-dom';
+import ProjectDetailHero from '../components/ProjectDetailHero';
+import ProjectDetailBody from '../components/ProjectDetailBody';
+import MemberCard from '../components/MemberCard';
+import ReferenceSection from '../components/ReferenceSection';
+import FlowerIcon from '../assets/flower.svg?react';
+import {projects, FALLBACK_PROJECT} from '../data/projects-detail-data';
 
-// JSON이 아직 없어서 화면이 깨지지 않도록 기본값으로 설정해둠.
-const FALLBACK_PROJECT = {
-  projectType: 'TEAM', // 'TEAM' | 'INDIVIDUAL'
-  generation: [], // ex) [13, 14]
-  title: '프로젝트 제목',
-  subtitle: '프로젝트 한 줄 소개',
-  content: '프로젝트 상세 설명이 들어갈 영역입니다.',
-  feature: '기능 설명이 들어갈 영역입니다.', // string | string[]
-  techStack: ['React', 'Spring'], // string[]
-  links: [{type: 'CLIENT', url: ''}], // ex) [{ type: 'CLIENT', url: 'https://github.com/...' }]
-};
-
-export default function ProjectDetail({project: projectProp}) {
-  const project = projectProp ?? FALLBACK_PROJECT;
+export default function ProjectDetail() {
+  const {slug} = useParams();
+  const project = projects[slug] || FALLBACK_PROJECT;
 
   const features = Array.isArray(project.feature)
     ? project.feature
@@ -30,6 +23,17 @@ export default function ProjectDetail({project: projectProp}) {
     : [];
   const links = Array.isArray(project.links) ? project.links : [];
 
+  // 현재 프로젝트를 제외한 다른 프로젝트들 중에서 랜덤으로 3개 선택
+  const randomReferences = Object.keys(projects)
+    .filter((key) => key !== slug)
+    .sort(() => Math.random() - 0.5)
+    .slice(0, 3)
+    .map((key) => ({
+      title: projects[key].title,
+      slug: key,
+      image: '',
+    }));
+
   return (
     <div className='w-full'>
       {/* HERO */}
@@ -40,11 +44,29 @@ export default function ProjectDetail({project: projectProp}) {
         features={features}
         techStack={techStack}
       />
-      {/* 지원이가 붙여넣을 컴포넌트 영역 */}
+
+      {/* 팀원 카드 */}
+      {project.members && project.members.length > 0 && (
+        <section className='mx-auto w-full max-w-[1440px] px-6 sm:px-10 lg:px-[120px]'>
+          <div className='member-section relative mt-[100px] max-w-[1200px]'>
+            <div className='flex flex-col gap-4'>
+              {project.members.map((member, index) => (
+                <MemberCard key={index} member={member} />
+              ))}
+            </div>
+            <div className='flower-decoration absolute right-0 bottom-0 translate-x-1/2 translate-y-1/2'>
+              <FlowerIcon className='h-auto w-16 sm:w-20' />
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* 다른 프로젝트 구경하기 */}
+      <section className='mx-auto w-full max-w-[1440px] px-6 py-10 sm:px-10 lg:px-[120px]'>
+        <div className='mt-[100px]'>
+          <ReferenceSection references={randomReferences} />
+        </div>
+      </section>
     </div>
   );
 }
-
-ProjectDetail.propTypes = {
-  project: PropTypes.object,
-};
