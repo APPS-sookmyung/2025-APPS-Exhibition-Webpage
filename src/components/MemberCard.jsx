@@ -1,8 +1,12 @@
 import PropTypes from 'prop-types';
+import BackendIcon from '../assets/backend.svg?react';
+import FrontendIcon from '../assets/frontend.svg?react';
+import DesignerIcon from '../assets/designer.svg?react';
 
-const ROLE_STYLES = {
-  프론트엔드: 'bg-Blue_medium text-white',
-  백엔드: 'bg-purple text-white',
+const ROLE_ICONS = {
+  백엔드: BackendIcon,
+  프론트엔드: FrontendIcon,
+  디자이너: DesignerIcon,
 };
 
 export default function MemberCard({member}) {
@@ -30,12 +34,14 @@ export default function MemberCard({member}) {
           <h3 className='text-lg font-semibold text-100 transition-colors group-hover:text-white sm:text-xl'>
             {member.name}
           </h3>
-          <span
-            className={`inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold transition-colors sm:px-[19px] sm:py-[5px] sm:text-sm ${
-              ROLE_STYLES[member.role] || ROLE_STYLES['프론트엔드']
-            }`}>
-            {member.role}
-          </span>
+          {ROLE_ICONS[member.role] && (
+            <div className='transition-all [&>svg>rect]:transition-colors group-hover:[&>svg>rect]:fill-Blue_light [&>svg>path]:transition-colors group-hover:[&>svg>path]:fill-Blue_medium'>
+              {(() => {
+                const Icon = ROLE_ICONS[member.role];
+                return <Icon className='h-6 w-auto' />;
+              })()}
+            </div>
+          )}
         </div>
         <p className='text-sm leading-[140%] text-80 transition-colors group-hover:text-white sm:text-base'>
           {member.description}
