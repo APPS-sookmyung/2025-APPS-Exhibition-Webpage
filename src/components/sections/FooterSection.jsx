@@ -1,4 +1,3 @@
-import React from 'react';
 import tinyLogo from '../../assets/footer/tinyLogo.svg';
 import miniFlower from '../../assets/footer/miniFlower.svg';
 
