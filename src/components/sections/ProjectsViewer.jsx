@@ -8,7 +8,7 @@ const ProjectsViewer = () => {
   const [isStackedView, setIsStackedView] = useState(true);
 
   return (
-    <div className='bg-Blue py-11.25'>
+    <div className='bg-primary py-11.25'>
       <div className='relative'>
         {/* 제목 */}
         <div className='md:pb-5 lg:pb-15.5'>

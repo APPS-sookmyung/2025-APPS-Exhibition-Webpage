@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import TechStackChips from './TechStackChips';
+import TechStackChips from './TechStackChips.jsx';
 
 export default function ProjectDetailBody({content, features, techStack}) {
   return (
@@ -17,7 +17,7 @@ export default function ProjectDetailBody({content, features, techStack}) {
           {features.map((feature, index) => (
             <span
               key={index}
-              className='bg-Blue_light text-Blue_medium inline-flex items-center rounded-full px-4 py-2 text-sm font-semibold'>
+              className='bg-Blue_light text-primary-light inline-flex items-center rounded-full px-4 py-2 text-sm font-semibold'>
               {feature}
             </span>
           ))}
