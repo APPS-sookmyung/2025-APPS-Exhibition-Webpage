@@ -1,4 +1,4 @@
-// 프로젝트 데이터 여기다가 넣으시면 됩니다.
+// Project data
 export const projects = {
   EMORY: {
     projectType: 'TEAM',
@@ -28,7 +28,7 @@ export const projects = {
     members: [
       {
         name: '김영교',
-        role: '프론트엔드',
+        role: ['PM', '프론트엔드'],
         description: '(소개글)',
         profileImage: '',
       },
@@ -46,7 +46,7 @@ export const projects = {
       },
       {
         name: '김도연',
-        role: '백엔드',
+        role: ['PM', '백엔드'],
         description: '(소개글)',
         profileImage: '',
       },
@@ -89,7 +89,7 @@ export const projects = {
     members: [
       {
         name: '하지민',
-        role: '프론트엔드',
+        role: ['디자이너', '프론트엔드'],
         description: '(소개글)',
         profileImage: '',
       },
@@ -119,7 +119,6 @@ export const projects = {
       },
     ],
   },
-
   Devsong: {
     projectType: 'TEAM',
     generation: [14],
@@ -131,74 +130,25 @@ export const projects = {
     links: [{type: 'CLIENT', url: ''}],
     members: [
       {
-        name: '김하늘',
+        name: '백수민',
         role: '프론트엔드',
         description: '(소개글)',
         profileImage: '',
       },
       {
-        name: '이바다',
+        name: '방지희',
         role: '백엔드',
         description: '(소개글)',
         profileImage: '',
       },
       {
-        name: '박별',
+        name: '신정은',
         role: '백엔드',
         description: '(소개글)',
         profileImage: '',
       },
       {
-        name: '최구름',
-        role: '디자이너',
-        description: '(소개글)',
-        profileImage: '',
-      },
-    ],
-  },
-
-  ChatToner: {
-    projectType: 'TEAM',
-    generation: [13],
-    title: 'ChatToner',
-    subtitle: 'ChatToner 한 줄 소개',
-    content: 'ChatToner 상세 설명입니다.',
-    feature: ['기능 1', '기능 2'],
-    techStack: ['Angular', 'Spring Boot', 'MySQL'],
-    links: [{type: 'CLIENT', url: ''}],
-    members: [
-      {
-        name: '윤하늘',
-        role: '프론트엔드',
-        description: '(소개글)',
-        profileImage: '',
-      },
-      {
-        name: '장미래',
-        role: '프론트엔드',
-        description: '(소개글)',
-        profileImage: '',
-      },
-      {
-        name: '임소라',
-        role: '백엔드',
-        description: '(소개글)',
-        profileImage: '',
-      },
-      {
-        name: '한별',
-        role: '백엔드',
-        description: '(소개글)',
-        profileImage: '',
-      },
-      {
-        name: '오하늘',
-        role: '백엔드',
-        description: '(소개글)',
-        profileImage: '',
-      },
-      {
-        name: '송구름',
+        name: '이은채',
         role: '디자이너',
         description: '(소개글)',
         profileImage: '',
@@ -206,7 +156,6 @@ export const projects = {
     ],
   },
 };
-
 // FALLBACK 프로젝트 (slug가 없거나 찾을 수 없을 때)
 export const FALLBACK_PROJECT = {
   projectType: 'TEAM',
