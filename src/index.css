@@ -1,10 +1,94 @@
+body {
+  font-family: Pretendard;
+  word-break: keep-all;
+}
+
 @import 'tailwindcss';
 
 @theme {
-  @keyframes marquee {
-    from { transform: translateX(0%); }
-    to { transform: translateX(-100%); }
-  }
+  --color-white: #ffffff;
+  --color-80: #333333;
+  --color-100: #111111;
+  --color-Blue_light: #d9e3fc;
+  --color-primary-light: #2e61e0;
+  --color-primary: #2a27e8;
+  --color-secondary: #f75820;
+  --color-tertiary: #ffb236;
+  --color-accent-blue: #36b2ed;
+  --color-gray_light: #d3d9df;
+  --color-red_light: #ffd2d2;
+  --color-Gray_light: #e9ecef;
+  --color-Green: #30e462;
+}
 
+/* 스크롤바 커스텀 */
+.horizontal-scroll::-webkit-scrollbar {
+  height: 7px;
+  padding-top: 2px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb {
+  border-radius: 9999px;
+  background: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+/* 애니메이션 동작 정의 */
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+:root {
   --animate-marquee: marquee 10s linear infinite;
+}
+
+.animate-marquee {
+  animation: var(--animate-marquee);
+}
+
+/* 왼쪽으로 흐르는 애니메이션 키프레임 */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* 데이터가 2배로 복제되었으므로, 전체 길이의 절반(-50%)만큼 이동하면 처음과 같아짐 */
+    transform: translateX(-50%);
+  }
+}
+
+/* 오른쪽으로 흐르는 애니메이션 키프레임 */
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* 실제 사용할 유틸리티 클래스 생성 */
+.animate-scroll-left {
+  /* 이름 | 시간 | 속도곡선 | 무한반복 */
+  animation: scroll-left 60s linear infinite;
+}
+
+.animate-scroll-right {
+  animation: scroll-right 60s linear infinite;
+}
+
+@media (max-width: 768px) {
+  .animate-scroll-left,
+  .animate-scroll-right {
+    animation-duration: 40s;
+  }
 }

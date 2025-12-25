@@ -1,5 +1,5 @@
-import AppsIcon from './icons/AppsIcon';
-import TreeIcon from './icons/TreeIcon';
+import AppsIcon from '../../component/icons/AppsIcon';
+import TreeIcon from '../../component/icons/TreeIcon';
 
 export default function Header() {
   return (

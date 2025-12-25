@@ -1,9 +1,9 @@
 import Header from './Header';
-import Line from './icons/Line';
-import ExhibitionIcon1 from './icons/ExhibitionIcon1';
-import ExhibitionIcon2 from './icons/ExhibitionIcon2';
-import BackIcon from './icons/BackIcon';
-import WAIcon from './icons/WAIcon';
+import Line from '../../component/icons/Line';
+import ExhibitionIcon1 from '../../component/icons/ExhibitionIcon1';
+import ExhibitionIcon2 from '../../component/icons/ExhibitionIcon2';
+import BackIcon from '../../component/icons/BackIcon';
+import WAIcon from '../../component/icons/WAIcon';
 
 export default function LandingPage() {
   return (

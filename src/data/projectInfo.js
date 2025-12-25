@@ -1,0 +1,198 @@
+import dummyThumbnail from '../assets/thumbnail/project-thumbnail.svg';
+import dummyPavicon from '../assets/pavicon/project-pavicon.svg';
+
+export const projectInfo = [
+  // 팀 프로젝트
+  {
+    id: 'chattoner',
+    slug: 'ChatToner',
+    title: 'CHAT-TONER',
+    type: 'team',
+    platform: 'WEB',
+    thumbnail: dummyThumbnail,
+    pavicon: dummyPavicon,
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    members: [
+      '11기 윤지원',
+      '11기 하지민',
+      '11기 권유진',
+      '11기 김지민',
+      '12기 정지은',
+    ],
+    link: 'https://example.com',
+  },
+  {
+    id: 'devsong',
+    slug: 'Devsong',
+    title: 'DEVSONG',
+    type: 'team',
+    platform: 'WEB',
+    thumbnail: dummyThumbnail,
+    pavicon: dummyPavicon,
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    members: [
+      '11기 백수민',
+      '11기 신정은',
+      '11기 방지희',
+      '12기 김도연',
+      '12기 엄다현',
+    ],
+    link: 'https://example.com',
+  },
+  {
+    id: 'emory',
+    slug: 'EMORY',
+    title: 'EMORY',
+    type: 'team',
+    platform: 'WEB',
+    thumbnail: dummyThumbnail,
+    pavicon: dummyPavicon,
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    members: [
+      '11기 윤지원',
+      '11기 신정은',
+      '12기 김도연',
+      '12기 김영교',
+      '12기 엄다현',
+      '12기 윤소영',
+    ],
+    link: 'https://example.com',
+  },
+
+  //   신입부원 프로젝트
+  {
+    id: 'bday',
+    title: 'B-DAY',
+    type: 'rookie',
+    platform: 'WEB',
+    thumbnail: dummyThumbnail,
+    pavicon: dummyPavicon,
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    members: ['12기 우채아'],
+    link: 'https://example.com',
+  },
+  {
+    id: 'budgetpilot',
+    title: 'BudgetPilot',
+    type: 'rookie',
+    platform: 'WEB',
+    thumbnail: dummyThumbnail,
+    pavicon: dummyPavicon,
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    members: ['12기 김도연'],
+    link: 'https://example.com',
+  },
+  {
+    id: 'clip',
+    title: 'Clip',
+    type: 'rookie',
+    platform: 'WEB',
+    thumbnail: dummyThumbnail,
+    pavicon: dummyPavicon,
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    members: ['12기 정지은'],
+    link: 'https://example.com',
+  },
+  {
+    id: 'commutime',
+    title: 'CommuTime',
+    type: 'rookie',
+    platform: 'WEB',
+    thumbnail: dummyThumbnail,
+    pavicon: dummyPavicon,
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    members: ['12기 김영교'],
+    link: 'https://example.com',
+  },
+  {
+    id: 'flist',
+    title: 'f-list',
+    type: 'rookie',
+    platform: 'WEB',
+    thumbnail: dummyThumbnail,
+    pavicon: dummyPavicon,
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    members: ['12기 이유나'],
+    link: 'https://example.com',
+  },
+  {
+    id: 'hellogiraffe',
+    title: 'HelloGiraffe',
+    type: 'rookie',
+    platform: 'WEB',
+    thumbnail: dummyThumbnail,
+    pavicon: dummyPavicon,
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    members: ['12기 문예선'],
+    link: 'https://example.com',
+  },
+  {
+    id: 'podorush',
+    title: 'PodoRush',
+    type: 'rookie',
+    platform: 'WEB',
+    thumbnail: dummyThumbnail,
+    pavicon: dummyPavicon,
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    members: ['12기 엄다현'],
+    link: 'https://example.com',
+  },
+  {
+    id: 'pouch',
+    title: 'Pouch',
+    type: 'rookie',
+    platform: 'WEB',
+    thumbnail: dummyThumbnail,
+    pavicon: dummyPavicon,
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    members: ['12기 배송이'],
+    link: 'https://example.com',
+  },
+  {
+    id: 'starlist',
+    title: 'starlist',
+    type: 'rookie',
+    platform: 'WEB',
+    thumbnail: dummyThumbnail,
+    pavicon: dummyPavicon,
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    members: ['12기 한지민'],
+    link: 'https://example.com',
+  },
+  {
+    id: 'streco',
+    title: 'STRECO',
+    type: 'rookie',
+    platform: 'WEB',
+    thumbnail: dummyThumbnail,
+    pavicon: dummyPavicon,
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    members: ['12기 임유진'],
+    link: 'https://example.com',
+  },
+  {
+    id: 'ults',
+    title: 'ULTS',
+    type: 'rookie',
+    platform: 'WEB',
+    thumbnail: dummyThumbnail,
+    pavicon: dummyPavicon,
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    members: ['12기 윤소영'],
+    link: 'https://example.com',
+  },
+];

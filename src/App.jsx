@@ -1,7 +1,14 @@
-import LandingPage from './component/LandingPage';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import ProjectDetailPage from './pages/ProjectDetailPage';
+import MainPage from './pages/MainPage';
 
-function App() {
-  return <LandingPage></LandingPage>;
+export function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<MainPage />} />
+        <Route path='/projects/:slug' element={<ProjectDetailPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
-
-export default App;
