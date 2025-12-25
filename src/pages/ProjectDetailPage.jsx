@@ -1,7 +1,7 @@
 import {useParams} from 'react-router-dom';
-import ProjectDetailHero from '../components/ProjectDetailHero';
-import ProjectDetailBody from '../components/ProjectDetailBody';
-import MemberCard from '../components/MemberCard';
+import ProjectDetailHero from '../components/project-detail/ProjectDetailHero';
+import ProjectDetailBody from '../components/project-detail/ProjectDetailBody';
+import MemberCard from '../components/cards/MemberCard';
 import ReferenceSection from '../components/ReferenceSection';
 import FlowerIcon from '../assets/flower.svg?react';
 import {projects, FALLBACK_PROJECT} from '../data/projects-detail-data';
