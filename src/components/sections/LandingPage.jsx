@@ -16,17 +16,17 @@ export default function LandingPage() {
           </p>
           <div className='font-pretendard relative z-10 mt-5 text-[clamp(4rem,15vw,170px)] leading-[0.8] font-bold tracking-[-0.07rem] text-white'>
             <div className='relative flex w-full items-baseline justify-between pb-4'>
-              <h1 className='shrink-0'>APPS</h1>
+              <p className='shrink-0'>APPS</p>
               <div className='ml-4 flex-1 overflow-hidden py-2 md:ml-10 lg:ml-90'>
                 <div className='animate-marquee inline-block whitespace-nowrap'>
-                  <span>SOOKMYUNG</span>
+                  <p>SOOKMYUNG</p>
                 </div>
               </div>
             </div>
             <div className='relative right-1/2 left-1/2 -mx-[50vw] mt-2 w-screen border-b border-dotted border-white' />
             <div className='-mt-2 flex flex-nowrap items-center justify-start'>
-              <h1 className='shrink-0 leading-none'>EXHIBITI</h1>
-              <h1 className='text-secondary shrink-0 leading-none'>O</h1>
+              <p className='shrink-0 leading-none'>EXHIBITI</p>
+              <p className='text-secondary shrink-0 leading-none'>O</p>
               <h1 className='shrink-0 leading-none'>N</h1>
               <div className='ml-2 flex shrink-0 translate-y-2 items-center md:ml-6 md:translate-y-4 lg:-space-x-4'>
                 <div className='w-auto origin-left scale-50 md:scale-75 lg:scale-100'>
@@ -39,15 +39,15 @@ export default function LandingPage() {
             </div>
             <div className='relative right-1/2 left-1/2 -mx-[50vw] mt-2 w-screen border-b border-dotted border-white' />
             <div className='flex justify-end pr-4 md:pr-10'>
-              <h1 className='pr-10 leading-none tracking-tighter md:-mt-2 md:pr-40'>
+              <p className='pr-10 leading-none tracking-tighter md:-mt-2 md:pr-40'>
                 2025
-              </h1>
+              </p>
             </div>
           </div>
 
           <img
             src={LinearIcon}
-            className='absolute top-[70%] -left-10 z-0 h-90 w-130 scale-50 md:scale-100 lg:top-[25.8%] lg:-left-14'
+            className='absolute top-[9%] -left-35 z-0 h-90 w-130 scale-50 md:scale-100 lg:top-[25.8%] lg:-left-14'
           />
 
           <div className='absolute right-6 bottom-50 z-20 flex items-center gap-3 md:right-45 md:bottom-75 md:gap-5'>
@@ -58,19 +58,19 @@ export default function LandingPage() {
           </div>
 
           <div className='mt-20 mb-20 space-y-4 md:mt-40'>
-            <h2 className='font-pretendard text-2xl leading-tight font-semibold tracking-wide md:text-4xl'>
+            <p className='font-pretendard text-2xl leading-tight font-semibold tracking-wide md:text-4xl'>
               블라블라 앱스 카피
-            </h2>
+            </p>
             <p className='font-pretendard tracking-wides text-xl font-semibold text-white md:text-4xl'>
               여기는 더미 텍스트가 들어갑니다.
             </p>
           </div>
 
-          <div className='md:bottom[-100px] pointer-events-none absolute right-0 bottom-[-100px] z-0 origin-bottom origin-right scale-[0.3] md:scale-[0.8] lg:bottom-[-240px] lg:scale-100'>
+          <div className='md:bottom[-100px] pointer-events-none absolute right-0 bottom-[-120px] z-0 origin-bottom origin-right scale-[0.3] md:scale-[0.8] lg:bottom-[-240px] lg:scale-100'>
             <div className='relative flex items-center justify-end'>
-              <span className='font-pretendard absolute z-20 -translate-x-[110px] translate-y-[100px] transform text-[50px] leading-none font-black tracking-[1em] text-white md:-translate-x-79 md:translate-y-15 md:text-[50px]'>
+              <p className='font-pretendard absolute z-20 -translate-x-[110px] translate-y-[100px] transform text-[50px] leading-none font-black tracking-[1em] text-white md:-translate-x-79 md:translate-y-15 md:text-[50px]'>
                 APPS
-              </span>
+              </p>
               <img
                 src={VectorIcon}
                 className='relative z-10 pr-10 pb-10 md:pr-20 md:pb-30'
@@ -79,9 +79,9 @@ export default function LandingPage() {
           </div>
 
           <div className='pointer-events-none absolute bottom-[-5%] left-0 z-0 flex w-full justify-center py-18 md:bottom-[-10%] lg:bottom-[-140px]'>
-            <span className='font-pretendard text-primary-light translate-y-[-1%] transform text-[20vw] leading-none font-medium md:text-[25vw] lg:text-[200px]'>
+            <p className='font-pretendard text-primary-light translate-y-[-1%] transform text-[20vw] leading-none font-medium md:text-[25vw] lg:text-[200px]'>
               APPS
-            </span>
+            </p>
           </div>
 
           <div className='absolute -bottom-5 left-6 origin-left scale-75 md:bottom-30 md:left-10 md:scale-90 lg:-bottom-30 lg:left-10 lg:scale-100'>
