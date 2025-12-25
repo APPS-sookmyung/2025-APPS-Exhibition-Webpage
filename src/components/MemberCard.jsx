@@ -1,15 +1,14 @@
 import PropTypes from 'prop-types';
-import BackendIcon from '../assets/backend.svg?react';
-import FrontendIcon from '../assets/frontend.svg?react';
-import DesignerIcon from '../assets/designer.svg?react';
-import PMIcon from '../assets/pm.svg?react';
 
-const ROLE_ICONS = {
-  백엔드: BackendIcon,
-  프론트엔드: FrontendIcon,
-  디자이너: DesignerIcon,
-  PM: PMIcon,
+const ROLE_CHIP_LABELS = {
+  백엔드: 'BACK-END',
+  프론트엔드: 'FRONT-END',
+  디자이너: 'DESIGNER',
+  PM: 'PM',
 };
+
+const ROLE_CHIP_BASE_CLASS =
+  'inline-flex items-center justify-center gap-2 rounded-[100px] bg-[#2E61E0] px-[19px] py-[5px] text-[11px] font-semibold tracking-[0.08em] text-white transition-colors duration-300 group-hover:bg-white group-hover:text-[#2E61E0]';
 
 export default function MemberCard({member}) {
   return (
@@ -41,15 +40,16 @@ export default function MemberCard({member}) {
               ? member.role
               : [member.role];
             return roles.map(
-              (role, index) =>
-                ROLE_ICONS[role] && (
-                  <div key={index} className='role-icon-wrapper'>
-                    {(() => {
-                      const Icon = ROLE_ICONS[role];
-                      return <Icon className='h-6 w-auto' />;
-                    })()}
-                  </div>
-                )
+              (role, index) => {
+                const label = ROLE_CHIP_LABELS[role] || role;
+                return (
+                  <span
+                    key={`${role}-${index}`}
+                    className={ROLE_CHIP_BASE_CLASS}>
+                    {label}
+                  </span>
+                );
+              }
             );
           })()}
         </div>
