@@ -14,7 +14,7 @@ export default function GridCard({project, index}) {
       </div>
 
       {/* 카드 */}
-      <div className='group absolute bottom-0 z-10 h-[75%] w-full overflow-hidden rounded-[20px] bg-[#E9ECEF] px-3 pt-3 pb-3 md:rounded-[25px] md:px-4 md:pt-4 md:pb-6 lg:rounded-[30px] lg:px-5 lg:pt-5'>
+      <div className='group bg-Gray_light absolute bottom-0 z-10 h-[75%] w-full overflow-hidden rounded-[20px] px-3 pt-3 pb-3 md:rounded-[25px] md:px-4 md:pt-4 md:pb-6 lg:rounded-[30px] lg:px-5 lg:pt-5'>
         {/* 호버 영역 */}
         <div className='absolute inset-0 z-20 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100'>
           {/* 호버 시 나타나는 그림자 */}
