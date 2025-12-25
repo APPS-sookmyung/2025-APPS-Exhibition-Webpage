@@ -7,41 +7,39 @@ export default function Activities() {
   const x = useTransform(scrollYProgress, [0.2, 0.6], ['0%', '-40%']);
 
   return (
-    <div className='relative w-full overflow-hidden bg-[#3936E5] py-32'>
-      <div className='relative z-10 mb-20 text-center'>
-        <h2 className='font-pretendard text-5xl font-semibold tracking-tight text-[#FFFFFF]'>
+    <div className='relative w-full overflow-hidden bg-[#3936E5] py-20 md:py-32'>
+      <div className='relative z-10 mb-16 text-center md:mb-20'>
+        <h2 className='font-pretendard text-3xl font-semibold tracking-tight text-[#FFFFFF] md:text-5xl'>
           ACTIVITIES
         </h2>
-        <p className='font-pretendard mt-5 text-2xl font-semibold text-[#D9E3FC]'>
+        <p className='font-pretendard mt-4 text-base font-semibold text-[#D9E3FC] md:mt-6 md:text-2xl'>
           APPS에서 정기적으로 진행하는 다양한 활동들이 있어요
         </p>
       </div>
-      <div className='font-pretendard absolute top-30 text-[150px] font-bold text-[#4B48F5] select-none'>
+      <div className='font-pretendard absolute top-24 text-[72px] font-bold text-[#4B48F5] select-none md:top-[120px] md:text-[150px]'>
         ACTIVITIES
       </div>
 
       <motion.div
         style={{x}}
-        className='relative z-20 flex items-stretch gap-8 px-8'>
+        className='relative z-20 flex items-stretch gap-6 overflow-x-auto px-4 md:gap-8 md:overflow-visible md:px-8 md:py-3'>
         {activitiesData.map((card) => {
           if (card.type === 'text') {
             return (
-              <motion.div
+              <div
                 key={card.id}
-                className='mt-1 h-[420px] w-[290px] shrink-0 rounded-3xl bg-[#E9ECEF] p-8'
-                whileHover={{y: -8}}
-                transition={{type: 'spring', stiffness: 200}}>
+                className='mt-1 h-[380px] w-[260px] shrink-0 rounded-3xl bg-[#E9ECEF] p-6 md:h-[420px] md:w-[290px] md:p-8'>
                 <span className='font-pretendard mt-3 mb-3 inline-block w-fit rounded-full bg-[#4B48F5] px-7 py-1 text-xs font-bold text-[#D9E3FC]'>
                   {card.tag}
                 </span>
-                <h3 className='font-pretendard mt-30 mb-2 text-[23px] font-bold'>
+                <h3 className='font-pretendard mt-20 mb-2 text-lg font-bold md:mt-[120px] md:text-[23px]'>
                   {card.title}
                 </h3>
                 <div className='my-2 border-t-2 border-dashed border-black' />
                 <p className='font-pretendard my-3 text-sm leading-relaxed font-medium text-black'>
                   {card.description}
                 </p>
-              </motion.div>
+              </div>
             );
           }
 
@@ -49,14 +47,13 @@ export default function Activities() {
             return (
               <motion.div
                 key={card.id}
-                className='mt-1 h-[420px] w-[290px] shrink-0 overflow-hidden rounded-3xl'
-                whileHover={{scale: 1.03}}
-                transition={{type: 'spring', stiffness: 200}}>
+                className='group relative mt-1 h-[380px] w-[260px] shrink-0 overflow-hidden rounded-3xl md:h-[420px] md:w-[290px]'>
                 <img
                   src={card.image}
                   alt=''
                   className='h-full w-full object-cover'
                 />
+                <div className='absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-200 group-hover:opacity-100' />
               </motion.div>
             );
           }
@@ -65,15 +62,17 @@ export default function Activities() {
         })}
       </motion.div>
 
-      <div className='relative -top-168 left-280'>
-        <div className='font-pretendard h-13 w-55 rounded-full bg-[#D9E3FC] text-center text-2xl leading-[2] font-bold tracking-[0.025rem] text-[#4B48F5]'>
-          COMMIT
+      <div className='absolute top-12 right-3 z-30 origin-top-right scale-70 sm:scale-90 md:top-15 md:right-40 md:scale-100'>
+        <div className='relative'>
+          <div className='font-pretendard h-11 w-44 rounded-full bg-[#D9E3FC] text-center text-lg leading-[2] font-bold tracking-[0.025rem] text-[#4B48F5] md:h-13 md:w-55 md:text-2xl'>
+            COMMIT
+          </div>
+          <div className='absolute left-18 mt-3 h-11 w-44 rounded-full bg-[#A96EFC] md:h-13 md:w-55'></div>
         </div>
-        <div className='absolute left-18 mt-3 h-13 w-55 rounded-full bg-[#A96EFC]'></div>
       </div>
 
       <svg
-        className='absolute z-30 mx-55 -mt-22'
+        className='absolute z-20 mx-45 -mt-10 scale-75 sm:scale-90 md:mx-55 md:-mt-13 md:scale-100'
         width='80'
         height='80'
         viewBox='0 0 100 100'
@@ -87,7 +86,7 @@ export default function Activities() {
       <svg
         width='282'
         height='282'
-        className='absolute z-10 -mt-38 ml-250'
+        className='absolute z-10 -mt-30 ml-250'
         viewBox='0 0 282 282'
         fill='none'
         xmlns='http://www.w3.org/2000/svg'>
@@ -104,10 +103,10 @@ export default function Activities() {
         </defs>
       </svg>
 
-      <div className='relative mt-10 h-[300px] w-full overflow-visible'>
+      <div className='md::h-[300px] relative mt-15 h-[380px] w-full overflow-visible'>
         <svg
           viewBox='0 0 1440 191'
-          className='absolute z-20 mt-42 w-full'
+          className='absolute top-5 left-0 z-20 w-full md:top-45'
           fill='none'
           xmlns='http://www.w3.org/2000/svg'>
           <g clipPath='url(#clip0_264_1031)'>
@@ -144,7 +143,7 @@ export default function Activities() {
 
         <svg
           viewBox='0 0 1440 243'
-          className='absolute z-10 mt-25 w-full'
+          className='absolute top-0 left-0 z-10 w-full md:top-24'
           fill='none'
           xmlns='http://www.w3.org/2000/svg'>
           <g clipPath='url(#clip0_264_1029)'>

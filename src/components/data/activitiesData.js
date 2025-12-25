@@ -1,4 +1,3 @@
-// activitiesData.js
 export const activitiesData = [
   {
     id: 1,
@@ -24,7 +23,7 @@ export const activitiesData = [
   {
     id: 4,
     type: 'image',
-    image: '/images/devtalk2.jpg',
+    image: '/images/devtalk1.jpg',
   },
   {
     id: 5,
@@ -37,6 +36,6 @@ export const activitiesData = [
   {
     id: 6,
     type: 'image',
-    image: '/images/devtalk3.jpg',
+    image: '/images/devtalk1.jpg',
   },
 ];
