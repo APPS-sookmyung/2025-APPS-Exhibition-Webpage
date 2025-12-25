@@ -16,7 +16,9 @@ body {
   --color-tertiary: #ffb236;
   --color-accent-blue: #36b2ed;
   --color-gray_light: #d3d9df;
+  --color-red_light: #ffd2d2;
   --color-Gray_light: #e9ecef;
+  --color-Green: #30e462;
 }
 
 /* 스크롤바 커스텀 */

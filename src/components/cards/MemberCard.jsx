@@ -13,13 +13,13 @@ const MemberCard = ({data, onClick, isActive}) => {
   if (type === 'keyword' || type === 'action') {
     // 테마별 배경색 매핑
     const themeStyles = {
-      yellow: 'bg-Yellow',
+      yellow: 'bg-tertiary',
       green: 'bg-Green',
       blue: 'bg-primary-light',
       purple: 'bg-secondary',
     };
 
-    const bgColor = themeStyles[theme] || 'bg-Yellow';
+    const bgColor = themeStyles[theme] || 'bg-tertiary';
 
     return (
       <div
