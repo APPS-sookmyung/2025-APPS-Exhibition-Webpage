@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import InfiniteLoopRow from './InfiniteLoopRow';
 import MemberCard from '../cards/MemberCard';
 import CenterLogo from '../../assets/logo/logo.svg';
@@ -14,6 +14,31 @@ const MemberIntroSection = () => {
   // 어떤 멤버가 선택되었는지 관리 (null이면 선택 안됨)
   const [selectedMember, setSelectedMember] = useState(null);
   const [cardPosition, setCardPosition] = useState(null);
+
+  useEffect(() => {
+    if (selectedMember) {
+      // 카드가 선택되면 스크롤을 막음
+      document.body.style.overflow = 'hidden';
+    } else {
+      // 선택이 해제되면 스크롤을 다시 허용
+      document.body.style.overflow = 'unset';
+    }
+    // 컴포넌트가 언마운트되거나 상태가 변할 때 뒷정리(cleanup)
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [selectedMember]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (selectedMember) {
+        handleClose();
+      }
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [selectedMember]);
+
   // 카드 클릭 핸들러
   const handleCardClick = (member, rect) => {
     if (selectedMember && selectedMember.id === member.id) {
