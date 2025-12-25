@@ -5,6 +5,7 @@ export const projectInfo = [
   // 팀 프로젝트
   {
     id: 'chattoner',
+    slug: 'ChatToner',
     title: 'CHAT-TONER',
     type: 'team',
     platform: 'WEB',
@@ -23,6 +24,7 @@ export const projectInfo = [
   },
   {
     id: 'devsong',
+    slug: 'Devsong',
     title: 'DEVSONG',
     type: 'team',
     platform: 'WEB',
@@ -41,6 +43,7 @@ export const projectInfo = [
   },
   {
     id: 'emory',
+    slug: 'EMORY',
     title: 'EMORY',
     type: 'team',
     platform: 'WEB',

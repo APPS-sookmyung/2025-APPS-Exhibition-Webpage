@@ -36,7 +36,7 @@ export default function StackedCardDeck({projects, index}) {
 
   return (
     <div
-      className='relative flex h-138.25 w-full justify-center'
+      className='relative flex h-100 w-80 scale-60 justify-center md:h-125 md:w-150 md:scale-80 lg:h-138.25 lg:scale-100'
       style={{perspective: '1000px', transformStyle: 'preserve-3d'}}>
       <div className='relative w-full' style={{transformStyle: 'preserve-3d'}}>
         {/* 카드 렌더링 */}
