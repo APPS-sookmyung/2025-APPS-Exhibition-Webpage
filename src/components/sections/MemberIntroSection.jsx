@@ -3,10 +3,10 @@ import InfiniteLoopRow from './InfiniteLoopRow';
 import MemberCard from '../cards/MemberCard';
 import CenterLogo from '../../assets/logo/logo.svg';
 
-import BgFlower from '../../assets/background_diagram/Frame flower.svg';
-import BgRock from '../../assets/background_diagram/Frame rock.svg';
-import BgTopD from '../../assets/background_diagram/Frame topD.svg';
-import BgBottomD from '../../assets/background_diagram/Frame bottomD.svg';
+import BgFlower from '../../assets/background-diagram/Frame flower.svg';
+import BgRock from '../../assets/background-diagram/Frame rock.svg';
+import BgTopD from '../../assets/background-diagram/Frame topD.svg';
+import BgBottomD from '../../assets/background-diagram/Frame bottomD.svg';
 
 import {ROW_1_DATA, ROW_2_DATA, ROW_3_DATA} from '../../data/appsIntroData';
 

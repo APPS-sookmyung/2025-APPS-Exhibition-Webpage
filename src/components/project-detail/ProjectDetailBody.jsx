@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import TechStackChips from './TechStackChips';
+import TechStackChips from './TechStackChips.jsx';
 
 export default function ProjectDetailBody({content, features, techStack}) {
   return (
