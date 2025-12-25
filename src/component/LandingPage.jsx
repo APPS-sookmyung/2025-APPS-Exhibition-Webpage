@@ -7,17 +7,17 @@ import WAIcon from './icons/WAIcon';
 
 export default function LandingPage() {
   return (
-    <div>
-      <div className='relative min-h-[1300px] overflow-hidden bg-[#2A27E8] text-[#FFFFFF]'>
+    <div className='w-full'>
+      <div className='relative min-h-screen overflow-hidden bg-[#2A27E8] text-[#FFFFFF] lg:min-h-[1300px]'>
         <Header />
-        <div className='relative mx-auto w-full px-20 py-18'>
-          <p className='font-pretendard text-3xl font-normal tracking-[-0.025em] text-[#CCD7F2]'>
+        <div className='relative mx-auto w-full px-6 py-10 lg:px-20 lg:py-18'>
+          <p className='font-pretendard text-lg font-normal tracking-[-0.025em] text-[#CCD7F2] md:text-2xl lg:text-3xl'>
             SMWU Programming Club
           </p>
-          <div className='font-pretendard relative z-10 mt-5 text-[170px] leading-[0.8] font-bold tracking-[-0.07rem] text-[#FFFFFF]'>
+          <div className='font-pretendard relative z-10 mt-5 text-[clamp(4rem,15vw,170px)] leading-[0.8] font-bold tracking-[-0.07rem] text-[#FFFFFF]'>
             <div className='relative flex w-full items-baseline justify-between pb-4'>
               <h1 className='shrink-0'>APPS</h1>
-              <div className='ml-90 flex-1 overflow-hidden py-2'>
+              <div className='ml-4 flex-1 overflow-hidden py-2 md:ml-10 lg:ml-90'>
                 <div className='animate-marquee inline-block whitespace-nowrap'>
                   <span>SOOKMYUNG</span>
                 </div>
@@ -30,45 +30,53 @@ export default function LandingPage() {
               <h1 className='shrink-0 leading-none'>EXHIBITI</h1>
               <h1 className='shrink-0 leading-none text-[#F75820]'>O</h1>
               <h1 className='shrink-0 leading-none'>N</h1>
-              <div className='ml-6 flex shrink-0 translate-y-4 items-center gap-2'>
-                <ExhibitionIcon1 />
-                <ExhibitionIcon2 />
+              <div className='ml-2 flex shrink-0 translate-y-2 items-center gap-2 md:ml-6 md:translate-y-4'>
+                <div className='origin-left scale-50 md:scale-75 lg:scale-100'>
+                  <ExhibitionIcon1 />
+                </div>
+                <div className='origin-left scale-50 md:scale-75 lg:scale-100'>
+                  <ExhibitionIcon2 />
+                </div>
               </div>
             </div>
             <div className='relative right-1/2 left-1/2 mt-2 -mr-[50vw] -mb-2 -ml-[50vw] w-screen'>
               <Line />
             </div>
-            <div className='flex justify-end pr-10'>
-              <h1 className='pr-40 leading-none tracking-tighter'>2025</h1>
+            <div className='flex justify-end pr-4 md:pr-10'>
+              <h1 className='pr-10 leading-none tracking-tighter md:pr-40'>
+                2025
+              </h1>
             </div>
           </div>
 
-          <div className='absolute top-[77%] -left-13 z-0'>
+          <div className='absolute top-[60%] -left-10 z-0 scale-50 md:scale-100 lg:top-[77%] lg:-left-13'>
             <BackIcon />
           </div>
 
-          <div className='absolute right-45 bottom-60 z-20 flex items-center gap-5'>
-            <WAIcon />
-            <div className='font-pretendard flex h-13 w-63 items-center justify-center rounded-full bg-[#D9E3FC] text-center text-2xl leading-[2] font-bold tracking-[0.025rem] text-[#333333]'>
+          <div className='absolute right-6 bottom-50 z-20 flex items-center gap-3 md:right-45 md:bottom-60 md:gap-5'>
+            <div className='scale-78 md:scale-100'>
+              <WAIcon />
+            </div>
+            <div className='font-pretendard flex h-10 w-36 items-center justify-center rounded-full bg-[#D9E3FC] text-center text-sm leading-[2] font-bold tracking-[0.025rem] text-[#333333] md:h-13 md:w-63 md:text-2xl'>
               WEB & APP
             </div>
           </div>
 
-          <div className='mt-40 space-y-4'>
-            <h2 className='font-pretendard text-4xl leading-tight font-semibold tracking-wide'>
+          <div className='mt-20 mb-20 space-y-4 md:mt-40'>
+            <h2 className='font-pretendard text-2xl leading-tight font-semibold tracking-wide md:text-4xl'>
               블라블라 앱스 카피
             </h2>
-            <p className='font-pretendard tracking-wides text-4xl font-semibold text-white'>
+            <p className='font-pretendard tracking-wides text-xl font-semibold text-white md:text-4xl'>
               여기는 더미 텍스트가 들어갑니다.
             </p>
           </div>
 
-          <div className='pointer-events-none absolute right-0 bottom-[-290px] z-0'>
+          <div className='md:bottom[-100px] pointer-events-none absolute right-0 bottom-[-100px] z-0 origin-bottom origin-right scale-[0.3] md:scale-[0.8] lg:bottom-[-290px] lg:scale-100'>
             <div className='relative flex items-center justify-end'>
-              <span className='font-pretendard absolute z-20 -translate-x-77 translate-y-15 transform text-[50px] leading-none font-black tracking-[1em] text-white'>
+              <span className='font-pretendard absolute z-20 -translate-x-[110px] translate-y-[100px] transform text-[50px] leading-none font-black tracking-[1em] text-white md:-translate-x-77 md:translate-y-15 md:text-[50px]'>
                 APPS
               </span>
-              <div className='relative z-10 pr-20 pb-20'>
+              <div className='relative z-10 pr-10 pb-10 md:pr-20 md:pb-20'>
                 <svg
                   width='280'
                   height='320'
@@ -84,15 +92,15 @@ export default function LandingPage() {
             </div>
           </div>
 
-          <div className='pointer-events-none absolute bottom-[-310px] left-0 z-0 flex w-full justify-center py-18'>
-            <span className='font-pretendard translate-y-[-50%] transform text-[200px] leading-none font-medium text-[#2E61E0]'>
+          <div className='pointer-events-none absolute bottom-[-5%] left-0 z-0 flex w-full justify-center py-18 md:bottom-[-10%] lg:bottom-[-310px]'>
+            <span className='font-pretendard translate-y-[-1%] transform text-[20vw] leading-none font-medium text-[#2E61E0] md:text-[25vw] lg:text-[200px]'>
               APPS
             </span>
           </div>
 
-          <div className='absolute -bottom-45 left-10'>
-            <div className='h-13 w-50 rounded-full bg-[#36B2ED]'></div>
-            <div className='-mt-3 ml-10 h-13 w-50 rounded-full bg-[#FFB236]'></div>
+          <div className='absolute -bottom-5 left-6 origin-left scale-75 md:bottom-20 md:left-10 md:scale-90 lg:-bottom-45 lg:left-10 lg:scale-100'>
+            <div className='h-8 w-32 rounded-full bg-[#36B2ED] md:h-10 md:w-40 lg:h-13 lg:w-50'></div>
+            <div className='-mt-2 ml-6 h-8 w-32 rounded-full bg-[#FFB236] md:-mt-3 md:ml-8 md:h-10 md:w-40 lg:ml-10 lg:h-13 lg:w-50'></div>
           </div>
         </div>
       </div>
