@@ -10,10 +10,11 @@ body {
   --color-80: #333333;
   --color-100: #111111;
   --color-Blue_light: #d9e3fc;
-  --color-Blue_medium: #4b48f5;
-  --color-Blue: #3936e5;
-  --color-purple: #a96efc;
-  --color-Primary: #d060f8;
+  --color-primary-light: #2e61e0;
+  --color-primary: #2a27e8;
+  --color-secondary: #f75820;
+  --color-tertiary: #ffb236;
+  --color-accent-blue: #36b2ed;
   --color-gray_light: #d3d9df;
 }
 
