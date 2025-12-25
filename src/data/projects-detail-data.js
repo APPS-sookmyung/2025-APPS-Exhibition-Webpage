@@ -95,7 +95,7 @@ export const projects = {
       },
       {
         name: '윤지원',
-        role: '백엔드',
+        role: ['백엔드', 'PM'],
         description: '(소개글)',
         profileImage: '',
       },
