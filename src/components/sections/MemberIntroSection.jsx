@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import {useState, useEffect} from 'react';
 import InfiniteLoopRow from './InfiniteLoopRow';
 import MemberCard from '../cards/MemberCard';
 import CenterLogo from '../../assets/logo/logo.svg';
@@ -60,28 +60,28 @@ const MemberIntroSection = () => {
       <img
         src={BgFlower}
         alt='background deco'
-        className='pointer-events-none absolute top-0 left-0 z-0 w-90 select-none md:w-150'
+        className='pointer-events-none absolute top-0 left-0 z-0 w-40 select-none md:w-150'
       />
 
       {/* 2. 우측 상단 (BottomD) */}
       <img
         src={BgBottomD}
         alt='background deco'
-        className='pointer-events-none absolute top-0 right-0 z-0 w-90 select-none md:w-150'
+        className='pointer-events-none absolute top-0 right-0 z-0 w-40 select-none md:w-150'
       />
 
       {/* 3. 좌측 하단 (TopD) */}
       <img
         src={BgTopD}
         alt='background deco'
-        className='pointer-events-none absolute bottom-0 left-0 z-0 w-90 select-none md:w-150'
+        className='pointer-events-none absolute bottom-0 left-0 z-0 w-40 select-none md:w-150'
       />
 
       {/* 4. 우측 하단 (Rock) */}
       <img
         src={BgRock}
         alt='background deco'
-        className='pointer-events-none absolute right-0 bottom-0 z-0 w-90 select-none md:w-150'
+        className='pointer-events-none absolute right-0 bottom-0 z-0 w-40 select-none md:w-150'
       />
 
       <div className='relative z-10 w-full'>
