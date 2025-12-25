@@ -75,20 +75,6 @@ export const projects = {
         profileImage: '',
       },
     ],
-    references: [
-      {
-        image: '',
-        title: 'ChatToner',
-      },
-      {
-        image: '',
-        title: 'EMORY',
-      },
-      {
-        image: '',
-        title: 'Devsong',
-      },
-    ],
   },
 
   ChatToner: {
@@ -132,20 +118,6 @@ export const projects = {
         profileImage: '',
       },
     ],
-    references: [
-      {
-        image: '',
-        title: 'COOKIEE-',
-      },
-      {
-        image: '',
-        title: 'Devsong',
-      },
-      {
-        image: '',
-        title: 'ChatToner',
-      },
-    ],
   },
 
   Devsong: {
@@ -181,20 +153,6 @@ export const projects = {
         role: '디자이너',
         description: '(소개글)',
         profileImage: '',
-      },
-    ],
-    references: [
-      {
-        image: '',
-        title: 'COOKIEE-',
-      },
-      {
-        image: '',
-        title: '프로젝트 2',
-      },
-      {
-        image: '',
-        title: 'ChatToner',
       },
     ],
   },
@@ -246,20 +204,6 @@ export const projects = {
         profileImage: '',
       },
     ],
-    references: [
-      {
-        image: '',
-        title: 'COOKIEE-',
-      },
-      {
-        image: '',
-        title: '프로젝트 2',
-      },
-      {
-        image: '',
-        title: 'Devsong',
-      },
-    ],
   },
 };
 
@@ -291,20 +235,6 @@ export const FALLBACK_PROJECT = {
       role: '디자이너',
       description: '(소개글)',
       profileImage: '',
-    },
-  ],
-  references: [
-    {
-      image: '',
-      title: '다른 프로젝트 1',
-    },
-    {
-      image: '',
-      title: '다른 프로젝트 2',
-    },
-    {
-      image: '',
-      title: '다른 Devsong',
     },
   ],
 };
