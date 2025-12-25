@@ -5,16 +5,6 @@ body {
 
 @import 'tailwindcss';
 
-@theme {
-  --color-white: #ffffff;
-  --color-80: #333333;
-  --color-100: #111111;
-  --color-Blue_light: #d9e3fc;
-  --color-Blue_medium: #4b48f5;
-  --color-Blue: #3936e5;
-  --color-purple: #a96efc;
-  --color-Primary: #d060f8;
-}
 
 /* 스크롤바 커스텀 */
 .horizontal-scroll::-webkit-scrollbar {
@@ -33,6 +23,45 @@ body {
 
 }
 
+
+/* 왼쪽으로 흐르는 애니메이션 키프레임 */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* 데이터가 2배로 복제되었으므로, 전체 길이의 절반(-50%)만큼 이동하면 처음과 같아짐 */
+    transform: translateX(-50%);
+  }
+}
+
+/* 오른쪽으로 흐르는 애니메이션 키프레임 */
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* 실제 사용할 유틸리티 클래스 생성 */
+.animate-scroll-left {
+  /* 이름 | 시간 | 속도곡선 | 무한반복 */
+  animation: scroll-left 60s linear infinite;
+}
+
+.animate-scroll-right {
+  animation: scroll-right 60s linear infinite;
+}
+
+@media (max-width: 768px) {
+  .animate-scroll-left,
+  .animate-scroll-right {
+    animation-duration: 40s;
+  }
+}
+
 @theme {
   --color-white: #ffffff;
   --color-80: #333333;
@@ -43,4 +72,8 @@ body {
   --color-purple: #a96efc;
   --color-Primary: #d060f8;
   --color-red_light : #FFD2D2;
+  --color-Gray_light: #E9ECEF;
+  --color-Yellow: #FFB236;
+  --color-Green: #30E462;
+
 }
