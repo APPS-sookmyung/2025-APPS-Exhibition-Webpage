@@ -1,18 +1,20 @@
 import PropTypes from 'prop-types';
 
 export default function PaviconCard({projectInfo, isSelected, onSelect}) {
-  const sizeClass = isSelected ? 'w-22.5 h-22.5' : 'w-20 h-20';
+  const sizeClass = isSelected
+    ? 'w-12 h-12 md:w-22.5 md:h-22.5 '
+    : 'w-10 h-10 md:w-20 md:h-20';
   const borderClass = isSelected ? 'border-2 border-white' : 'border-0';
   const opacityClass = isSelected ? 'opacity-100' : 'opacity-60';
 
   return (
-    <div className='mx-2.5 shrink-0'>
+    <div className='mx-1 shrink-0 md:scale-85 lg:mx-2.5 lg:scale-100'>
       <img
         src={projectInfo.pavicon}
         alt={projectInfo.title}
         draggable={false}
         onClick={onSelect}
-        className={`cursor-pointer rounded-[20px] object-cover ${sizeClass} ${borderClass} ${opacityClass}`}
+        className={`cursor-pointer rounded-xl object-cover md:rounded-[20px] ${sizeClass} ${borderClass} ${opacityClass}`}
       />
     </div>
   );

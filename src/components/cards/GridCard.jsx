@@ -5,16 +5,16 @@ export default function GridCard({project, index}) {
   index = index < 10 ? '0' + index : index;
 
   return (
-    <div className='relative mx-1.25 my-5 flex h-99 w-75 cursor-default justify-center'>
+    <div className='relative mx-1.25 my-5 flex h-60 w-full cursor-default justify-center md:h-80 lg:h-99'>
       {/* 뒷배경 숫자 인덱스 */}
-      <div className='absolute top-4.5 z-0 flex justify-center'>
-        <p className='text-[200px] leading-21.25 font-semibold tracking-[-12px] text-indigo-600'>
+      <div className='absolute top-2 z-0 flex justify-center lg:top-4.5'>
+        <p className='text-[120px] leading-10 font-semibold tracking-[-12px] text-indigo-600 md:text-[170px] md:leading-18 lg:text-[200px] lg:leading-21.25'>
           {index}
         </p>
       </div>
 
       {/* 카드 */}
-      <div className='group absolute bottom-0 z-10 h-75 w-75 overflow-hidden rounded-[30px] bg-[#E9ECEF] px-5 pt-5 pb-6'>
+      <div className='group absolute bottom-0 z-10 h-[75%] w-full overflow-hidden rounded-[20px] bg-[#E9ECEF] px-3 pt-3 pb-3 md:rounded-[25px] md:px-4 md:pt-4 md:pb-6 lg:rounded-[30px] lg:px-5 lg:pt-5'>
         {/* 호버 영역 */}
         <div className='absolute inset-0 z-20 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100'>
           {/* 호버 시 나타나는 그림자 */}
@@ -26,11 +26,11 @@ export default function GridCard({project, index}) {
         </div>
 
         {/* 제목 */}
-        <div className='mb-4 flex items-center justify-between'>
-          <p className='line-clamp-1 text-sm leading-5 font-semibold text-indigo-600'>
+        <div className='mb-1 flex items-center justify-between text-indigo-600 md:mb-2 lg:mb-4'>
+          <p className='line-clamp-1 text-[10px] leading-5 font-semibold md:text-sm'>
             {project.title}
           </p>
-          <p className='text-indigo-60 rounded-full bg-blue-100 px-5 py-1.25 text-xs leading-4 font-bold'>
+          <p className='rounded-full bg-blue-100 px-3 text-xs text-[10px] leading-4 font-bold md:px-5 md:py-1.25'>
             {project.platform}
           </p>
         </div>
@@ -40,9 +40,9 @@ export default function GridCard({project, index}) {
           <img
             src={project.thumbnail}
             alt={project.title}
-            className='h-36 w-64 rounded-[10px] object-cover outline-1 outline-blue-100'
+            className='h-20 w-36 self-center rounded-[10px] object-cover outline-1 outline-blue-100 md:h-27 md:w-48 lg:h-36 lg:w-64'
           />
-          <p className='line-clamp-3 pt-3 text-sm leading-5 font-semibold text-zinc-800'>
+          <p className='line-clamp-3 pt-1 text-[10px] leading-4 font-medium text-zinc-800 md:pt-2 md:text-[14px] md:leading-5 md:font-semibold lg:pt-3 lg:text-sm'>
             {project.description}
           </p>
         </div>
