@@ -1,11 +1,11 @@
 const Line = () => {
   return (
     <svg
-      className='mt-4'
-      width='1440'
+      width='100%'
       height='2'
       viewBox='0 0 1440 2'
       fill='none'
+      preserveAspectRatio='none'
       xmlns='http://www.w3.org/2000/svg'>
       <line
         y1='1'
