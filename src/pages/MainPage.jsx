@@ -1,9 +1,9 @@
-import ProjectsViewer from '../components/sections/ProjectsViewer.jsx';
+import Activities from '../components/activities/activities.jsx';
 
 export default function MainPage() {
   return (
     <main>
-      <ProjectsViewer />
+      <Activities />
     </main>
   );
 }
