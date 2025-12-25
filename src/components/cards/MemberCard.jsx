@@ -16,7 +16,7 @@ const MemberCard = ({data, onClick, isActive}) => {
       yellow: 'bg-Yellow',
       green: 'bg-Green',
       blue: 'bg-primary-light',
-      purple: 'bg-Primary',
+      purple: 'bg-secondary',
     };
 
     const bgColor = themeStyles[theme] || 'bg-Yellow';

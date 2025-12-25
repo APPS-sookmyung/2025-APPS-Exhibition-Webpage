@@ -9,8 +9,8 @@ const AboutSection = () => {
     md:h-[80px] md:bg-[length:160px_160px]
   `;
   const waveImageClass = `
-    bg-[image:radial-gradient(circle,var(--color-Primary)_30px,transparent_0)]
-    md:bg-[image:radial-gradient(circle,var(--color-Primary)_80px,transparent_0)]
+    bg-[image:radial-gradient(circle,var(--color-secondary)_30px,transparent_0)]
+    md:bg-[image:radial-gradient(circle,var(--color-secondary)_80px,transparent_0)]
   `;
 
   return (
@@ -25,7 +25,7 @@ const AboutSection = () => {
         </div>
       </div>
 
-      <div className='bg-Primary relative mx-auto w-[94.6%] md:w-full md:max-w-[94.6%]'>
+      <div className='bg-secondary relative mx-auto w-[94.6%] md:w-full md:max-w-[94.6%]'>
         <div
           className={` ${waveBaseClass} ${waveImageClass} -top-[30px] bg-[position:center_top] md:-top-[80px]`}></div>
 

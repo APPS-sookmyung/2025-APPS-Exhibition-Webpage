@@ -42,7 +42,7 @@ const FooterSection = () => {
           <div className='grid grid-cols-1 gap-10 text-sm md:grid-cols-2 md:gap-16'>
             {/* Developer Column */}
             <div>
-              <h3 className='text-Primary mb-5 font-bold tracking-wider'>
+              <h3 className='text-secondary mb-5 font-bold tracking-wider'>
                 DEVELOPER
               </h3>
               <ul className='space-y-2.5 font-light text-white'>
@@ -54,7 +54,7 @@ const FooterSection = () => {
 
             {/* Designer Column */}
             <div className='relative'>
-              <h3 className='text-Primary mb-5 font-bold tracking-wider'>
+              <h3 className='text-secondary mb-5 font-bold tracking-wider'>
                 DESIGNER
               </h3>
               <ul className='space-y-2.5 font-light text-white'>
