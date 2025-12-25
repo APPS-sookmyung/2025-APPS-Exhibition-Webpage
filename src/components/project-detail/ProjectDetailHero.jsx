@@ -1,7 +1,7 @@
-import Share from '../assets/Share.svg?react';
-import Exit from '../assets/Exit.svg?react';
-import Github from '../assets/Github.svg?react';
-import Link from '../assets/Link.svg?react';
+import Share from '../assets/project-detail/Share.svg?react';
+import Exit from '../assets/project-detail/Exit.svg?react';
+import Github from '../assets/project-detail/Github.svg?react';
+import Link from '../assets/project-detail/Link.svg?react';
 import {useMemo} from 'react';
 import PropTypes from 'prop-types';
 
