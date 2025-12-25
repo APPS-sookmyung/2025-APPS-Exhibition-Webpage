@@ -8,7 +8,7 @@ const CtaSection = () => {
     // 기존 코드의 상단 Wrapper 부분 (CTA Banner)
     <div className='flex w-full flex-col items-center bg-transparent px-[20px] pt-16 pb-10'>
       <div className='bg-Blue relative flex min-h-[360px] w-full max-w-[1100px] flex-col items-center justify-start overflow-hidden rounded-[40px] p-10 pt-30 pb-70 text-center text-white shadow-2xl md:min-h-[420px] md:rounded-[60px] md:px-16'>
-        <div className='text-Blue_medium pointer-events-none absolute right-80 bottom-10 left-0 z-0 text-center text-[7rem] leading-none font-bold tracking-tighter select-none md:text-[11rem]'>
+        <div className='text-primary-light pointer-events-none absolute right-80 bottom-10 left-0 z-0 text-center text-[7rem] leading-none font-bold tracking-tighter select-none md:text-[11rem]'>
           CONNECT ON
         </div>
 
@@ -52,7 +52,7 @@ const CtaSection = () => {
 
           {/* 핸들 정보 */}
           <div className='flex items-center gap-3'>
-            <span className='bg-Blue_light text-Blue_medium rounded-full px-3 py-1 text-[10px] font-extrabold tracking-wide md:text-xs'>
+            <span className='bg-Blue_light text-primary-light rounded-full px-3 py-1 text-[10px] font-extrabold tracking-wide md:text-xs'>
               LINKED FOR
             </span>
             <span className='text-xl font-bold tracking-wider md:text-2xl'>

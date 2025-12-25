@@ -46,7 +46,7 @@ const AboutSection = () => {
                   className='h-full w-full object-cover'
                 />
               </div>
-              <div className='bg-Blue_light text-Blue_medium absolute -bottom-4 -left-2 z-10 rounded-full px-6 py-2 text-sm font-extrabold shadow-md md:text-[24px]'>
+              <div className='bg-Blue_light text-primary-light absolute -bottom-4 -left-2 z-10 rounded-full px-6 py-2 text-sm font-extrabold shadow-md md:text-[24px]'>
                 2024 APPS EXH
               </div>
             </div>
