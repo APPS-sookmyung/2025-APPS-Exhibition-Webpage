@@ -6,7 +6,6 @@ body {
 @import 'tailwindcss';
 
 
-
 /* 스크롤바 커스텀 */
 .horizontal-scroll::-webkit-scrollbar {
   height: 7px;
