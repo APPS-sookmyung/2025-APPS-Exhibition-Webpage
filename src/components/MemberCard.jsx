@@ -12,8 +12,7 @@ const ROLE_CHIP_BASE_CLASS =
 
 export default function MemberCard({member}) {
   return (
-    <div
-      className='group flex gap-4 rounded-[20px] bg-gray_light px-6 py-4 shadow-none transition-all duration-300 hover:bg-Primary hover:shadow-[inset_0px_0px_6px_1px_rgba(0,0,0,0.25)] sm:gap-10 sm:rounded-[30px] sm:px-[35px] sm:py-[31px]'>
+    <div className='group bg-gray_light hover:bg-secondary flex gap-4 rounded-[20px] px-6 py-4 shadow-none transition-all duration-300 hover:shadow-[inset_0px_0px_6px_1px_rgba(0,0,0,0.25)] sm:gap-10 sm:rounded-[30px] sm:px-[35px] sm:py-[31px]'>
       {/* 프로필 이미지 */}
       <div className='h-16 w-16 flex-shrink-0 overflow-hidden rounded-full bg-white sm:h-[140px] sm:w-[140px]'>
         {member.profileImage ? (
@@ -23,7 +22,7 @@ export default function MemberCard({member}) {
             className='h-full w-full object-cover'
           />
         ) : (
-          <div className='flex h-full w-full items-center justify-center bg-80'>
+          <div className='bg-80 flex h-full w-full items-center justify-center'>
             <span className='text-sm text-white'>{member.name[0]}</span>
           </div>
         )}
@@ -32,28 +31,24 @@ export default function MemberCard({member}) {
       {/* 내용 영역 */}
       <div className='flex flex-1 flex-col gap-2'>
         <div className='flex flex-wrap items-center gap-2'>
-          <h3 className='text-lg font-semibold text-100 transition-colors group-hover:text-white sm:text-xl'>
+          <h3 className='text-100 text-lg font-semibold transition-colors group-hover:text-white sm:text-xl'>
             {member.name}
           </h3>
           {(() => {
             const roles = Array.isArray(member.role)
               ? member.role
               : [member.role];
-            return roles.map(
-              (role, index) => {
-                const label = ROLE_CHIP_LABELS[role] || role;
-                return (
-                  <span
-                    key={`${role}-${index}`}
-                    className={ROLE_CHIP_BASE_CLASS}>
-                    {label}
-                  </span>
-                );
-              }
-            );
+            return roles.map((role, index) => {
+              const label = ROLE_CHIP_LABELS[role] || role;
+              return (
+                <span key={`${role}-${index}`} className={ROLE_CHIP_BASE_CLASS}>
+                  {label}
+                </span>
+              );
+            });
           })()}
         </div>
-        <p className='text-sm leading-[140%] text-80 transition-colors group-hover:text-white sm:text-base'>
+        <p className='text-80 text-sm leading-[140%] transition-colors group-hover:text-white sm:text-base'>
           {member.description}
         </p>
       </div>

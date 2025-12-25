@@ -52,7 +52,7 @@ export default function ProjectDetailHero({project, links = []}) {
   };
 
   return (
-    <section className='bg-primary-light w-full overflow-hidden rounded-b-[60px]'>
+    <section className='bg-primary w-full overflow-hidden rounded-b-[60px]'>
       <div className='mx-auto flex w-full max-w-[1440px] flex-col gap-[60px] px-6 py-[41px] sm:px-10 lg:px-[120px]'>
         <div className='flex justify-end gap-2.5'>
           <button
