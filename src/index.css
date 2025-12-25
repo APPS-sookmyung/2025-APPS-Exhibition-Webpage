@@ -5,6 +5,17 @@ body {
 
 @import 'tailwindcss';
 
+@theme {
+  --color-white: #ffffff;
+  --color-80: #333333;
+  --color-100: #111111;
+  --color-Blue_light: #d9e3fc;
+  --color-Blue_medium: #4b48f5;
+  --color-Blue: #3936e5;
+  --color-purple: #a96efc;
+  --color-Primary: #d060f8;
+}
+
 /* 스크롤바 커스텀 */
 .horizontal-scroll::-webkit-scrollbar {
   height: 7px;

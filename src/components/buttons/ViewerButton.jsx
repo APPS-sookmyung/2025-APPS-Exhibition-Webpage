@@ -28,7 +28,7 @@ export default function ViewerButton({stackedView, onChangeView}) {
 
       {/* 배경 슬라이더 (애니메이션 요소) */}
       <div
-        className={`absolute z-0 h-13 w-16 rounded-full bg-[#333333] duration-200 ${
+        className={`bg-80 absolute z-0 h-13 w-16 rounded-full duration-200 ${
           stackedView ? 'translate-x-[70%]' : '-translate-x-3'
         }`}></div>
     </div>
