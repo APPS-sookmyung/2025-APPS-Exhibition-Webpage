@@ -16,9 +16,9 @@ const InfiniteLoopRow = ({
   return (
     <div className='w-full overflow-hidden py-4 select-none'>
       <div
-        className={`flex w-max gap-4 ${direction === 'left' ? 'animate-scroll-left' : 'animate-scroll-right'} `}
+        className={`flex w-max gap-4 ${direction === 'left' ? 'animate-scroll-left' : 'animate-scroll-right'} focus-within:[animation-play-state:paused] active:[animation-play-state:paused]`}
         style={{
-          animationPlayState: isAnySelected ? 'paused' : 'running',
+          animationPlayState: isAnySelected ? 'paused' : undefined,
         }}>
         {loopData.map((item, index) => {
           const isSelected = selectedId === item.id;

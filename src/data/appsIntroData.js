@@ -49,14 +49,7 @@ export const ROW_1_DATA = [
     avatarImage: MOCK_AVATAR,
     message: '개발뿐만 아니라 기획, 디자인 팀원들과 소통하는 법을 익혔습니다.',
   },
-  {
-    id: 'r1-4',
-    type: 'member',
-    name: '방지희',
-    subText: '11기 · Computer Science 24',
-    avatarImage: MOCK_AVATAR,
-    message: '개발뿐만 아니라 기획, 디자인 팀원들과 소통하는 법을 익혔습니다.',
-  },
+
   {
     id: 'r1-5',
     type: 'member',
