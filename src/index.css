@@ -31,7 +31,6 @@ body {
   border-radius: 9999px;
   background: rgba(0, 0, 0, 0.4);
   cursor: pointer;
-
 }
 
 /* 팀원 카드 호버 시 역할 아이콘 색상 변경 */
@@ -42,5 +41,11 @@ body {
 
 .group:hover .role-icon-wrapper svg path {
   fill: #4b48f5;
+  transition: fill 0.3s;
+}
+
+/* 카드 호버 시 flower 아이콘 색상 변경....(이게맞나) */
+.member-section:has(.group:hover) .flower-decoration svg path {
+  fill: #d3d9df;
   transition: fill 0.3s;
 }
