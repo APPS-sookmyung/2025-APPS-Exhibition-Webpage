@@ -14,7 +14,7 @@ const AboutSection = () => {
   `;
 
   return (
-    <section className='bg-Blue relative w-full overflow-hidden pt-40 pb-20 md:pt-60'>
+    <section className='bg-primary relative w-full overflow-hidden pt-40 pb-20 md:pt-60'>
       <div className='absolute top-6 left-10 flex flex-col gap-2 opacity-30 md:top-10 md:left-20'>
         <div className='grid grid-cols-3 gap-5 opacity-30 md:gap-7'>
           {Array.from({length: 6}).map((_, index) => (
