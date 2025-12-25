@@ -1,10 +1,10 @@
-// 프로젝트 데이터
+// 프로젝트 데이터 여기다가 넣으시면 됩니다.
 export const projects = {
-  cookiee: {
+  EMORY: {
     projectType: 'TEAM',
     generation: [13, 14],
     title: 'COOKIEE-',
-    subtitle: '이제까지 나만의 국거리 모음을 기록해 보세요!',
+    subtitle: '어쩌구저쩌구!',
     content:
       'Cookiee-는 자신만의 국거리 모음을 기록하고 공유할 수 있는 소셜 플랫폼입니다. 좋아하는 레시피를 저장하고, 다른 사용자들과 요리 경험을 나눌 수 있습니다.',
     feature: [
@@ -16,8 +16,14 @@ export const projects = {
     ],
     techStack: ['React', 'Spring', 'MySQL', 'AWS'],
     links: [
-      {type: 'CLIENT', url: 'https://github.com/APPS-sookmyung/2024-COOKIEE-frontend'},
-      {type: 'SERVER', url: 'https://github.com/APPS-sookmyung/2024-COOKIEE-backend'},
+      {
+        type: 'CLIENT',
+        url: 'https://github.com/APPS-sookmyung/2024-COOKIEE-frontend',
+      },
+      {
+        type: 'SERVER',
+        url: 'https://github.com/APPS-sookmyung/2024-COOKIEE-backend',
+      },
     ],
     members: [
       {
@@ -72,55 +78,55 @@ export const projects = {
     references: [
       {
         image: '',
-        title: '프로젝트 2',
+        title: 'ChatToner',
       },
       {
         image: '',
-        title: '프로젝트 3',
+        title: 'EMORY',
       },
       {
         image: '',
-        title: '프로젝트 4',
+        title: 'Devsong',
       },
     ],
   },
 
-  'project-2': {
+  ChatToner: {
     projectType: 'TEAM',
     generation: [14],
-    title: '프로젝트 2',
-    subtitle: '프로젝트 2 한 줄 소개',
-    content: '프로젝트 2 상세 설명입니다.',
+    title: 'ChatToner',
+    subtitle: 'ChatToner 한 줄 소개',
+    content: 'ChatToner 상세 설명입니다.',
     feature: ['기능 1', '기능 2', '기능 3'],
     techStack: ['React', 'Node.js', 'MongoDB'],
     links: [{type: 'CLIENT', url: ''}],
     members: [
       {
-        name: '이민준',
+        name: '하지민',
         role: '프론트엔드',
         description: '(소개글)',
         profileImage: '',
       },
       {
-        name: '박서연',
-        role: '프론트엔드',
-        description: '(소개글)',
-        profileImage: '',
-      },
-      {
-        name: '최지호',
+        name: '윤지원',
         role: '백엔드',
         description: '(소개글)',
         profileImage: '',
       },
       {
-        name: '정수아',
+        name: '김지민',
         role: '백엔드',
         description: '(소개글)',
         profileImage: '',
       },
       {
-        name: '강태민',
+        name: '정지은',
+        role: '백엔드',
+        description: '(소개글)',
+        profileImage: '',
+      },
+      {
+        name: '하지민',
         role: '디자이너',
         description: '(소개글)',
         profileImage: '',
@@ -133,21 +139,21 @@ export const projects = {
       },
       {
         image: '',
-        title: '프로젝트 3',
+        title: 'Devsong',
       },
       {
         image: '',
-        title: '프로젝트 4',
+        title: 'ChatToner',
       },
     ],
   },
 
-  'project-3': {
+  Devsong: {
     projectType: 'TEAM',
     generation: [14],
-    title: '프로젝트 3',
-    subtitle: '프로젝트 3 한 줄 소개',
-    content: '프로젝트 3 상세 설명입니다.',
+    title: 'Devsong',
+    subtitle: 'Devsong 한 줄 소개',
+    content: 'Devsong 상세 설명입니다.',
     feature: ['기능 1', '기능 2', '기능 3', '기능 4'],
     techStack: ['Vue', 'Django', 'PostgreSQL'],
     links: [{type: 'CLIENT', url: ''}],
@@ -188,17 +194,17 @@ export const projects = {
       },
       {
         image: '',
-        title: '프로젝트 4',
+        title: 'ChatToner',
       },
     ],
   },
 
-  'project-4': {
+  ChatToner: {
     projectType: 'TEAM',
     generation: [13],
-    title: '프로젝트 4',
-    subtitle: '프로젝트 4 한 줄 소개',
-    content: '프로젝트 4 상세 설명입니다.',
+    title: 'ChatToner',
+    subtitle: 'ChatToner 한 줄 소개',
+    content: 'ChatToner 상세 설명입니다.',
     feature: ['기능 1', '기능 2'],
     techStack: ['Angular', 'Spring Boot', 'MySQL'],
     links: [{type: 'CLIENT', url: ''}],
@@ -251,7 +257,7 @@ export const projects = {
       },
       {
         image: '',
-        title: '프로젝트 3',
+        title: 'Devsong',
       },
     ],
   },
@@ -269,19 +275,19 @@ export const FALLBACK_PROJECT = {
   links: [{type: 'CLIENT', url: ''}],
   members: [
     {
-      name: '김민서',
+      name: 'n1',
       role: '프론트엔드',
       description: '(소개글)',
       profileImage: '',
     },
     {
-      name: '이서준',
+      name: 'n2',
       role: '백엔드',
       description: '(소개글)',
       profileImage: '',
     },
     {
-      name: '박지우',
+      name: 'n3',
       role: '디자이너',
       description: '(소개글)',
       profileImage: '',
@@ -298,7 +304,7 @@ export const FALLBACK_PROJECT = {
     },
     {
       image: '',
-      title: '다른 프로젝트 3',
+      title: '다른 Devsong',
     },
   ],
 };
