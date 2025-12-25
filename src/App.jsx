@@ -1,7 +1,14 @@
-// src/App.jsx
-import {useRoutes} from 'react-router-dom';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import ProjectDetailPage from './pages/ProjectDetailPage';
 import MainPage from './pages/MainPage';
 
-export default function App() {
-  return useRoutes([{path: '/', element: <MainPage />}]);
+export function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<MainPage />} />
+        <Route path='/projects/:slug' element={<ProjectDetailPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
