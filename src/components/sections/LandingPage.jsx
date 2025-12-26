@@ -66,7 +66,7 @@ export default function LandingPage() {
             </p>
           </div>
 
-          <div className='md:bottom[-100px] pointer-events-none absolute -right-4 bottom-[-120px] z-0 origin-bottom origin-right scale-[0.3] md:-mr-25 md:-mb-40 md:scale-[0.7] lg:bottom-[-240px] lg:scale-100'>
+          <div className='md:bottom[-100px] pointer-events-none absolute -right-4 bottom-[-120px] z-0 origin-bottom origin-right scale-[0.3] min-[1025px]:right-[90px] min-[1025px]:bottom-[-75px] md:-mr-25 md:-mb-40 md:scale-[0.7] lg:scale-100'>
             <div className='relative flex items-center justify-end'>
               <p className='font-pretendard absolute z-20 -translate-x-[110px] translate-y-[100px] transform text-[50px] leading-none font-black tracking-[1em] text-white md:-translate-x-79 md:translate-y-15 md:text-[50px]'>
                 APPS
