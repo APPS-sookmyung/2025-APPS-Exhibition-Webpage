@@ -1,7 +1,7 @@
 import {useParams} from 'react-router-dom';
 import ProjectDetailHero from '../components/project-detail/ProjectDetailHero';
 import ProjectDetailBody from '../components/project-detail/ProjectDetailBody';
-import MemberCard from '../components/cards/MemberCard';
+import MemberCard from '../components/MemberCard';
 import ReferenceSection from '../components/ReferenceSection';
 import FlowerIcon from '../assets/flower.svg?react';
 import {projects, FALLBACK_PROJECT} from '../data/projects-detail-data';
@@ -55,7 +55,7 @@ export default function ProjectDetail() {
               ))}
             </div>
             <div className='flower-decoration absolute right-0 bottom-0 translate-x-1/2 translate-y-1/2'>
-              <FlowerIcon className='h-auto w-16 sm:w-20' />
+              <FlowerIcon className='h-20 w-20' />
             </div>
           </div>
         </section>
