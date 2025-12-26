@@ -4,24 +4,24 @@ import UnionIcon from '../../assets/activities/Union.svg';
 import SimpleIcon from '../../assets/activities/simple-icons_suno.svg';
 import Framec from '../../assets/activities/Frame-c.svg';
 import Frame0 from '../../assets/activities/Frame-0.svg';
-import ActivityCard from './ActivityCard';
+import ActivityCard from '../cards/ActivityCard.jsx';
 
 export default function Activities() {
   return (
     <div className='bg-primary relative w-full overflow-hidden py-20 md:py-32'>
       <div className='relative z-10 mb-16 text-center md:mb-20'>
-        <p className='font-pretendard text-3xl font-semibold tracking-tight text-[#FFFFFF] md:text-5xl'>
+        <p className='text-3xl font-semibold tracking-tight text-[#FFFFFF] md:text-5xl'>
           ACTIVITIES
         </p>
-        <p className='font-pretendard mt-4 text-base font-semibold text-[#D9E3FC] md:mt-6 md:text-2xl'>
+        <p className='mt-4 text-base font-semibold text-[#D9E3FC] md:mt-6 md:text-2xl'>
           APPS에서 정기적으로 진행하는 다양한 활동들이 있어요
         </p>
       </div>
-      <div className='font-pretendard absolute top-24 text-[72px] font-bold text-[#4B48F5] select-none md:top-[120px] md:text-[150px]'>
+      <div className='absolute top-24 text-[72px] font-bold text-[#4B48F5] select-none md:top-[120px] md:text-[150px]'>
         ACTIVITIES
       </div>
 
-      <motion.div className='no-scrollbar relative z-20 flex items-stretch gap-6 overflow-x-auto px-4 md:gap-8 md:px-8 md:py-3'>
+      <motion.div className='horizontal-scroll relative z-20 flex items-stretch gap-6 overflow-x-auto px-4 md:gap-8 md:px-8 md:py-3'>
         {activitiesData.map((card) => (
           <ActivityCard key={card.id} card={card} />
         ))}
@@ -29,10 +29,10 @@ export default function Activities() {
 
       <div className='absolute z-30 hidden origin-top-right lg:top-15 lg:right-40 lg:block lg:scale-100'>
         <div className='relative'>
-          <div className='font-pretendard bg-tertiary text-primary h-11 w-45 rounded-full text-center text-lg leading-[2] font-bold tracking-[0.025rem] md:h-13 md:w-60 md:text-2xl'>
+          <div className='bg-tertiary text-primary h-11 w-45 rounded-full text-center text-lg leading-[2] font-bold tracking-[0.025rem] md:h-13 md:w-60 md:text-2xl'>
             PROGRAMMING
           </div>
-          <div className='font-pretendard bg-accent-blue text-primary absolute left-18 mt-3 h-11 w-45 rounded-full text-center text-lg leading-[2] font-bold tracking-[0.025rem] md:h-13 md:w-60 md:text-2xl'>
+          <div className='bg-accent-blue text-primary absolute left-18 mt-3 h-11 w-45 rounded-full text-center text-lg leading-[2] font-bold tracking-[0.025rem] md:h-13 md:w-60 md:text-2xl'>
             DEVELOP
           </div>
         </div>
