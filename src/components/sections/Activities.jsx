@@ -27,7 +27,7 @@ export default function Activities() {
         ))}
       </motion.div>
 
-      <div className='absolute top-12 right-5 z-30 origin-top-right scale-70 sm:scale-90 md:top-15 md:right-40 md:scale-100'>
+      <div className='absolute z-30 hidden origin-top-right lg:top-15 lg:right-40 lg:block lg:scale-100'>
         <div className='relative'>
           <div className='font-pretendard bg-tertiary text-primary h-11 w-45 rounded-full text-center text-lg leading-[2] font-bold tracking-[0.025rem] md:h-13 md:w-60 md:text-2xl'>
             PROGRAMMING
