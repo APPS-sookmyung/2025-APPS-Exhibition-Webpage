@@ -51,7 +51,7 @@ const AboutSection = () => {
               </div>
             </div>
 
-            <div className='mx-5 hidden h-40 border-l-2 border-dotted border-white md:block'></div>
+            <div className='mx-5 hidden h-40 border-l-2 border-dotted border-white lg:block'></div>
             <div className='max-w-lg text-left'>
               <p className='mb-4 text-sm font-bold md:text-base'>
                 숙명여자대학교 소프트웨어학부 웹 앱 개발 학회
