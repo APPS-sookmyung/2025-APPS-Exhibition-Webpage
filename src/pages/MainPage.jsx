@@ -1,3 +1,4 @@
+import Activities from '../components/sections/Activities.jsx';
 import ProjectsViewer from '../components/sections/ProjectsViewer.jsx';
 import AboutSection from '../components/sections/AboutSection';
 import MemberIntroSection from '../components/sections/MemberIntroSection';
@@ -10,6 +11,7 @@ export default function MainPage() {
     <main>
       <LandingPage />
       <ProjectsViewer />
+      <Activities />
       <AboutSection />
       <MemberIntroSection />
       <CtaSection />
