@@ -8,8 +8,8 @@ import FooterSection from '../components/sections/FooterSection.jsx';
 export default function MainPage() {
   return (
     <main>
-      <Activities />
       <ProjectsViewer />
+      <Activities />
       <AboutSection />
       <MemberIntroSection />
       <CtaSection />

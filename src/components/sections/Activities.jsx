@@ -14,9 +14,9 @@ export default function Activities() {
   return (
     <div className='bg-primary relative w-full overflow-hidden py-20 md:py-32'>
       <div className='relative z-10 mb-16 text-center md:mb-20'>
-        <h2 className='font-pretendard text-3xl font-semibold tracking-tight text-[#FFFFFF] md:text-5xl'>
+        <p className='font-pretendard text-3xl font-semibold tracking-tight text-[#FFFFFF] md:text-5xl'>
           ACTIVITIES
-        </h2>
+        </p>
         <p className='font-pretendard mt-4 text-base font-semibold text-[#D9E3FC] md:mt-6 md:text-2xl'>
           APPS에서 정기적으로 진행하는 다양한 활동들이 있어요
         </p>
@@ -47,7 +47,7 @@ export default function Activities() {
       <div>
         <img
           src={UnionIcon}
-          className='md:-mt-12s absolute z-20 mx-45 -mt-10 scale-75 sm:scale-90 md:mx-53 md:scale-80'
+          className='absolute z-20 mx-37 -mt-10 scale-60 sm:scale-90 md:mx-53 md:-mt-12 md:scale-80'
         />
       </div>
 
@@ -55,7 +55,7 @@ export default function Activities() {
         <img src={SimpleIcon} className='absolute z-10 -mt-30 ml-250' />
       </div>
 
-      <div className='md::h-[300px] relative mt-15 h-[380px] w-full overflow-visible'>
+      <div className='relative mt-15 h-[380px] w-full overflow-visible md:h-[100px]'>
         <img
           src={Framec}
           className='absolute top-5 left-0 z-20 w-full md:top-45'

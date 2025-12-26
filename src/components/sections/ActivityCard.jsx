@@ -4,7 +4,7 @@ import {motion} from 'framer-motion';
 
 const ActivityCard = ({card}) => {
   const commonClassName =
-    'relative mt-1 h-[380px] w-[260px] shrink-0 overflow-hidden rounded-3xl md:h-[420px] md:w-[290px]';
+    'relative mt-1 h-[270px] w-[220px] shrink-0 overflow-hidden rounded-3xl md:h-[420px] md:w-[290px]';
 
   return (
     <motion.div className={commonClassName}>
@@ -20,15 +20,15 @@ const ActivityCard = ({card}) => {
       )}
 
       {card.type === 'text' && (
-        <div className='flex h-full w-full flex-col bg-[#E9ECEF] p-6 md:p-8'>
-          <span className='font-pretendard mt-3 mb-3 inline-block w-fit rounded-full bg-[#4B48F5] px-7 py-1 text-xs font-bold text-[#D9E3FC]'>
+        <div className='flex h-full w-full flex-col bg-[#E9ECEF] p-4 md:p-8'>
+          <span className='font-pretendard mt-1 -mb-4 inline-block w-fit rounded-full bg-[#4B48F5] px-7 py-1 text-[10px] font-bold text-[#D9E3FC] md:text-xs'>
             {card.tag}
           </span>
-          <h3 className='font-pretendard mt-20 mb-2 text-lg font-bold md:mt-[120px] md:text-[23px]'>
+          <h3 className='font-pretendard mt-12 mb-2 text-lg font-bold md:mt-[120px] md:text-[23px]'>
             {card.title}
           </h3>
           <div className='my-2 border-t-2 border-dashed border-black' />
-          <p className='font-pretendard my-3 text-sm leading-relaxed font-medium text-black'>
+          <p className='font-pretendard my-3 text-xs leading-relaxed font-medium text-black md:text-sm'>
             {card.description}
           </p>
         </div>
