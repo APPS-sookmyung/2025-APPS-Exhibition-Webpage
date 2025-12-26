@@ -1,4 +1,4 @@
-import {motion, useScroll, useTransform} from 'framer-motion';
+import {motion} from 'framer-motion';
 import {activitiesData} from '../data/activitiesData';
 import UnionIcon from '../../assets/activities/Union.svg';
 import SimpleIcon from '../../assets/activities/simple-icons_suno.svg';
@@ -7,10 +7,6 @@ import Frame0 from '../../assets/activities/Frame-0.svg';
 import ActivityCard from './ActivityCard';
 
 export default function Activities() {
-  const {scrollYProgress} = useScroll();
-
-  const x = useTransform(scrollYProgress, [0.2, 0.6], ['0%', '-40%']);
-
   return (
     <div className='bg-primary relative w-full overflow-hidden py-20 md:py-32'>
       <div className='relative z-10 mb-16 text-center md:mb-20'>
@@ -25,15 +21,13 @@ export default function Activities() {
         ACTIVITIES
       </div>
 
-      <motion.div
-        style={{x}}
-        className='no-scrollbar relative z-20 flex items-stretch gap-6 overflow-x-auto px-4 md:gap-8 md:px-8 md:py-3'>
+      <motion.div className='no-scrollbar relative z-20 flex items-stretch gap-6 overflow-x-auto px-4 md:gap-8 md:px-8 md:py-3'>
         {activitiesData.map((card) => (
           <ActivityCard key={card.id} card={card} />
         ))}
       </motion.div>
 
-      <div className='absolute top-12 right-3 z-30 origin-top-right scale-70 sm:scale-90 md:top-15 md:right-40 md:scale-100'>
+      <div className='absolute top-12 right-5 z-30 origin-top-right scale-70 sm:scale-90 md:top-15 md:right-40 md:scale-100'>
         <div className='relative'>
           <div className='font-pretendard bg-tertiary text-primary h-11 w-45 rounded-full text-center text-lg leading-[2] font-bold tracking-[0.025rem] md:h-13 md:w-60 md:text-2xl'>
             PROGRAMMING
@@ -55,7 +49,7 @@ export default function Activities() {
         <img src={SimpleIcon} className='absolute z-10 -mt-30 ml-250' />
       </div>
 
-      <div className='relative mt-15 h-[380px] w-full overflow-visible md:h-[100px]'>
+      <div className='relative mt-15 h-auto w-full overflow-visible md:h-[270px]'>
         <img
           src={Framec}
           className='absolute top-5 left-0 z-20 w-full md:top-45'
