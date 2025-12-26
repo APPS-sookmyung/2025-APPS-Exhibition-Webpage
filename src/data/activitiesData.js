@@ -1,4 +1,4 @@
-import peopleIcon from '../../assets/activities/people.svg';
+import peopleIcon from '../assets/activities/people.svg';
 
 export const activitiesData = [
   {
