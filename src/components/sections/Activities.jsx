@@ -1,5 +1,5 @@
 import {motion} from 'framer-motion';
-import {activitiesData} from '../../data/activitiesData';
+import {activitiesData} from '../../data/activitiesData.js';
 import UnionIcon from '../../assets/activities/Union.svg';
 import SimpleIcon from '../../assets/activities/simple-icons_suno.svg';
 import Framec from '../../assets/activities/Frame-c.svg';
