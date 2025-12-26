@@ -84,7 +84,7 @@ export default function LandingPage() {
             </p>
           </div>
 
-          <div className='absolute -bottom-5 left-6 origin-left scale-75 md:bottom-30 md:left-10 md:scale-90 lg:-bottom-30 lg:left-10 lg:scale-100'>
+          <div className='absolute -bottom-2 left-6 origin-left scale-75 md:bottom-30 md:left-10 md:scale-90 lg:-bottom-30 lg:left-10 lg:scale-100'>
             <div className='bg-accent-blue h-8 w-32 rounded-full md:h-10 md:w-40 lg:h-13 lg:w-50'></div>
             <div className='bg-tertiary -mt-2 ml-6 h-8 w-32 rounded-full md:-mt-3 md:ml-8 md:h-10 md:w-40 lg:ml-10 lg:h-13 lg:w-50'></div>
           </div>
