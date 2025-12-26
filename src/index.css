@@ -16,6 +16,9 @@ body {
   --color-tertiary: #ffb236;
   --color-accent-blue: #36b2ed;
   --color-gray_light: #d3d9df;
+  --color-red_light: #ffd2d2;
+  --color-Gray_light: #e9ecef;
+  --color-Green: #30e462;
 }
 
 /* 스크롤바 커스텀 */
@@ -70,19 +73,4 @@ body {
   .animate-scroll-right {
     animation-duration: 40s;
   }
-}
-
-@theme {
-  --color-white: #ffffff;
-  --color-80: #333333;
-  --color-100: #111111;
-  --color-Blue_light: #d9e3fc;
-  --color-Blue_medium: #4b48f5;
-  --color-Blue: #3936e5;
-  --color-purple: #a96efc;
-  --color-Primary: #d060f8;
-  --color-red_light: #ffd2d2;
-  --color-Gray_light: #e9ecef;
-  --color-Yellow: #ffb236;
-  --color-Green: #30e462;
 }

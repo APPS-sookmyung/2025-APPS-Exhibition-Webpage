@@ -59,14 +59,14 @@ export default function ProjectDetailHero({project, links = []}) {
             type='button'
             aria-label='Share'
             onClick={handleShare}
-            className='inline-flex h-10 w-10 items-center justify-center cursor-pointer'>
+            className='inline-flex h-10 w-10 cursor-pointer items-center justify-center'>
             <Share className='h-10 w-10' />
           </button>
           <button
             type='button'
             aria-label='Exit'
             onClick={() => navigate('/')}
-            className='inline-flex h-10 w-10 items-center justify-center cursor-pointer'>
+            className='inline-flex h-10 w-10 cursor-pointer items-center justify-center'>
             <Exit className='h-10 w-10' />
           </button>
         </div>
@@ -86,7 +86,7 @@ export default function ProjectDetailHero({project, links = []}) {
             {chips.map((text) => (
               <span
                 key={text}
-                className='bg-Blue_light text-Blue_medium inline-flex items-center rounded-full px-4 py-1 text-sm font-semibold'>
+                className='bg-Blue_light text-primary-light inline-flex items-center rounded-full px-4 py-1 text-sm font-semibold'>
                 {text}
               </span>
             ))}
@@ -141,6 +141,7 @@ ProjectDetailHero.propTypes = {
     generation: PropTypes.arrayOf(PropTypes.number),
     title: PropTypes.string,
     subtitle: PropTypes.string,
+    content: PropTypes.string,
   }).isRequired,
   links: PropTypes.arrayOf(
     PropTypes.shape({

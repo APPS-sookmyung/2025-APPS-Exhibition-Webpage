@@ -88,7 +88,7 @@ const MemberIntroSection = () => {
         {/* 섹션 헤더 */}
         <div className='z-10 mb-12 px-4 text-center'>
           <h2 className='text-100 mb-4 text-4xl font-bold md:text-5xl'>
-            부원들이 말하는 <span className='text-Blue_medium'>APPS?</span>
+            부원들이 말하는 <span className='text-primary-light'>APPS?</span>
           </h2>
           <p className='text-80 text-lg font-semibold md:text-xl'>
             서로가 갖고 있는 다양한 경험과 지식의 공유를 통해 동반성장을
@@ -133,7 +133,7 @@ const MemberIntroSection = () => {
         </div>
         <div className='z-10 px-4 py-5 text-center'>
           <p className='text-80 text-sm font-normal'>
-            카드를 <span className='text-Blue_medium'>클릭</span>하여 부원들의
+            카드를 <span className='text-primary-light'>클릭</span>하여 부원들의
             이야기를 만나보세요.
           </p>
         </div>
