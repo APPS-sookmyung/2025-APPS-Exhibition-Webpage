@@ -65,6 +65,7 @@ export const projectInfo = [
   //   신입부원 프로젝트
   {
     id: 'bday',
+    slug: 'bday',
     title: 'B-DAY',
     type: 'rookie',
     platform: 'WEB',
@@ -77,6 +78,7 @@ export const projectInfo = [
   },
   {
     id: 'budgetpilot',
+    slug: 'budgetpilot',
     title: 'BudgetPilot',
     type: 'rookie',
     platform: 'WEB',
@@ -89,6 +91,7 @@ export const projectInfo = [
   },
   {
     id: 'clip',
+    slug: 'clip',
     title: 'Clip',
     type: 'rookie',
     platform: 'WEB',
@@ -101,6 +104,7 @@ export const projectInfo = [
   },
   {
     id: 'commutime',
+    slug: 'commutime',
     title: 'CommuTime',
     type: 'rookie',
     platform: 'WEB',
@@ -113,6 +117,7 @@ export const projectInfo = [
   },
   {
     id: 'flist',
+    slug: 'flist',
     title: 'f-list',
     type: 'rookie',
     platform: 'WEB',
@@ -125,6 +130,7 @@ export const projectInfo = [
   },
   {
     id: 'hellogiraffe',
+    slug: 'hellogiraffe',
     title: 'HelloGiraffe',
     type: 'rookie',
     platform: 'WEB',
@@ -137,6 +143,7 @@ export const projectInfo = [
   },
   {
     id: 'podorush',
+    slug: 'podorush',
     title: 'PodoRush',
     type: 'rookie',
     platform: 'WEB',
@@ -149,6 +156,7 @@ export const projectInfo = [
   },
   {
     id: 'pouch',
+    slug: 'pouch',
     title: 'Pouch',
     type: 'rookie',
     platform: 'WEB',
@@ -161,6 +169,7 @@ export const projectInfo = [
   },
   {
     id: 'starlist',
+    slug: 'starlist',
     title: 'starlist',
     type: 'rookie',
     platform: 'WEB',
@@ -173,6 +182,7 @@ export const projectInfo = [
   },
   {
     id: 'streco',
+    slug: 'streco',
     title: 'STRECO',
     type: 'rookie',
     platform: 'WEB',
@@ -185,6 +195,7 @@ export const projectInfo = [
   },
   {
     id: 'ults',
+    slug: 'ults',
     title: 'ULTS',
     type: 'rookie',
     platform: 'WEB',
