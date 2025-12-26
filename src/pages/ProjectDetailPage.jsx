@@ -55,7 +55,7 @@ export default function ProjectDetail() {
               ))}
             </div>
             <div className='flower-decoration absolute right-0 bottom-0 translate-x-1/2 translate-y-1/2'>
-              <FlowerIcon className='h-auto w-16 sm:w-20' />
+              <FlowerIcon className='h-20 w-20' />
             </div>
           </div>
         </section>
