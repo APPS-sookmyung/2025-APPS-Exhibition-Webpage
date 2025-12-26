@@ -1,7 +1,7 @@
-import Share from '../assets/project-detail/Share.svg?react';
-import Exit from '../assets/project-detail/Exit.svg?react';
-import Github from '../assets/project-detail/Github.svg?react';
-import Link from '../assets/project-detail/Link.svg?react';
+import Share from '../../assets/project-detail/share.svg?react';
+import Exit from '../../assets/project-detail/exit.svg?react';
+import Github from '../../assets/project-detail/github.svg?react';
+import Link from '../../assets/project-detail/link.svg?react';
 import {useMemo} from 'react';
 import {useNavigate} from 'react-router-dom';
 import PropTypes from 'prop-types';
@@ -52,7 +52,7 @@ export default function ProjectDetailHero({project, links = []}) {
   };
 
   return (
-    <section className='bg-Blue_medium w-full overflow-hidden rounded-b-[60px]'>
+    <section className='bg-primary w-full overflow-hidden rounded-b-[60px]'>
       <div className='mx-auto flex w-full max-w-[1440px] flex-col gap-[60px] px-6 py-[41px] sm:px-10 lg:px-[120px]'>
         <div className='flex justify-end gap-2.5'>
           <button
