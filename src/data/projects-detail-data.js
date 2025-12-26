@@ -155,6 +155,216 @@ export const projects = {
       },
     ],
   },
+
+  // 신입부원 프로젝트
+  bday: {
+    projectType: 'INDIVIDUAL',
+    generation: [12],
+    title: 'B-DAY',
+    subtitle: 'B-DAY 한 줄 소개',
+    content: 'B-DAY 상세 설명입니다.',
+    feature: ['기능 1', '기능 2'],
+    techStack: ['React'],
+    links: [{type: 'CLIENT', url: ''}],
+    members: [
+      {
+        name: '우채아',
+        role: '개발자',
+        description: '(소개글)',
+        profileImage: '',
+      },
+    ],
+  },
+
+  budgetpilot: {
+    projectType: 'INDIVIDUAL',
+    generation: [12],
+    title: 'BudgetPilot',
+    subtitle: 'BudgetPilot 한 줄 소개',
+    content: 'BudgetPilot 상세 설명입니다.',
+    feature: ['기능 1', '기능 2'],
+    techStack: ['React'],
+    links: [{type: 'CLIENT', url: ''}],
+    members: [
+      {
+        name: '김도연',
+        role: '개발자',
+        description: '(소개글)',
+        profileImage: '',
+      },
+    ],
+  },
+
+  clip: {
+    projectType: 'INDIVIDUAL',
+    generation: [12],
+    title: 'Clip',
+    subtitle: 'Clip 한 줄 소개',
+    content: 'Clip 상세 설명입니다.',
+    feature: ['기능 1', '기능 2'],
+    techStack: ['React'],
+    links: [{type: 'CLIENT', url: ''}],
+    members: [
+      {
+        name: '정지은',
+        role: '개발자',
+        description: '(소개글)',
+        profileImage: '',
+      },
+    ],
+  },
+
+  commutime: {
+    projectType: 'INDIVIDUAL',
+    generation: [12],
+    title: 'CommuTime',
+    subtitle: 'CommuTime 한 줄 소개',
+    content: 'CommuTime 상세 설명입니다.',
+    feature: ['기능 1', '기능 2'],
+    techStack: ['React'],
+    links: [{type: 'CLIENT', url: ''}],
+    members: [
+      {
+        name: '김영교',
+        role: '개발자',
+        description: '(소개글)',
+        profileImage: '',
+      },
+    ],
+  },
+
+  flist: {
+    projectType: 'INDIVIDUAL',
+    generation: [12],
+    title: 'f-list',
+    subtitle: 'f-list 한 줄 소개',
+    content: 'f-list 상세 설명입니다.',
+    feature: ['기능 1', '기능 2'],
+    techStack: ['React'],
+    links: [{type: 'CLIENT', url: ''}],
+    members: [
+      {
+        name: '이유나',
+        role: '개발자',
+        description: '(소개글)',
+        profileImage: '',
+      },
+    ],
+  },
+
+  hellogiraffe: {
+    projectType: 'INDIVIDUAL',
+    generation: [12],
+    title: 'HelloGiraffe',
+    subtitle: 'HelloGiraffe 한 줄 소개',
+    content: 'HelloGiraffe 상세 설명입니다.',
+    feature: ['기능 1', '기능 2'],
+    techStack: ['React'],
+    links: [{type: 'CLIENT', url: ''}],
+    members: [
+      {
+        name: '문예선',
+        role: '개발자',
+        description: '(소개글)',
+        profileImage: '',
+      },
+    ],
+  },
+
+  podorush: {
+    projectType: 'INDIVIDUAL',
+    generation: [12],
+    title: 'PodoRush',
+    subtitle: 'PodoRush 한 줄 소개',
+    content: 'PodoRush 상세 설명입니다.',
+    feature: ['기능 1', '기능 2'],
+    techStack: ['React'],
+    links: [{type: 'CLIENT', url: ''}],
+    members: [
+      {
+        name: '엄다현',
+        role: '개발자',
+        description: '(소개글)',
+        profileImage: '',
+      },
+    ],
+  },
+
+  pouch: {
+    projectType: 'INDIVIDUAL',
+    generation: [12],
+    title: 'Pouch',
+    subtitle: 'Pouch 한 줄 소개',
+    content: 'Pouch 상세 설명입니다.',
+    feature: ['기능 1', '기능 2'],
+    techStack: ['React'],
+    links: [{type: 'CLIENT', url: ''}],
+    members: [
+      {
+        name: '배송이',
+        role: '개발자',
+        description: '(소개글)',
+        profileImage: '',
+      },
+    ],
+  },
+
+  starlist: {
+    projectType: 'INDIVIDUAL',
+    generation: [12],
+    title: 'starlist',
+    subtitle: 'starlist 한 줄 소개',
+    content: 'starlist 상세 설명입니다.',
+    feature: ['기능 1', '기능 2'],
+    techStack: ['React'],
+    links: [{type: 'CLIENT', url: ''}],
+    members: [
+      {
+        name: '한지민',
+        role: '개발자',
+        description: '(소개글)',
+        profileImage: '',
+      },
+    ],
+  },
+
+  streco: {
+    projectType: 'INDIVIDUAL',
+    generation: [12],
+    title: 'STRECO',
+    subtitle: 'STRECO 한 줄 소개',
+    content: 'STRECO 상세 설명입니다.',
+    feature: ['기능 1', '기능 2'],
+    techStack: ['React'],
+    links: [{type: 'CLIENT', url: ''}],
+    members: [
+      {
+        name: '임유진',
+        role: '개발자',
+        description: '(소개글)',
+        profileImage: '',
+      },
+    ],
+  },
+
+  ults: {
+    projectType: 'INDIVIDUAL',
+    generation: [12],
+    title: 'ULTS',
+    subtitle: 'ULTS 한 줄 소개',
+    content: 'ULTS 상세 설명입니다.',
+    feature: ['기능 1', '기능 2'],
+    techStack: ['React'],
+    links: [{type: 'CLIENT', url: ''}],
+    members: [
+      {
+        name: '윤소영',
+        role: '개발자',
+        description: '(소개글)',
+        profileImage: '',
+      },
+    ],
+  },
 };
 // FALLBACK 프로젝트 (slug가 없거나 찾을 수 없을 때)
 export const FALLBACK_PROJECT = {
