@@ -169,7 +169,7 @@ export const projects = {
     members: [
       {
         name: '우채아',
-        role: '개발자',
+        role: '프론트엔드',
         description: '(소개글)',
         profileImage: '',
       },
@@ -188,7 +188,7 @@ export const projects = {
     members: [
       {
         name: '김도연',
-        role: '개발자',
+        role: '프론트엔드',
         description: '(소개글)',
         profileImage: '',
       },
@@ -207,7 +207,7 @@ export const projects = {
     members: [
       {
         name: '정지은',
-        role: '개발자',
+        role: '프론트엔드',
         description: '(소개글)',
         profileImage: '',
       },
@@ -226,7 +226,7 @@ export const projects = {
     members: [
       {
         name: '김영교',
-        role: '개발자',
+        role: '프론트엔드',
         description: '(소개글)',
         profileImage: '',
       },
@@ -245,7 +245,7 @@ export const projects = {
     members: [
       {
         name: '이유나',
-        role: '개발자',
+        role: '프론트엔드',
         description: '(소개글)',
         profileImage: '',
       },
@@ -264,7 +264,7 @@ export const projects = {
     members: [
       {
         name: '문예선',
-        role: '개발자',
+        role: '프론트엔드',
         description: '(소개글)',
         profileImage: '',
       },
@@ -283,7 +283,7 @@ export const projects = {
     members: [
       {
         name: '엄다현',
-        role: '개발자',
+        role: '프론트엔드',
         description: '(소개글)',
         profileImage: '',
       },
@@ -302,7 +302,7 @@ export const projects = {
     members: [
       {
         name: '배송이',
-        role: '개발자',
+        role: '프론트엔드',
         description: '(소개글)',
         profileImage: '',
       },
@@ -321,7 +321,7 @@ export const projects = {
     members: [
       {
         name: '한지민',
-        role: '개발자',
+        role: '프론트엔드',
         description: '(소개글)',
         profileImage: '',
       },
@@ -340,7 +340,7 @@ export const projects = {
     members: [
       {
         name: '임유진',
-        role: '개발자',
+        role: '프론트엔드',
         description: '(소개글)',
         profileImage: '',
       },
@@ -359,7 +359,7 @@ export const projects = {
     members: [
       {
         name: '윤소영',
-        role: '개발자',
+        role: '프론트엔드',
         description: '(소개글)',
         profileImage: '',
       },
