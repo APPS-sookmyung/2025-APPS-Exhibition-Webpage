@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import ReactIcon from '../assets/react.svg?react';
-import SpringIcon from '../assets/spring.svg?react';
+import ReactIcon from '../../assets/project-detail/react.svg?react';
+import SpringIcon from '../../assets/project-detail/spring.svg?react';
 
 const TECH_ICON_MAP = {
   react: ReactIcon,
