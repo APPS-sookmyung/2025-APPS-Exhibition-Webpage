@@ -23,21 +23,21 @@ export default function LandingPage() {
                 </div>
               </div>
             </div>
-            <div className='relative right-1/2 left-1/2 -mx-[50vw] mt-2 w-screen border-b border-dotted border-white' />
-            <div className='-mt-2 flex flex-nowrap items-center justify-start'>
+            <div className='relative right-1/2 left-1/2 -mx-[50vw] -mt-2 w-screen border-b border-dotted border-white md:mt-2' />
+            <div className='-mt-12 flex flex-nowrap items-center justify-start'>
               <p className='shrink-0 leading-none'>EXHIBITI</p>
               <p className='text-secondary shrink-0 leading-none'>O</p>
               <h1 className='shrink-0 leading-none'>N</h1>
               <div className='ml-2 flex shrink-0 translate-y-2 items-center md:ml-6 md:translate-y-4 lg:-space-x-4'>
-                <div className='w-auto origin-left scale-50 md:scale-75 lg:scale-100'>
+                <div className='hidden w-auto origin-left md:block md:scale-75 lg:scale-100'>
                   <img src={MaterialIcon} />
                 </div>
-                <div className='origin-left scale-50 md:scale-75 lg:scale-100'>
+                <div className='origin-leff md:scale-75 lg:scale-100'>
                   <img src={MdiIcon} />
                 </div>
               </div>
             </div>
-            <div className='relative right-1/2 left-1/2 -mx-[50vw] mt-2 w-screen border-b border-dotted border-white' />
+            <div className='relative right-1/2 left-1/2 -mx-[50vw] -mt-9 w-screen border-b border-dotted border-white md:mt-2' />
             <div className='flex justify-end pr-4 md:pr-10'>
               <p className='pr-10 leading-none tracking-tighter md:-mt-2 md:pr-40'>
                 2025
@@ -58,15 +58,15 @@ export default function LandingPage() {
           </div>
 
           <div className='mt-20 mb-20 space-y-4 md:mt-40'>
-            <p className='font-pretendard text-2xl leading-tight font-semibold tracking-wide md:text-4xl'>
+            <p className='font-pretendard text-1xl leading-tight font-semibold tracking-wide md:text-4xl'>
               블라블라 앱스 카피
             </p>
-            <p className='font-pretendard tracking-wides text-xl font-semibold text-white md:text-4xl'>
+            <p className='font-pretendard tracking-wides text-1xl font-semibold text-white md:text-4xl'>
               여기는 더미 텍스트가 들어갑니다.
             </p>
           </div>
 
-          <div className='md:bottom[-100px] pointer-events-none absolute right-0 bottom-[-120px] z-0 origin-bottom origin-right scale-[0.3] md:scale-[0.8] lg:bottom-[-240px] lg:scale-100'>
+          <div className='md:bottom[-100px] pointer-events-none absolute -right-4 bottom-[-120px] z-0 origin-bottom origin-right scale-[0.3] md:scale-[0.8] lg:bottom-[-240px] lg:scale-100'>
             <div className='relative flex items-center justify-end'>
               <p className='font-pretendard absolute z-20 -translate-x-[110px] translate-y-[100px] transform text-[50px] leading-none font-black tracking-[1em] text-white md:-translate-x-79 md:translate-y-15 md:text-[50px]'>
                 APPS
@@ -78,13 +78,13 @@ export default function LandingPage() {
             </div>
           </div>
 
-          <div className='pointer-events-none absolute bottom-[-5%] left-0 z-0 flex w-full justify-center py-18 md:bottom-[-10%] lg:bottom-[-140px]'>
+          <div className='pointer-events-none absolute bottom-[-9%] left-0 z-0 flex w-full justify-center py-18 md:bottom-[-10%] lg:bottom-[-140px]'>
             <p className='font-pretendard text-primary-light translate-y-[-1%] transform text-[20vw] leading-none font-medium md:text-[25vw] lg:text-[200px]'>
               APPS
             </p>
           </div>
 
-          <div className='absolute -bottom-2 left-6 origin-left scale-75 md:bottom-30 md:left-10 md:scale-90 lg:-bottom-30 lg:left-10 lg:scale-100'>
+          <div className='absolute -bottom-6 left-2.5 origin-left scale-75 md:bottom-30 md:left-10 md:scale-90 lg:-bottom-30 lg:left-10 lg:scale-100'>
             <div className='bg-accent-blue h-8 w-32 rounded-full md:h-10 md:w-40 lg:h-13 lg:w-50'></div>
             <div className='bg-tertiary -mt-2 ml-6 h-8 w-32 rounded-full md:-mt-3 md:ml-8 md:h-10 md:w-40 lg:ml-10 lg:h-13 lg:w-50'></div>
           </div>
