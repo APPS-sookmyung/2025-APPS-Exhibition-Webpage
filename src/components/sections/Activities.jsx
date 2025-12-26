@@ -1,3 +1,4 @@
+import {useRef, useEffect} from 'react';
 import {motion} from 'framer-motion';
 import {activitiesData} from '../../data/activitiesData.js';
 import UnionIcon from '../../assets/activities/Union.svg';
@@ -7,6 +8,28 @@ import Frame0 from '../../assets/activities/Frame-0.svg';
 import ActivityCard from '../cards/ActivityCard.jsx';
 
 export default function Activities() {
+  const scrollRef = useRef(null);
+
+  //가로 스크롤 추가
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+
+    const onWheel = (e) => {
+      if (e.deltaY === 0) return;
+      e.preventDefault();
+      el.scrollTo({
+        left: el.scrollLeft + e.deltaY, // 가로 위치 + 세로 이동량
+        behavior: 'auto',
+      });
+    };
+    el.addEventListener('wheel', onWheel, {passive: false});
+
+    return () => {
+      el.removeEventListener('wheel', onWheel);
+    };
+  }, []);
+
   return (
     <div className='bg-primary relative w-full overflow-hidden py-20 md:py-32'>
       <div className='relative z-10 mb-16 text-center md:mb-20'>
@@ -21,7 +44,9 @@ export default function Activities() {
         ACTIVITIES
       </div>
 
-      <motion.div className='horizontal-scroll relative z-20 flex items-stretch gap-6 overflow-x-auto px-4 md:gap-8 md:px-8 md:py-3'>
+      <motion.div
+        ref={scrollRef}
+        className='horizontal-scroll relative z-20 flex items-stretch gap-6 overflow-x-auto px-4 md:gap-8 md:px-8 md:py-3'>
         {activitiesData.map((card) => (
           <ActivityCard key={card.id} card={card} />
         ))}
