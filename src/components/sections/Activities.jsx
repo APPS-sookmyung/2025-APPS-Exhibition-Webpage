@@ -74,7 +74,7 @@ export default function Activities() {
         <img src={SimpleIcon} className='absolute z-10 -mt-30 ml-250' />
       </div>
 
-      <div className='relative mt-15 h-auto w-full overflow-visible md:h-[270px]'>
+      <div className='relative mt-15 h-auto w-full overflow-visible md:h-82.5'>
         <img
           src={Framec}
           className='absolute top-5 left-0 z-20 w-full md:top-45'

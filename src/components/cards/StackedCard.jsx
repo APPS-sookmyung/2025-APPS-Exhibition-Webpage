@@ -15,7 +15,7 @@ export default function StackedCard({project}) {
 
       {/* 텍스트 - 제목, 설명, 멤버*/}
       <div className='mt-1 flex cursor-default flex-col'>
-        <p className='font-base border-b border-[#D7D7D7] py-1.5 text-xl leading-7 text-[#2E61E0] md:py-2.5 md:text-2xl md:font-bold'>
+        <p className='border-b border-[#D7D7D7] py-1.5 text-xl leading-7 text-[#2E61E0] md:py-2.5 md:text-2xl md:font-bold'>
           {project.title}
         </p>
         <p className='mb-2 line-clamp-3 pt-2.5 pb-0.5 text-sm leading-4 font-normal md:line-clamp-4 lg:line-clamp-5'>
