@@ -12,7 +12,7 @@ export const projectInfo = [
     thumbnail: dummyThumbnail,
     pavicon: dummyPavicon,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      '기업의 비용과 시간을 아끼는, 최적의 신입사원 온보딩 툴 ChatToner',
     members: [
       '11기 윤지원',
       '11기 하지민',
@@ -30,8 +30,7 @@ export const projectInfo = [
     platform: 'WEB',
     thumbnail: dummyThumbnail,
     pavicon: dummyPavicon,
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    description: '숙명여대 개발자들을 위한 커뮤니티',
     members: [
       '11기 백수민',
       '11기 신정은',
@@ -49,8 +48,7 @@ export const projectInfo = [
     platform: 'WEB',
     thumbnail: dummyThumbnail,
     pavicon: dummyPavicon,
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    description: '인터랙티브 감정 피드백 서비스, EMORY',
     members: [
       '11기 윤지원',
       '11기 신정은',
@@ -59,7 +57,7 @@ export const projectInfo = [
       '12기 엄다현',
       '12기 윤소영',
     ],
-    link: 'https://example.com',
+    link: 'https://apps-emory.netlify.app/',
   },
 
   //   신입부원 프로젝트
