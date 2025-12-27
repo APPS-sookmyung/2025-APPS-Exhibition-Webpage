@@ -1,6 +1,13 @@
 import dummyThumbnail from '../assets/thumbnail/project-thumbnail.svg';
 import dummyPavicon from '../assets/pavicon/project-pavicon.svg';
 
+//팀 프로젝트 썸네일
+import chattonerThumbnail from '../assets/thumbnail/chattoner-thumbnail.png';
+import devsongThumbnail from '../assets/thumbnail/devsong-thumbnail.png';
+//팀 프로젝트 파비콘
+import chattonerPavicon from '../assets/pavicon/chattoner-pavicon.png';
+import devsongPavicon from '../assets/pavicon/devsong-pavicon.png';
+
 //개인 프로젝트 썸네일
 import bdayThumbnail from '../assets/thumbnail/b-day.png';
 import flistThumbnail from '../assets/thumbnail/f-list.png';
@@ -17,6 +24,9 @@ import podorushPavicon from '../assets/pavicon/podorush.png';
 import starlistPavicon from '../assets/pavicon/starlist.png';
 import strecoPavicon from '../assets/pavicon/streco.png';
 
+//아직 Emory 파비콘, 썸네일 없음
+//아직 Devsong, Chattoner 배포 링크 없음
+
 export const projectInfo = [
   // 팀 프로젝트
   {
@@ -24,9 +34,8 @@ export const projectInfo = [
     slug: 'ChatToner',
     title: 'CHAT-TONER',
     type: 'team',
-    platform: 'WEB',
-    thumbnail: dummyThumbnail,
-    pavicon: dummyPavicon,
+    thumbnail: chattonerThumbnail,
+    pavicon: chattonerPavicon,
     description:
       '기업의 비용과 시간을 아끼는, 최적의 신입사원 온보딩 툴 ChatToner',
     members: [
@@ -43,9 +52,8 @@ export const projectInfo = [
     slug: 'Devsong',
     title: 'DEVSONG',
     type: 'team',
-    platform: 'WEB',
-    thumbnail: dummyThumbnail,
-    pavicon: dummyPavicon,
+    thumbnail: devsongThumbnail,
+    pavicon: devsongPavicon,
     description: '숙명여대 개발자들을 위한 커뮤니티',
     members: [
       '11기 백수민',
@@ -61,7 +69,6 @@ export const projectInfo = [
     slug: 'EMORY',
     title: 'EMORY',
     type: 'team',
-    platform: 'WEB',
     thumbnail: dummyThumbnail,
     pavicon: dummyPavicon,
     description: '인터랙티브 감정 피드백 서비스, EMORY',
