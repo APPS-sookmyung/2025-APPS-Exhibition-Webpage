@@ -1,7 +1,47 @@
+import {useState} from 'react';
 import AppsIcon from '../../assets/header/appsIcon.svg';
 import TreeIcon from '../../assets/header/tree.svg';
 
 export default function Header() {
+  const [showShareMenu, setShowShareMenu] = useState(false);
+  const [copySuccess, setCopySuccess] = useState(false);
+
+  const handleShare = async () => {
+    const url = window.location.href;
+
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: 'APPS 2025 온라인 전시회',
+          text: '숙명여대 프로그래밍 동아리 APPS의 2025 전시회에 초대합니다!',
+          url: url,
+        });
+      } catch (err) {
+        if (err.name !== 'AbortError') {
+          console.error('공유 실패:', err);
+        }
+      }
+    } else {
+      // Web Share API 미지원시 메뉴 표시
+      setShowShareMenu(!showShareMenu);
+    }
+  };
+
+  const handleCopyLink = async () => {
+    try {
+      await navigator.clipboard.writeText(window.location.href);
+      setCopySuccess(true);
+      setTimeout(() => {
+        setCopySuccess(false);
+        setShowShareMenu(false);
+      }, 2000);
+    } catch (err) {
+      console.error('링크 복사 실패:', err);
+    }
+  };
+
+  const LINKTREE_URL = 'https://linktr.ee/sookmyung_apps';
+
   return (
     <header className='flex w-full items-center justify-between bg-[#3D6EEE]/20 px-6 py-3 md:px-10 lg:px-21'>
       <div className='flex items-center gap-2 md:gap-3'>
@@ -14,16 +54,33 @@ export default function Header() {
         <span>2025 ONLINE EXHIBITION</span>
       </div>
       <div className='font-pretendard flex items-center gap-2 font-medium text-[#FFFFFF] md:gap-3.5 md:font-semibold'>
-        <button className='hidden rounded-full border border-white min-[1025px]:block min-[1025px]:px-5 min-[1025px]:py-1.5 min-[1025px]:text-sm'>
-          링크 공유하기
+        <div className='relative'>
+          <button
+            onClick={handleShare}
+            className='rounded-full border border-white px-3 py-1 text-xs transition-colors hover:bg-white/10 md:px-5 md:py-1.5 md:text-sm'>
+            {copySuccess ? '링크 복사됨!' : '링크 공유하기'}
+          </button>
+          {showShareMenu && (
+            <div className='absolute top-full right-0 z-50 mt-2 w-40 overflow-hidden rounded-lg bg-white shadow-lg'>
+              <button
+                onClick={handleCopyLink}
+                className='w-full px-4 py-2 text-left text-sm text-gray-700 transition-colors hover:bg-gray-100'>
+                링크 복사
+              </button>
+            </div>
+          )}
+        </div>
+        <button className='rounded-full border border-white px-3 py-1 text-xs transition-colors hover:bg-white/10 md:px-5 md:py-1.5 md:text-sm'>
+          13기 알림 신청하기
         </button>
-        <button className='rounded-full border border-white px-3 py-1 text-xs md:px-5 md:py-1.5 md:text-sm'>
-          0기 알림 신청하기
-        </button>
-        <button className='flex items-center gap-1 rounded-full border border-white px-3 py-1 text-xs md:gap-2 md:px-5 md:py-1.5 md:text-sm'>
+        <a
+          href={LINKTREE_URL}
+          target='_blank'
+          rel='noopener noreferrer'
+          className='flex items-center gap-1 rounded-full border border-white px-3 py-1 text-xs transition-colors hover:bg-white/10 md:gap-2 md:px-5 md:py-1.5 md:text-sm'>
           <span>Linktree</span>
           <img src={TreeIcon} className='scale-75 md:scale-100' />
-        </button>
+        </a>
       </div>
     </header>
   );
