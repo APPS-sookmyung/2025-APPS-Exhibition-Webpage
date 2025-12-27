@@ -21,6 +21,14 @@ import KimJiminImg from '../assets/members/KimJimin.jpg';
 import KwonYujinImg from '../assets/members/KwonYujin.jpg';
 import JeongJieunImg from '../assets/members/JeongJieun.png';
 
+// ============================================
+// 4. 신입부원 프로젝트 Imports
+import LeeYunaImg from '../assets/members/LeeYuna.jpg';
+import HanJiminImg from '../assets/members/HanJimin.jpg';
+import MunYeseonImg from '../assets/members/MunYeseon.jpeg';
+import BaeSongyiImg from '../assets/members/BaeSongyi.jpeg';
+import LimYujinImg from '../assets/members/LimYujin.jpeg';
+
 // Project data
 export const projects = {
   EMORY: {
@@ -227,16 +235,16 @@ export const projects = {
     ],
     techStack: ['React', 'JavaScript', 'TailwindCSS', 'Firebase', 'Netlify'],
     links: [
-      {type: 'CLIENT', url: ''},
-      {type: 'SERVER', url: 'https://baseball-day.netlify.app/'},
+      {type: 'CLIENT', url: 'https://github.com/APPS-sookmyung/2025-B-DAY'},
       {type: 'LINK', url: 'https://baseball-day.netlify.app/'},
     ],
     members: [
       {
         name: '우채아',
         role: '프론트엔드',
-        description: '(소개글)',
-        profileImage: '',
+        description:
+          'B-DAY는 저의 첫 프론트엔드 프로젝트입니다. 지금까지 백엔드 개발만 경험해왔었는데, 프론트엔드 개발자의 고충과 어려움을 이해할 수 있었던 소중한 경험이었어요🤣 프로젝트 주제를 선정하는 것부터 개발 계획을 짜는 것까지 오롯이 혼자서 진행하다 보니 속도도 잘 나지 않고 늘어져 개인적으로는 뿌듯함보다는 아쉬움이 더 남는 프로젝트인 것 같아요. 하지만 이 프로젝트 덕분에 제가 평소 좋아하는 것을 서비스로 만들어보는 즐거운 경험도 해 보고, 이렇게 전시회에 올릴 수 있어 뿌듯합니다😊',
+        profileImage: WooChaeaImg,
       },
     ],
   },
@@ -265,9 +273,8 @@ export const projects = {
       '외부 AI모델(OPENAI API)',
     ],
     links: [
-      {type: 'CLIENT', url: ''},
       {
-        type: 'SERVER',
+        type: 'CLIENT',
         url: 'https://github.com/APPS-sookmyung/2025-BudgetPilot',
       },
       {type: 'LINK', url: 'https://budgetpilot.netlify.app/'},
@@ -276,8 +283,8 @@ export const projects = {
       {
         name: '김도연',
         role: ['프론트엔드', '백엔드'],
-        description: '(소개글)',
-        profileImage: '',
+        description: '',
+        profileImage: KimDoyeonImg,
       },
     ],
   },
@@ -297,16 +304,15 @@ export const projects = {
     ],
     techStack: ['React', 'JavaScript', 'CSS', 'Firebase'],
     links: [
-      {type: 'CLIENT', url: ''},
-      {type: 'SERVER', url: 'https://github.com/APPS-sookmyung/2025-Clip.git'},
+      {type: 'CLIENT', url: 'https://github.com/APPS-sookmyung/2025-Clip.git'},
       {type: 'LINK', url: 'https://clip-8c9e0.web.app/'},
     ],
     members: [
       {
         name: '정지은',
         role: ['PM', '프론트엔드', '백엔드'],
-        description: '(소개글)',
-        profileImage: '',
+        description: '',
+        profileImage: JeongJieunImg,
       },
     ],
   },
@@ -326,16 +332,15 @@ export const projects = {
     ],
     techStack: ['React', 'TypeScript'],
     links: [
-      {type: 'CLIENT', url: ''},
-      {type: 'SERVER', url: 'https://github.com/APPS-sookmyung/2025-CommuTime'},
+      {type: 'CLIENT', url: 'https://github.com/APPS-sookmyung/2025-CommuTime'},
       {type: 'LINK', url: 'https://commutime.vercel.app/'},
     ],
     members: [
       {
         name: '김영교',
-        role: '',
-        description: '(소개글)',
-        profileImage: '',
+        role: '프론트엔드',
+        description: '',
+        profileImage: KimYoungkyoImg,
       },
     ],
   },
@@ -355,9 +360,8 @@ export const projects = {
     ],
     techStack: ['React'],
     links: [
-      {type: 'CLIENT', url: ''},
       {
-        type: 'SERVER',
+        type: 'CLIENT',
         url: 'https://github.com/APPS-sookmyung/2025-f-list.git',
       },
       {type: 'LINK', url: 'https://2025-f-list-w4qb.vercel.app/'},
@@ -365,9 +369,10 @@ export const projects = {
     members: [
       {
         name: '이유나',
-        role: '',
-        description: '(소개글)',
-        profileImage: '',
+        role: '프론트엔드',
+        description:
+          '이번 신입 부원 프로젝트를 통해 처음 개발에 도전하고, 많은 것을 공부할 수 있는 시간이었습니다. 개발에 ㄱ자도 모르던 사람이었지만 학회 활동을 통한 스터디와 직접 개발하면서 부딪혔던 오류들을 해결하면서 이렇게 프로젝트의 마무리까지 올 수 있었던 것 같습니다. 직접 이용하고 싶던 서비스를 구상부터 개발까지 스스로 완성할 수 있어 너무 뿌듯합니다. ',
+        profileImage: LeeYunaImg,
       },
     ],
   },
@@ -394,9 +399,8 @@ export const projects = {
       'GitHub Pages',
     ],
     links: [
-      {type: 'CLIENT', url: ''},
       {
-        type: 'SERVER',
+        type: 'CLIENT',
         url: 'https://github.com/APPS-sookmyung/2025-HelloGiraffe.git',
       },
       {type: 'LINK', url: 'https://tjsl0607.github.io/2025-HelloGiraffe/'},
@@ -404,9 +408,9 @@ export const projects = {
     members: [
       {
         name: '문예선',
-        role: ['PM', '프론트엔드', '백엔드', '디자인'],
-        description: '(소개글)',
-        profileImage: '',
+        role: ['PM', '프론트엔드', '백엔드'],
+        description: `이번 프로젝트를 하면서 가장 많이 배운 것은 포기하지 않는 법이었습니다. 처음 웹 프로그래밍 지식을 배울 때는 정말 이해되는 게 하나도 없어 재능이 없는 게 아닐지 두려웠습니다. 그러나 이 개인 프로젝트를 만들면서 하나씩 배워갈 수 있었습니다. 단순히 기술적 성장을 넘어서 끊임없이 배우기 위해 다양한 방법을 시도하면 언젠가는 그 지식을 나의 것으로 만들어낼 수 있겠다는 확신을 가질 수 있었습니다. 끝내는 프로젝트 중간 발표회에서 늘 시간이 없어서, 능력이 부족해서 못할 것 같다면서도 슬쩍 넣어봤던 LLM 도입도 해내었습니다. 이 과정은 정말 혼자였다면 못했을 것 같습니다. 함께 해준 앱스 부원들과 운영진분들 덕분에 함께 성장하는 가치도 배울 수 있었습니다. 앞으로는 이 경험을 바탕으로 더욱 더 성장할 수 있을 것 같습니다!`,
+        profileImage: MunYeseonImg,
       },
     ],
   },
@@ -425,16 +429,16 @@ export const projects = {
     ],
     techStack: ['React', 'Tailwind CSS', 'JavaScript'],
     links: [
-      {type: 'CLIENT', url: ''},
-      {type: 'SERVER', url: 'https://github.com/dahyun1060/2025-PodoRush'},
+      {type: 'CLIENT', url: 'https://github.com/dahyun1060/2025-PodoRush'},
       {type: 'LINK', url: '2025-podo-rush.vercel.app'},
     ],
     members: [
       {
         name: '엄다현',
         role: '프론트엔드',
-        description: '(소개글)',
-        profileImage: '',
+        description:
+          '콘서트 가는 것을 좋아해 티켓팅을 게임처럼 구현해 보고자 포도러쉬 프로젝트를 진행했습니다. 이 프로젝트를 통해 리액트를 처음 접했고, 2학기 리액트 스터디와 병행하며 배운 내용을 직접 적용해 볼 수 있었습니다. 구현 과정에서 다양한 에러를 겪었지만 해결하며 리액트의 동작 원리를 이해하게 되었고, 처음으로 배포까지 경험하며 프로젝트의 전체 흐름을 배울 수 있었던 의미 있는 시간이었습니다.',
+        profileImage: EomDahyunImg,
       },
     ],
   },
@@ -455,16 +459,15 @@ export const projects = {
     ],
     techStack: ['HTML', 'CSS', 'React', 'JS'],
     links: [
-      {type: 'CLIENT', url: ''},
-      {type: 'SERVER', url: 'https://github.com/APPS-sookmyung/2025-Pouch'},
+      {type: 'CLIENT', url: 'https://github.com/APPS-sookmyung/2025-Pouch'},
       {type: 'LINK', url: 'https://bucolic-daifuku-0a202b.netlify.app/'},
     ],
     members: [
       {
         name: '배송이',
-        role: '',
-        description: '(소개글)',
-        profileImage: '',
+        role: '프론트엔드',
+        description: '',
+        profileImage: BaeSongyiImg,
       },
     ],
   },
@@ -484,16 +487,15 @@ export const projects = {
     ],
     techStack: ['React', 'Tailwind'],
     links: [
-      {type: 'CLIENT', url: ''},
-      {type: 'SERVER', url: 'https://github.com/jimin-25/2025-starlist'},
+      {type: 'CLIENT', url: 'https://github.com/jimin-25/2025-starlist'},
       {type: 'LINK', url: 'https://2025-starlist.vercel.app/'},
     ],
     members: [
       {
         name: '한지민',
         role: '프론트엔드',
-        description: '(소개글)',
-        profileImage: '',
+        description: `Starlist 프로젝트를 통해 개발에 대한 많은 지식과 경험을 쌓을 수 있어 좋았습니다. '어떤 것을 개발하면 좋을까?'부터 시작해서 계획을 세우고 직접 개발까지 해보면서 많은 것을 배울 수 있었습니다. 저의 첫 프로젝트인 Starlist를 개발한 경험은 잊지 못할 것 같습니다 !`,
+        profileImage: HanJiminImg,
       },
     ],
   },
@@ -512,16 +514,16 @@ export const projects = {
     ],
     techStack: ['React', 'Tailwind'],
     links: [
-      {type: 'CLIENT', url: ''},
-      {type: 'SERVER', url: 'https://github.com/APPS-sookmyung/2025-Streco'},
+      {type: 'CLIENT', url: 'https://github.com/APPS-sookmyung/2025-Streco'},
       {type: 'LINK', url: 'https://2025-streco.vercel.app/'},
     ],
     members: [
       {
         name: '임유진',
         role: '프론트엔드',
-        description: '(소개글)',
-        profileImage: '',
+        description:
+          '최근 게임 경기에 관심을 가지게 되어 여러 방송들을 보다가 하이라이트를 개인적으로 기록할 수 있으면 좋을 것 같다는 생각에 Streco를 개발하게 되었습니다. 혼자 기획부터 개발까지 모든 걸 해야해서 처음에는 막막했지만, 부원들의 소중한 피드백 덕분에 수월하게 프로젝트를 진행할 수 있었어요. 디자인 수정이나 기능 구현 과정에서 시행착오도 많았지만, 그만큼 빠르게 성장하고 있다는 걸 느낄 수 있었고 세상에 하나 뿐인 웹사이트를 제작하게 되어 정말 뿌듯했습니다!',
+        profileImage: LimYujinImg,
       },
     ],
   },
@@ -541,16 +543,15 @@ export const projects = {
     ],
     techStack: ['CSS', 'React', 'TypeScript'],
     links: [
-      {type: 'CLIENT', url: ''},
-      {type: 'SERVER', url: 'https://github.com/APPS-sookmyung/2025-ULTS'},
+      {type: 'CLIENT', url: 'https://github.com/APPS-sookmyung/2025-ULTS'},
       {type: 'LINK', url: 'https://ults.netlify.app'},
     ],
     members: [
       {
         name: '윤소영',
         role: '프론트엔드',
-        description: '(소개글)',
-        profileImage: '',
+        description: `안녕하세요. 12기 윤소영입니다. 이번에 'EMORY'에서 프론트엔드를 담당하였고, 개인 프로젝트로 편지 작성 서비스 'ULTS'를 개발하였습니다.`,
+        profileImage: YoonSoyoungImg,
       },
     ],
   },

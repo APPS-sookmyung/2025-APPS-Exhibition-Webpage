@@ -1,6 +1,22 @@
 import dummyThumbnail from '../assets/thumbnail/project-thumbnail.svg';
 import dummyPavicon from '../assets/pavicon/project-pavicon.svg';
 
+//개인 프로젝트 썸네일
+import bdayThumbnail from '../assets/thumbnail/b-day.png';
+import flistThumbnail from '../assets/thumbnail/f-list.png';
+import hellogiraffeThumbnail from '../assets/thumbnail/hellogiraffe.png';
+import podorushThumbnail from '../assets/thumbnail/podorush.png';
+import starlistThumbnail from '../assets/thumbnail/starlist.png';
+import strecoThumbnail from '../assets/thumbnail/streco.png';
+
+//개인 프로젝트 파비콘
+import bdayPavicon from '../assets/pavicon/b-day.png';
+import flistPavicon from '../assets/pavicon/f-list.png';
+import hellogiraffePavicon from '../assets/pavicon/hellogiraffe.png';
+import podorushPavicon from '../assets/pavicon/podorush.png';
+import starlistPavicon from '../assets/pavicon/starlist.png';
+import strecoPavicon from '../assets/pavicon/streco.png';
+
 export const projectInfo = [
   // 팀 프로젝트
   {
@@ -66,9 +82,8 @@ export const projectInfo = [
     slug: 'bday',
     title: 'B-DAY',
     type: 'rookie',
-    platform: 'WEB',
-    thumbnail: dummyThumbnail,
-    pavicon: dummyPavicon,
+    thumbnail: bdayThumbnail,
+    pavicon: bdayPavicon,
     description: '나만의 야구 직관 일기, B-DAY',
     members: ['12기 우채아'],
     link: 'https://baseball-day.netlify.app/',
@@ -78,7 +93,6 @@ export const projectInfo = [
     slug: 'budgetpilot',
     title: 'BudgetPilot',
     type: 'rookie',
-    platform: 'WEB',
     thumbnail: dummyThumbnail,
     pavicon: dummyPavicon,
     description:
@@ -91,7 +105,6 @@ export const projectInfo = [
     slug: 'clip',
     title: 'Clip',
     type: 'rookie',
-    platform: 'WEB',
     thumbnail: dummyThumbnail,
     pavicon: dummyPavicon,
     description:
@@ -104,7 +117,6 @@ export const projectInfo = [
     slug: 'commutime',
     title: 'CommuTime',
     type: 'rookie',
-    platform: 'WEB',
     thumbnail: dummyThumbnail,
     pavicon: dummyPavicon,
     description: '통학•통근 자기계발 서비스 CommuTime',
@@ -116,9 +128,8 @@ export const projectInfo = [
     slug: 'flist',
     title: 'F-list',
     type: 'rookie',
-    platform: 'WEB',
-    thumbnail: dummyThumbnail,
-    pavicon: dummyPavicon,
+    thumbnail: flistThumbnail,
+    pavicon: flistPavicon,
     description:
       '나만의 옷 정보와 위시리스트를 아카이빙 할 수 있는 웹 서비스 F-list',
     members: ['12기 이유나'],
@@ -129,9 +140,8 @@ export const projectInfo = [
     slug: 'hellogiraffe',
     title: 'HelloGiraffe',
     type: 'rookie',
-    platform: 'WEB',
-    thumbnail: dummyThumbnail,
-    pavicon: dummyPavicon,
+    thumbnail: hellogiraffeThumbnail,
+    pavicon: hellogiraffePavicon,
     description:
       '비폭력 대화(NVC)를 기반으로 건강한 관계 형성을 돕는 AI 마음 대화 가이드, HelloGiraffe',
     members: ['12기 문예선'],
@@ -142,9 +152,8 @@ export const projectInfo = [
     slug: 'podorush',
     title: 'PodoRush',
     type: 'rookie',
-    platform: 'WEB',
-    thumbnail: dummyThumbnail,
-    pavicon: dummyPavicon,
+    thumbnail: podorushThumbnail,
+    pavicon: podorushPavicon,
     description: '티켓팅 연습 게임 Podorush',
     members: ['12기 엄다현'],
     link: '2025-podo-rush.vercel.app',
@@ -154,7 +163,6 @@ export const projectInfo = [
     slug: 'pouch',
     title: 'Pouchkeeper',
     type: 'rookie',
-    platform: 'WEB',
     thumbnail: dummyThumbnail,
     pavicon: dummyPavicon,
     description:
@@ -167,9 +175,8 @@ export const projectInfo = [
     slug: 'starlist',
     title: 'Starlist',
     type: 'rookie',
-    platform: 'WEB',
-    thumbnail: dummyThumbnail,
-    pavicon: dummyPavicon,
+    thumbnail: starlistThumbnail,
+    pavicon: starlistPavicon,
     description:
       '매일의 작은 성취를 별로 쌓아 보상까지 이어주는 습관 형성 todolist',
     members: ['12기 한지민'],
@@ -180,9 +187,8 @@ export const projectInfo = [
     slug: 'streco',
     title: 'Streco',
     type: 'rookie',
-    platform: 'WEB',
-    thumbnail: dummyThumbnail,
-    pavicon: dummyPavicon,
+    thumbnail: strecoThumbnail,
+    pavicon: strecoPavicon,
     description: '단 한 번뿐인 방송 속 최고의 순간을 Streco에 기록해 보세요!',
     members: ['12기 임유진'],
     link: 'https://2025-streco.vercel.app/',
@@ -192,7 +198,6 @@ export const projectInfo = [
     slug: 'ults',
     title: 'ULTS - Unsent Letters, To the Star',
     type: 'rookie',
-    platform: 'WEB',
     thumbnail: dummyThumbnail,
     pavicon: dummyPavicon,
     description: '전하지 못한 마음을 밤하늘의 별로 띄워 보내는 공간, ULTS',
