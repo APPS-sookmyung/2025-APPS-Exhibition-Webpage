@@ -37,7 +37,7 @@ const AboutSection = () => {
             WHAT IS APPS?
           </h2>
           <div className='-mx-6 my-5 border-t-2 border-dotted border-white/50 md:-mx-20 md:border-white'></div>
-          <div className='flex flex-col items-center justify-center gap-10 md:flex-row md:gap-10'>
+          <div className='flex flex-col items-center justify-center gap-10 md:gap-10 lg:flex-row'>
             <div className='relative shrink-0'>
               <div className='mt-5 h-[180px] w-full max-w-[400px] overflow-hidden rounded-[90px] md:w-[400px]'>
                 <img
@@ -51,7 +51,7 @@ const AboutSection = () => {
               </div>
             </div>
 
-            <div className='mx-5 hidden h-40 border-l-2 border-dotted border-white md:block'></div>
+            <div className='mx-5 hidden h-40 border-l-2 border-dotted border-white lg:block'></div>
             <div className='max-w-lg text-left'>
               <p className='mb-4 text-sm font-bold md:text-base'>
                 숙명여자대학교 소프트웨어학부 웹 앱 개발 학회
