@@ -19,7 +19,7 @@ const ProjectsViewer = () => {
         </div>
 
         {/* 스와이프 버튼 */}
-        <div className='flex scale-40 justify-self-center md:absolute md:top-[12%] md:right-10 md:scale-80 lg:right-20 lg:scale-100'>
+        <div className='flex w-full scale-40 justify-center md:absolute md:top-[12%] md:right-10 md:w-auto md:scale-80 lg:right-20 lg:scale-100'>
           <ViewerButton
             stackedView={isStackedView}
             onChangeView={setIsStackedView}
