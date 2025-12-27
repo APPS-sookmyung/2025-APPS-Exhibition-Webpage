@@ -1,6 +1,22 @@
 import dummyThumbnail from '../assets/thumbnail/project-thumbnail.svg';
 import dummyPavicon from '../assets/pavicon/project-pavicon.svg';
 
+//개인 프로젝트 썸네일
+import bdayThumbnail from '../assets/thumbnail/b-day.png';
+import flistThumbnail from '../assets/thumbnail/f-list.png';
+import hellogiraffeThumbnail from '../assets/thumbnail/hellogiraffe.png';
+import podorushThumbnail from '../assets/thumbnail/podorush.png';
+import starlistThumbnail from '../assets/thumbnail/starlist.png';
+import strecoThumbnail from '../assets/thumbnail/streco.png';
+
+//개인 프로젝트 파비콘
+import bdayPavicon from '../assets/pavicon/b-day.png';
+import flistPavicon from '../assets/pavicon/f-list.png';
+import hellogiraffePavicon from '../assets/pavicon/hellogiraffe.png';
+import podorushPavicon from '../assets/pavicon/podorush.png';
+import starlistPavicon from '../assets/pavicon/starlist.png';
+import strecoPavicon from '../assets/pavicon/streco.png';
+
 export const projectInfo = [
   // 팀 프로젝트
   {
@@ -66,142 +82,126 @@ export const projectInfo = [
     slug: 'bday',
     title: 'B-DAY',
     type: 'rookie',
-    platform: 'WEB',
-    thumbnail: dummyThumbnail,
-    pavicon: dummyPavicon,
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    thumbnail: bdayThumbnail,
+    pavicon: bdayPavicon,
+    description: '나만의 야구 직관 일기, B-DAY',
     members: ['12기 우채아'],
-    link: 'https://example.com',
+    link: 'https://baseball-day.netlify.app/',
   },
   {
     id: 'budgetpilot',
     slug: 'budgetpilot',
     title: 'BudgetPilot',
     type: 'rookie',
-    platform: 'WEB',
     thumbnail: dummyThumbnail,
     pavicon: dummyPavicon,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      '여행 정보와, 취향, 예산 비율을 바탕으로 여행 스팟을 자동 추천해 한번에 확인할 수 있는 개인 맞춤 여행 리포트 budgetpilot',
     members: ['12기 김도연'],
-    link: 'https://example.com',
+    link: 'https://budgetpilot.netlify.app/',
   },
   {
     id: 'clip',
     slug: 'clip',
     title: 'Clip',
     type: 'rookie',
-    platform: 'WEB',
     thumbnail: dummyThumbnail,
     pavicon: dummyPavicon,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      '흩어진 웹 콘텐츠를 카테고리로 분류하고 스크랩하여 만드는 나만의 디지털 스크랩 룸 Clip',
     members: ['12기 정지은'],
-    link: 'https://example.com',
+    link: 'https://clip-8c9e0.web.app/',
   },
   {
     id: 'commutime',
     slug: 'commutime',
     title: 'CommuTime',
     type: 'rookie',
-    platform: 'WEB',
     thumbnail: dummyThumbnail,
     pavicon: dummyPavicon,
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    description: '통학•통근 자기계발 서비스 CommuTime',
     members: ['12기 김영교'],
-    link: 'https://example.com',
+    link: 'https://commutime.vercel.app/',
   },
   {
     id: 'flist',
     slug: 'flist',
-    title: 'f-list',
+    title: 'F-list',
     type: 'rookie',
-    platform: 'WEB',
-    thumbnail: dummyThumbnail,
-    pavicon: dummyPavicon,
+    thumbnail: flistThumbnail,
+    pavicon: flistPavicon,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      '나만의 옷 정보와 위시리스트를 아카이빙 할 수 있는 웹 서비스 F-list',
     members: ['12기 이유나'],
-    link: 'https://example.com',
+    link: 'https://2025-f-list-w4qb.vercel.app/',
   },
   {
     id: 'hellogiraffe',
     slug: 'hellogiraffe',
     title: 'HelloGiraffe',
     type: 'rookie',
-    platform: 'WEB',
-    thumbnail: dummyThumbnail,
-    pavicon: dummyPavicon,
+    thumbnail: hellogiraffeThumbnail,
+    pavicon: hellogiraffePavicon,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      '비폭력 대화(NVC)를 기반으로 건강한 관계 형성을 돕는 AI 마음 대화 가이드, HelloGiraffe',
     members: ['12기 문예선'],
-    link: 'https://example.com',
+    link: 'https://tjsl0607.github.io/2025-HelloGiraffe/',
   },
   {
     id: 'podorush',
     slug: 'podorush',
     title: 'PodoRush',
     type: 'rookie',
-    platform: 'WEB',
-    thumbnail: dummyThumbnail,
-    pavicon: dummyPavicon,
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    thumbnail: podorushThumbnail,
+    pavicon: podorushPavicon,
+    description: '티켓팅 연습 게임 Podorush',
     members: ['12기 엄다현'],
-    link: 'https://example.com',
+    link: '2025-podo-rush.vercel.app',
   },
   {
     id: 'pouch',
     slug: 'pouch',
-    title: 'Pouch',
+    title: 'Pouchkeeper',
     type: 'rookie',
-    platform: 'WEB',
     thumbnail: dummyThumbnail,
     pavicon: dummyPavicon,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      '내 모든 뷰티 아이템을 한 곳에 정리해주는 신개념 온라인 파우치',
     members: ['12기 배송이'],
-    link: 'https://example.com',
+    link: 'https://bucolic-daifuku-0a202b.netlify.app/',
   },
   {
     id: 'starlist',
     slug: 'starlist',
-    title: 'starlist',
+    title: 'Starlist',
     type: 'rookie',
-    platform: 'WEB',
-    thumbnail: dummyThumbnail,
-    pavicon: dummyPavicon,
+    thumbnail: starlistThumbnail,
+    pavicon: starlistPavicon,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      '매일의 작은 성취를 별로 쌓아 보상까지 이어주는 습관 형성 todolist',
     members: ['12기 한지민'],
-    link: 'https://example.com',
+    link: 'https://2025-starlist.vercel.app/',
   },
   {
     id: 'streco',
     slug: 'streco',
-    title: 'STRECO',
+    title: 'Streco',
     type: 'rookie',
-    platform: 'WEB',
-    thumbnail: dummyThumbnail,
-    pavicon: dummyPavicon,
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    thumbnail: strecoThumbnail,
+    pavicon: strecoPavicon,
+    description: '단 한 번뿐인 방송 속 최고의 순간을 Streco에 기록해 보세요!',
     members: ['12기 임유진'],
-    link: 'https://example.com',
+    link: 'https://2025-streco.vercel.app/',
   },
   {
     id: 'ults',
     slug: 'ults',
-    title: 'ULTS',
+    title: 'ULTS - Unsent Letters, To the Star',
     type: 'rookie',
-    platform: 'WEB',
     thumbnail: dummyThumbnail,
     pavicon: dummyPavicon,
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    description: '전하지 못한 마음을 밤하늘의 별로 띄워 보내는 공간, ULTS',
     members: ['12기 윤소영'],
-    link: 'https://example.com',
+    link: 'https://ults.netlify.app',
   },
 ];
