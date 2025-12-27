@@ -8,14 +8,14 @@ const CtaSection = () => {
     // 기존 코드의 상단 Wrapper 부분 (CTA Banner)
     <div className='flex w-full flex-col items-center bg-transparent px-[20px] pt-16 pb-10'>
       <div className='bg-primary relative flex min-h-[360px] w-full max-w-[1100px] flex-col items-center justify-start overflow-hidden rounded-[40px] p-10 pt-30 pb-70 text-center text-white shadow-2xl md:min-h-[420px] md:rounded-[60px] md:px-16'>
-        <div className='text-primary-light pointer-events-none absolute right-80 bottom-10 left-0 z-0 text-center text-[7rem] leading-none font-bold tracking-tighter select-none md:text-[11rem]'>
+        <div className='text-primary-light pointer-events-none absolute right-80 bottom-10 left-0 z-0 mx-auto w-1/2 text-center text-[3rem] leading-none font-bold tracking-tighter select-none md:w-auto md:text-[5rem] lg:w-auto lg:text-[7rem]'>
           CONNECT ON
         </div>
 
         <img
           src={electricBg}
           alt=''
-          className='pointer-events-none absolute right-0 bottom-0 z-0 h-[80%] object-contain md:h-auto'
+          className='pointer-events-none absolute right-0 bottom-0 z-0 h-[30%] object-contain md:h-auto'
         />
 
         <div className='relative z-10 flex flex-col items-center gap-8 md:gap-10'>
