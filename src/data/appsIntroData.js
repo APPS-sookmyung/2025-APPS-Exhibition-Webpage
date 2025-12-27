@@ -145,7 +145,7 @@ export const ROW_2_DATA = [
     id: 'r2-7',
     type: 'member',
     name: '임유진',
-    subText: '12기 · Computer Science 25',
+    subText: '12기 · Computer Science 24',
     avatarImage: LimYujinImg,
     message:
       '도전하는 용기와 열정을 배웠어요. 새로운 걸 시도하면 실패할까 두려웠고, 열심히 해서 결과가 나오지 않는 게 무서워 열정과도 거리가 먼 사람이었어요. 하지만 누구보다 하루하루를 불태우는 APPS 부원들을 보며 의미 없이 지나가는 시간들이 점점 아깝다는 생각이 들기 시작했어요. 그래서 가만히 있지 말고 기회가 찾아오면 시도해보기로 마음 먹었어요. 덕분에 1년간 React, Spring, Unity, Next.js 스터디와 여러 프로젝트도 진행할 수 있었어요!',
