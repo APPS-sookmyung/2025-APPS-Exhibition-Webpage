@@ -1,3 +1,26 @@
+// EMORY Team Images
+import YoonJeewonImg from '../assets/members/YoonJeewon.jpeg';
+import YoonSoyoungImg from '../assets/members/YoonSoyoung.jpg';
+import KimDoyeonImg from '../assets/members/KimDoyeon.jpg';
+import EomDahyunImg from '../assets/members/EomDahyeon.jpg';
+import ShinJungeunImg from '../assets/members/ShinJeongeun.jpg';
+import KimYoungkyoImg from '../assets/members/KimYoungkyo.png';
+
+// ============================================
+// 2. Devsong Team Imports
+import BangJiheeImg from '../assets/members/BangJihee.jpg';
+import BaekSuminImg from '../assets/members/BaekSumin.jpeg';
+import WooChaeaImg from '../assets/members/WooChaea.jpg';
+import LeeEunchaeImg from '../assets/members/LeeEunchae.jpg';
+
+// ============================================
+// 3. ChatToner Team Imports
+// 윤지원 님은 위에서 import 함
+import HaJiminImg from '../assets/members/HaJimin.jpg';
+import KimJiminImg from '../assets/members/KimJimin.jpg';
+import KwonYujinImg from '../assets/members/KwonYujin.jpg';
+import JeongJieunImg from '../assets/members/JeongJieun.png';
+
 // Project data
 export const projects = {
   EMORY: {
@@ -40,37 +63,37 @@ export const projects = {
         name: '윤지원',
         role: ['AI', '프론트엔드'],
         description: '(소개글)',
-        profileImage: '',
+        profileImage: YoonJeewonImg,
       },
       {
         name: '김도연',
         role: ['PM', 'AI', '백엔드'],
         description: '(소개글)',
-        profileImage: '',
+        profileImage: KimDoyeonImg,
       },
       {
         name: '엄다현',
         role: '백엔드',
         description: '(소개글)',
-        profileImage: '',
+        profileImage: EomDahyunImg,
       },
       {
         name: '신정은',
         role: '백엔드',
         description: '(소개글)',
-        profileImage: '',
+        profileImage: ShinJungeunImg,
       },
       {
         name: '윤소영',
         role: '프론트엔드',
         description: '(소개글)',
-        profileImage: '',
+        profileImage: YoonSoyoungImg,
       },
       {
         name: '김영교',
         role: '프론트엔드',
         description: '(소개글)',
-        profileImage: '',
+        profileImage: KimYoungkyoImg,
       },
     ],
   },
@@ -104,25 +127,25 @@ export const projects = {
         name: '방지희',
         role: ['프론트엔드', '백엔드'],
         description: '(소개글)',
-        profileImage: '',
+        profileImage: BangJiheeImg,
       },
       {
         name: '백수민',
         role: '프론트엔드장',
         description: '(소개글)',
-        profileImage: '',
+        profileImage: BaekSuminImg,
       },
       {
         name: '우채아',
         role: ['PM', '백엔드'],
         description: '(소개글)',
-        profileImage: '',
+        profileImage: WooChaeaImg,
       },
       {
         name: '이은채',
         role: '백엔드장',
         description: '(소개글)',
-        profileImage: '',
+        profileImage: LeeEunchaeImg,
       },
     ],
   },
@@ -151,38 +174,41 @@ export const projects = {
       'OpenAI',
     ],
     links: [
-      {type: 'CLIENT', url: 'https://github.com/APPS-sookmyung/CHAT-TONER.git'},
+      {
+        type: 'CLIENT',
+        url: 'https://github.com/APPS-sookmyung/CHAT-TONER.git',
+      },
     ],
     members: [
       {
         name: '윤지원',
         role: ['백엔드', 'PM'],
         description: '(소개글)',
-        profileImage: '',
+        profileImage: YoonJeewonImg,
       },
       {
         name: '하지민',
         role: ['디자인', '프론트엔드'],
         description: '(소개글)',
-        profileImage: '',
+        profileImage: HaJiminImg,
       },
       {
         name: '김지민',
         role: '백엔드',
         description: '(소개글)',
-        profileImage: '',
+        profileImage: KimJiminImg,
       },
       {
         name: '권유진',
         role: ['백엔드', '인프라'],
         description: '(소개글)',
-        profileImage: '',
+        profileImage: KwonYujinImg,
       },
       {
         name: '정지은',
         role: '백엔드',
         description: '(소개글)',
-        profileImage: '',
+        profileImage: JeongJieunImg,
       },
     ],
   },
