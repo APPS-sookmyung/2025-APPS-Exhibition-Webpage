@@ -72,12 +72,20 @@ export default function ProjectDetailHero({project, links = []}) {
           </button>
         </div>
 
-        {/* 썸네일 placeholder */}
-        <div className='flex w-full max-w-[1200px] items-center justify-center rounded-[28px] bg-white/20'>
+        {/* 썸네일 */}
+        <div className='w-full max-w-[1200px] overflow-hidden rounded-[28px] bg-white/20'>
           <div className='aspect-[16/9] w-full'>
-            <div className='flex h-full w-full items-center justify-center'>
-              <span className='text-sm text-white/60'>프로젝트 썸네일</span>
-            </div>
+            {project.gif ? (
+              <img
+                src={project.gif}
+                alt={`${project.title} thumbnail`}
+                className='h-full w-full object-cover'
+              />
+            ) : (
+              <div className='flex h-full w-full items-center justify-center'>
+                <span className='text-sm text-white/60'>프로젝트 썸네일</span>
+              </div>
+            )}
           </div>
         </div>
 
@@ -144,6 +152,7 @@ ProjectDetailHero.propTypes = {
     generation: PropTypes.arrayOf(PropTypes.number),
     title: PropTypes.string,
     subtitle: PropTypes.string,
+    gif: PropTypes.string,
     content: PropTypes.string,
     tags: PropTypes.arrayOf(PropTypes.string),
   }).isRequired,
