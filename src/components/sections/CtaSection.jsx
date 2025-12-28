@@ -1,7 +1,7 @@
 import {useState} from 'react';
-import LinkedInIcon from '../../assets/footer/linkedin.svg?react';
+import LinkedInIcon from '../../assets/footer/LinkedIn.svg?react';
 import LinkedInIconHover from '../../assets/footer/linkedinHover.svg?react';
-import InstagramIcon from '../../assets/footer/instagram.svg?react';
+import InstagramIcon from '../../assets/footer/Instagram.svg?react';
 import InstagramIconHover from '../../assets/footer/instagramHover.svg?react';
 import electricBg from '../../assets/footer/electric.svg';
 
