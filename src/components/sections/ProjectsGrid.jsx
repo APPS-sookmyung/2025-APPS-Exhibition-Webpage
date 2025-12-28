@@ -12,7 +12,7 @@ export default function ProjectsGrid() {
       <ProjectViewerTitle stackedView={false} titleText={'TEAM PROJECT'} />
 
       {/* 팀 프로젝트 */}
-      <div className='flex h-auto min-h-0 justify-center py-10'>
+      <div className='flex h-auto min-h-0 justify-center py-3 md:py-10'>
         <div className={`${responsiveClass}`}>
           {projects
             .filter((project) => project.type === 'team')
@@ -26,7 +26,7 @@ export default function ProjectsGrid() {
       <ProjectViewerTitle stackedView={false} titleText={'ROOKIE PROJECT'} />
 
       {/* 개인 프로젝트 */}
-      <div className='flex h-auto min-h-0 justify-center py-10'>
+      <div className='flex h-auto min-h-0 justify-center py-3 md:py-10'>
         <div className={`${responsiveClass}`}>
           {projects
             .filter((project) => project.type === 'rookie')
