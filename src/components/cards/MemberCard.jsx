@@ -35,8 +35,8 @@ const MemberCard = ({data, onClick, isActive}) => {
   return (
     <button
       onClick={onClick}
-      className={`relative flex shrink-0 items-center gap-4 rounded-xl py-3 pr-8 pl-3 text-left transition-all duration-300 ease-in-out ${
-        isActive ? 'bg-Primary z-50 text-white' : 'text-100 z-0 bg-white'
+      className={`relative flex shrink-0 cursor-pointer items-center gap-4 rounded-xl py-3 pr-8 pl-3 text-left transition-all duration-300 ease-in-out ${
+        isActive ? 'bg-accent-blue z-50 text-white' : 'text-100 z-0 bg-white'
       } `}>
       {/* 아바타 이미지 영역 */}
       <div className='h-10 w-10 shrink-0 overflow-hidden rounded-full bg-white sm:h-12 sm:w-12'>
