@@ -6,10 +6,11 @@ import MemberCard from '../components/MemberCard';
 import ReferenceSection from '../components/ReferenceSection';
 import FlowerIcon from '../assets/flower.svg?react';
 import {projects, FALLBACK_PROJECT} from '../data/projects-detail-data';
+import {projectInfo} from '../data/projectInfo';
 
 export default function ProjectDetail() {
   const {slug} = useParams();
-  const project = projects[slug] || FALLBACK_PROJECT;
+  let project = projects[slug] || FALLBACK_PROJECT;
 
   // lg breakpoint(1024px)를 기준으로 3개 또는 2개를 선택할지 결정
   const [numToSelect, setNumToSelect] = useState(
@@ -40,6 +41,15 @@ export default function ProjectDetail() {
     : [];
   const links = Array.isArray(project.links) ? project.links : [];
 
+  const thumbnailMap = projectInfo.reduce((acc, proj) => {
+    acc[proj.slug] = proj.thumbnail;
+    return acc;
+  }, {});
+
+  if (project && !project.gif) {
+    project.gif = thumbnailMap[slug];
+  }
+
   // 현재 프로젝트를 제외한 다른 프로젝트들 중에서 랜덤으로 N개 선택
   const randomReferences = Object.keys(projects)
     .filter((key) => key !== slug)
@@ -48,7 +58,7 @@ export default function ProjectDetail() {
     .map((key) => ({
       title: projects[key].title,
       slug: key,
-      image: '',
+      image: thumbnailMap[key],
     }));
 
   return (
