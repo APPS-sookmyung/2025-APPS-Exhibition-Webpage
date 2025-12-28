@@ -36,7 +36,7 @@ const CtaSection = () => {
           <div className='flex gap-[4cqw] md:gap-6'>
             {/* 인스타그램 */}
             <a
-              href='#'
+              href='https://www.instagram.com/sookmyung_apps/'
               target='_blank'
               rel='noopener noreferrer'
               className='transition-opacity hover:opacity-80'>
@@ -52,7 +52,7 @@ const CtaSection = () => {
             </a>
             {/* 링크드인 */}
             <a
-              href='#'
+              href='https://www.linkedin.com/company/sookmyung-apps/?viewAsMember=true'
               target='_blank'
               rel='noopener noreferrer'
               className='transition-opacity hover:opacity-80'>
