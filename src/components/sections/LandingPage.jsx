@@ -79,12 +79,12 @@ export default function LandingPage() {
           </div>
 
           <div className='pointer-events-none absolute bottom-[-9%] left-0 z-0 flex w-full justify-center py-18 md:bottom-[-18%] lg:bottom-[-140px]'>
-            <p className='font-pretendard text-primary-light translate-y-[-1%] transform text-[20vw] leading-none font-medium md:text-[25vw] lg:text-[200px]'>
+            <p className='font-pretendard translate-y-[-1%] transform text-[20vw] leading-none font-medium text-white/10 md:text-[25vw] lg:text-[200px]'>
               APPS
             </p>
           </div>
 
-          <div className='absolute -bottom-6 left-2.5 origin-left scale-75 md:-bottom-40 md:left-10 md:scale-90 lg:-bottom-30 lg:left-10 lg:scale-100'>
+          <div className='absolute -bottom-6 left-2.5 h-[100px] origin-left scale-75 md:-bottom-40 md:left-10 md:scale-90 lg:-bottom-30 lg:left-10 lg:scale-100'>
             <div className='bg-accent-blue h-8 w-32 rounded-full md:h-10 md:w-40 lg:h-13 lg:w-50'></div>
             <div className='bg-tertiary -mt-2 ml-6 h-8 w-32 rounded-full md:-mt-3 md:ml-8 md:h-10 md:w-40 lg:ml-10 lg:h-13 lg:w-50'></div>
           </div>
