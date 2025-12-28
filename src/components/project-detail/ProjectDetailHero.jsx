@@ -92,11 +92,11 @@ export default function ProjectDetailHero({project, links = []}) {
               </span>
             ))}
           </div>
-          <div className='flex justify-between'>
-            <p className='text-[48px] leading-[1.1] font-bold text-white sm:text-[60px]'>
+          <div className='flex items-center justify-between'>
+            <p className='text-[36px] leading-[1.2] font-bold text-white sm:text-[48px] lg:text-[60px]'>
               {project.title}
             </p>
-            <div className='flex flex-wrap gap-4'>
+            <div className='flex flex-shrink-0 flex-wrap gap-2 sm:gap-4'>
               {links.map((item) => {
                 const isGithub =
                   item.type === 'CLIENT' ||
@@ -119,8 +119,8 @@ export default function ProjectDetailHero({project, links = []}) {
                       isEnabled ? '' : 'cursor-not-allowed'
                     }`}
                     title={isEnabled ? item.url : '링크가 아직 없습니다'}>
-                    <Icon className='square-[50px]' />
-                    <p className='text-[14px] font-medium text-white'>
+                    <Icon className='square-[40px] sm:square-[50px]' />
+                    <p className='text-[12px] font-medium text-white sm:text-[14px]'>
                       {item.type}
                     </p>
                   </a>

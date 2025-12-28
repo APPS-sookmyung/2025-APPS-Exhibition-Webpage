@@ -1,3 +1,4 @@
+import {useState, useEffect} from 'react';
 import {useParams} from 'react-router-dom';
 import ProjectDetailHero from '../components/project-detail/ProjectDetailHero';
 import ProjectDetailBody from '../components/project-detail/ProjectDetailBody';
@@ -10,6 +11,22 @@ import {projectInfo} from '../data/projectInfo';
 export default function ProjectDetail() {
   const {slug} = useParams();
   const project = projects[slug] || FALLBACK_PROJECT;
+
+  // lg breakpoint(1024px)를 기준으로 3개 또는 2개를 선택할지 결정
+  const [numToSelect, setNumToSelect] = useState(
+    window.innerWidth >= 1024 ? 3 : 2
+  );
+
+  useEffect(() => {
+    const handleResize = () => {
+      setNumToSelect(window.innerWidth >= 1024 ? 3 : 2);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   const features = Array.isArray(project.feature)
     ? project.feature
@@ -24,19 +41,16 @@ export default function ProjectDetail() {
     : [];
   const links = Array.isArray(project.links) ? project.links : [];
 
-  // 현재 프로젝트를 제외한 다른 프로젝트들 중에서 랜덤으로 3개 선택
+  // 현재 프로젝트를 제외한 다른 프로젝트들 중에서 랜덤으로 N개 선택
   const randomReferences = Object.keys(projects)
     .filter((key) => key !== slug)
     .sort(() => Math.random() - 0.5)
-    .slice(0, 3)
-    .map((key) => {
-      const projectData = projectInfo.find((p) => p.slug === key);
-      return {
-        title: projects[key].title,
-        slug: key,
-        image: projectData?.thumbnail || '',
-      };
-    });
+    .slice(0, numToSelect)
+    .map((key) => ({
+      title: projects[key].title,
+      slug: key,
+      image: '',
+    }));
 
   return (
     <div className='w-full'>

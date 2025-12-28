@@ -56,7 +56,7 @@ const ProjectsStacked = () => {
       <div className='relative overflow-hidden md:mb-8 lg:mb-20'>
         {/* 배경 텍스트 #4B48F5 */}
         <div className='pointer-events-none absolute inset-0 z-0 flex items-center justify-center'>
-          <p className='pb-4 text-[60px] leading-none font-bold whitespace-nowrap text-white opacity-10 select-none md:text-[80px] lg:text-[150px]'>
+          <p className='pb-4 text-[60px] leading-none font-bold whitespace-nowrap text-white/10 select-none md:text-[80px] lg:text-[150px]'>
             PROJECTS ARCHIVE
           </p>
         </div>

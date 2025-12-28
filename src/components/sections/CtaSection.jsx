@@ -1,9 +1,14 @@
-import React from 'react';
-import linkedInIcon from '../../assets/footer/LinkedIn.svg';
-import instagramIcon from '../../assets/footer/Instagram.svg';
+import {useState} from 'react';
+import LinkedInIcon from '../../assets/footer/linkedIn.svg?react';
+import LinkedInIconHover from '../../assets/footer/linkedInHover.svg?react';
+import InstagramIcon from '../../assets/footer/instagram.svg?react';
+import InstagramIconHover from '../../assets/footer/instagramHover.svg?react';
 import electricBg from '../../assets/footer/electric.svg';
 
 const CtaSection = () => {
+  const [isInstaHovered, setInstaHovered] = useState(false);
+  const [isLinkedinHovered, setLinkedinHovered] = useState(false);
+
   return (
     // 기존 코드의 상단 Wrapper 부분 (CTA Banner)
     <div className='flex w-full flex-col items-center bg-transparent px-[5%] pt-10 pb-10 lg:px-[25px] lg:py-[60px]'>
@@ -39,28 +44,28 @@ const CtaSection = () => {
               href='https://www.instagram.com/sookmyung_apps/'
               target='_blank'
               rel='noopener noreferrer'
-              className='transition-opacity hover:opacity-80'>
-              <img
-                src={instagramIcon}
-                alt='Instagram'
-                /* w-[15cqw]: 모바일에서 박스 너비의 15% 크기 (약 45~55px 정도)
-           md:w-20: 데스크탑에서는 80px로 고정
-           h-auto: 너비에 맞춰 높이 자동 조절
-        */
-                className='h-auto w-[15cqw] drop-shadow-md md:w-20'
-              />
+              className='transition-opacity'
+              onMouseEnter={() => setInstaHovered(true)}
+              onMouseLeave={() => setInstaHovered(false)}>
+              {isInstaHovered ? (
+                <InstagramIconHover className='h-auto w-[15cqw] drop-shadow-md md:w-20' />
+              ) : (
+                <InstagramIcon className='h-auto w-[15cqw] drop-shadow-md md:w-20' />
+              )}
             </a>
             {/* 링크드인 */}
             <a
               href='https://kr.linkedin.com/company/sookmyung-apps'
               target='_blank'
               rel='noopener noreferrer'
-              className='transition-opacity hover:opacity-80'>
-              <img
-                src={linkedInIcon}
-                alt='LinkedIn'
-                className='h-auto w-[15cqw] drop-shadow-md md:w-20'
-              />
+              className='transition-opacity'
+              onMouseEnter={() => setLinkedinHovered(true)}
+              onMouseLeave={() => setLinkedinHovered(false)}>
+              {isLinkedinHovered ? (
+                <LinkedInIconHover className='h-auto w-[15cqw] drop-shadow-md md:w-20' />
+              ) : (
+                <LinkedInIcon className='h-auto w-[15cqw] drop-shadow-md md:w-20' />
+              )}
             </a>
           </div>
 
