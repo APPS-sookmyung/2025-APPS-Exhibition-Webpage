@@ -19,6 +19,8 @@ import budgetpilotThumbnail from '../assets/thumbnail/budgetpilot.png';
 import commutimeThumbnail from '../assets/thumbnail/commutime.png';
 import pouchkeeperThumbnail from '../assets/thumbnail/pouchkeeper.png';
 import timetablemakerThumbnail from '../assets/thumbnail/timetablemaker.png';
+import ultsThumbnail from '../assets/thumbnail/ults.png';
+import clipThumbnail from '../assets/thumbnail/clip.png';
 
 //개인 프로젝트 파비콘
 import bdayPavicon from '../assets/pavicon/b-day.png';
@@ -31,6 +33,8 @@ import budgetpilotPavicon from '../assets/pavicon/budgetpilot.png';
 import commutimePavicon from '../assets/pavicon/commutime.png';
 import pouchkeeperPavicon from '../assets/pavicon/pouchkeeper.png';
 import timetablemakerPavicon from '../assets/pavicon/timetablemaker.png';
+import ultsPavicon from '../assets/pavicon/ults.png';
+import clipPavicon from '../assets/pavicon/clip.png';
 
 //아직 Emory 파비콘, 썸네일 없음
 //아직 Devsong, Chattoner 배포 링크 없음
@@ -120,8 +124,8 @@ export const projectInfo = [
     slug: 'clip',
     title: 'Clip',
     type: 'rookie',
-    thumbnail: dummyThumbnail,
-    pavicon: dummyPavicon,
+    thumbnail: clipThumbnail,
+    pavicon: clipPavicon,
     description:
       '흩어진 웹 콘텐츠를 카테고리로 분류하고 스크랩하여 만드는 나만의 디지털 스크랩 룸 Clip',
     members: ['12기 정지은'],
@@ -187,7 +191,7 @@ export const projectInfo = [
   },
   {
     id: 'starlist',
-    slug: 'Starlist',
+    slug: 'starlist',
     title: 'Starlist',
     type: 'rookie',
     thumbnail: starlistThumbnail,
@@ -210,7 +214,7 @@ export const projectInfo = [
   },
   {
     id: 'timetablemaker',
-    slug: '시간표 메이커',
+    slug: 'timetablemaker',
     title: '시간표 메이커',
     type: 'rookie',
     thumbnail: timetablemakerThumbnail,
@@ -225,8 +229,8 @@ export const projectInfo = [
     slug: 'ults',
     title: 'ULTS - Unsent Letters, To the Star',
     type: 'rookie',
-    thumbnail: dummyThumbnail,
-    pavicon: dummyPavicon,
+    thumbnail: ultsThumbnail,
+    pavicon: ultsPavicon,
     description: '전하지 못한 마음을 밤하늘의 별로 띄워 보내는 공간, ULTS',
     members: ['12기 윤소영'],
     link: 'https://ults.netlify.app',
