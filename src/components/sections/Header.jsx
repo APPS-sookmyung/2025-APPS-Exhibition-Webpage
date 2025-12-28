@@ -56,8 +56,12 @@ export default function Header() {
       </div>
       <div className='font-pretendard flex items-center gap-2 font-medium text-[#FFFFFF] md:gap-3.5 md:font-semibold'>
         <div className='relative'>
-          <button onClick={handleShare} className='md:hidden'>
-            <img src={ShareIcon} alt='공유하기' className='h-6 w-6' />
+          <button onClick={handleShare} className='flex items-center md:hidden'>
+            <img
+              src={ShareIcon}
+              alt='공유하기'
+              className='h-[26px] w-[26px] items-center'
+            />
           </button>
 
           <button
