@@ -6,6 +6,7 @@ import MemberCard from '../components/MemberCard';
 import ReferenceSection from '../components/ReferenceSection';
 import FlowerIcon from '../assets/flower.svg?react';
 import {projects, FALLBACK_PROJECT} from '../data/projects-detail-data';
+import {projectInfo} from '../data/projectInfo';
 
 export default function ProjectDetail() {
   const {slug} = useParams();

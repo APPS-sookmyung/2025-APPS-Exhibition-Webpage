@@ -15,9 +15,10 @@ export default function ProjectDetailHero({project, links = []}) {
     const gens = Array.isArray(project.generation)
       ? project.generation.map((n) => `${n}기`)
       : [];
+    const tags = Array.isArray(project.tags) ? project.tags : [];
 
-    return [typeChip, ...gens];
-  }, [project.projectType, project.generation]);
+    return [typeChip, ...gens, ...tags];
+  }, [project.projectType, project.generation, project.tags]);
 
   const handleShare = async () => {
     const shareData = {
@@ -98,7 +99,9 @@ export default function ProjectDetailHero({project, links = []}) {
             <div className='flex flex-shrink-0 flex-wrap gap-2 sm:gap-4'>
               {links.map((item) => {
                 const isGithub =
-                  item.type === 'CLIENT' || item.type === 'SERVER';
+                  item.type === 'CLIENT' ||
+                  item.type === 'SERVER' ||
+                  item.type === 'SERVER & CLIENT';
                 const Icon = isGithub ? Github : Link;
                 const isEnabled = Boolean(item.url);
 
@@ -142,10 +145,11 @@ ProjectDetailHero.propTypes = {
     title: PropTypes.string,
     subtitle: PropTypes.string,
     content: PropTypes.string,
+    tags: PropTypes.arrayOf(PropTypes.string),
   }).isRequired,
   links: PropTypes.arrayOf(
     PropTypes.shape({
-      type: PropTypes.oneOf(['CLIENT', 'SERVER', 'LINK']),
+      type: PropTypes.oneOf(['CLIENT', 'SERVER', 'SERVER & CLIENT', 'WEB']),
       url: PropTypes.string,
     })
   ),

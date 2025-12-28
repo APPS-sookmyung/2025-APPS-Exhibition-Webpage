@@ -1,12 +1,14 @@
-import dummyThumbnail from '../assets/thumbnail/project-thumbnail.svg';
-import dummyPavicon from '../assets/pavicon/project-pavicon.svg';
-
 //팀 프로젝트 썸네일
 import chattonerThumbnail from '../assets/thumbnail/chattoner-thumbnail.png';
 import devsongThumbnail from '../assets/thumbnail/devsong-thumbnail.png';
+import emoryThumbnail from '../assets/thumbnail/emory-thumbnail.png';
+import dotdotdotThumbnail from '../assets/thumbnail/dotdotdot-thumbnail.png';
+
 //팀 프로젝트 파비콘
 import chattonerPavicon from '../assets/pavicon/chattoner-pavicon.png';
 import devsongPavicon from '../assets/pavicon/devsong-pavicon.png';
+import emoryPavicon from '../assets/pavicon/emory-pavicon.png';
+import dotdotdotPavicon from '../assets/pavicon/dotdotdot-pavicon.jpg';
 
 //개인 프로젝트 썸네일
 import bdayThumbnail from '../assets/thumbnail/b-day.png';
@@ -15,6 +17,12 @@ import hellogiraffeThumbnail from '../assets/thumbnail/hellogiraffe.png';
 import podorushThumbnail from '../assets/thumbnail/podorush.png';
 import starlistThumbnail from '../assets/thumbnail/starlist.png';
 import strecoThumbnail from '../assets/thumbnail/streco.png';
+import budgetpilotThumbnail from '../assets/thumbnail/budgetpilot.png';
+import commutimeThumbnail from '../assets/thumbnail/commutime.png';
+import pouchkeeperThumbnail from '../assets/thumbnail/pouchkeeper.png';
+import timetablemakerThumbnail from '../assets/thumbnail/timetablemaker.png';
+import ultsThumbnail from '../assets/thumbnail/ults.png';
+import clipThumbnail from '../assets/thumbnail/clip.png';
 
 //개인 프로젝트 파비콘
 import bdayPavicon from '../assets/pavicon/b-day.png';
@@ -23,6 +31,12 @@ import hellogiraffePavicon from '../assets/pavicon/hellogiraffe.png';
 import podorushPavicon from '../assets/pavicon/podorush.png';
 import starlistPavicon from '../assets/pavicon/starlist.png';
 import strecoPavicon from '../assets/pavicon/streco.png';
+import budgetpilotPavicon from '../assets/pavicon/budgetpilot.png';
+import commutimePavicon from '../assets/pavicon/commutime.png';
+import pouchkeeperPavicon from '../assets/pavicon/pouchkeeper.png';
+import timetablemakerPavicon from '../assets/pavicon/timetablemaker.png';
+import ultsPavicon from '../assets/pavicon/ults.png';
+import clipPavicon from '../assets/pavicon/clip.png';
 
 //아직 Emory 파비콘, 썸네일 없음
 //아직 Devsong, Chattoner 배포 링크 없음
@@ -69,8 +83,8 @@ export const projectInfo = [
     slug: 'EMORY',
     title: 'EMORY',
     type: 'team',
-    thumbnail: dummyThumbnail,
-    pavicon: dummyPavicon,
+    thumbnail: emoryThumbnail,
+    pavicon: emoryPavicon,
     description: '인터랙티브 감정 피드백 서비스, EMORY',
     members: [
       '11기 윤지원',
@@ -79,8 +93,30 @@ export const projectInfo = [
       '12기 김영교',
       '12기 엄다현',
       '12기 윤소영',
+      '디자이너 주수연',
+      '디자이너 소일전',
     ],
     link: 'https://apps-emory.netlify.app/',
+  },
+  {
+    id: 'dotdotdot',
+    slug: 'dotdotdot',
+    title: 'dotdotdot',
+    type: 'team',
+    thumbnail: dotdotdotThumbnail,
+    pavicon: dotdotdotPavicon,
+    description:
+      'APPS x 인천문화재단 협업 2025 문화예술특화거리 점점점 공동 프로젝트 웹사이트',
+    members: [
+      '11기 윤지원',
+      '11기 백수민',
+      '11기 하지민',
+      '12기 김영교',
+      '12기 임유진',
+      '디자이너 김지윤',
+      '디자이너 이다솔',
+    ],
+    link: 'https://www.2025dotdotdot.com/',
   },
 
   //   신입부원 프로젝트
@@ -100,8 +136,8 @@ export const projectInfo = [
     slug: 'budgetpilot',
     title: 'BudgetPilot',
     type: 'rookie',
-    thumbnail: dummyThumbnail,
-    pavicon: dummyPavicon,
+    thumbnail: budgetpilotThumbnail,
+    pavicon: budgetpilotPavicon,
     description:
       '여행 정보와, 취향, 예산 비율을 바탕으로 여행 스팟을 자동 추천해 한번에 확인할 수 있는 개인 맞춤 여행 리포트 budgetpilot',
     members: ['12기 김도연'],
@@ -112,8 +148,8 @@ export const projectInfo = [
     slug: 'clip',
     title: 'Clip',
     type: 'rookie',
-    thumbnail: dummyThumbnail,
-    pavicon: dummyPavicon,
+    thumbnail: clipThumbnail,
+    pavicon: clipPavicon,
     description:
       '흩어진 웹 콘텐츠를 카테고리로 분류하고 스크랩하여 만드는 나만의 디지털 스크랩 룸 Clip',
     members: ['12기 정지은'],
@@ -124,8 +160,8 @@ export const projectInfo = [
     slug: 'commutime',
     title: 'CommuTime',
     type: 'rookie',
-    thumbnail: dummyThumbnail,
-    pavicon: dummyPavicon,
+    thumbnail: commutimeThumbnail,
+    pavicon: commutimePavicon,
     description: '통학•통근 자기계발 서비스 CommuTime',
     members: ['12기 김영교'],
     link: 'https://commutime.vercel.app/',
@@ -170,8 +206,8 @@ export const projectInfo = [
     slug: 'pouch',
     title: 'Pouchkeeper',
     type: 'rookie',
-    thumbnail: dummyThumbnail,
-    pavicon: dummyPavicon,
+    thumbnail: pouchkeeperThumbnail,
+    pavicon: pouchkeeperPavicon,
     description:
       '내 모든 뷰티 아이템을 한 곳에 정리해주는 신개념 온라인 파우치',
     members: ['12기 배송이'],
@@ -201,12 +237,24 @@ export const projectInfo = [
     link: 'https://2025-streco.vercel.app/',
   },
   {
+    id: 'timetablemaker',
+    slug: 'timetablemaker',
+    title: '시간표 메이커',
+    type: 'rookie',
+    thumbnail: timetablemakerThumbnail,
+    pavicon: timetablemakerPavicon,
+    description:
+      '사용자의 기호에 맞는 맞춤형 시간표를 자동으로 생성하는 대학생 맞춤 시간표 메이커 서비스',
+    members: ['12기 이은채'],
+    link: 'https://echae0111.github.io/timetable-maker/',
+  },
+  {
     id: 'ults',
     slug: 'ults',
     title: 'ULTS - Unsent Letters, To the Star',
     type: 'rookie',
-    thumbnail: dummyThumbnail,
-    pavicon: dummyPavicon,
+    thumbnail: ultsThumbnail,
+    pavicon: ultsPavicon,
     description: '전하지 못한 마음을 밤하늘의 별로 띄워 보내는 공간, ULTS',
     members: ['12기 윤소영'],
     link: 'https://ults.netlify.app',

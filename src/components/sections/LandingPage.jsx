@@ -59,10 +59,10 @@ export default function LandingPage() {
 
           <div className='mt-20 mb-20 space-y-4 md:mt-40'>
             <p className='font-pretendard text-1xl leading-tight font-semibold tracking-wide md:text-3xl lg:text-4xl'>
-              블라블라 앱스 카피
+              2025 APPS 전시회에 오신 것을 환영합니다!
             </p>
             <p className='font-pretendard tracking-wides text-1xl font-semibold text-white md:text-3xl lg:text-4xl'>
-              여기는 더미 텍스트가 들어갑니다.
+              부원들의 열정과 노력이 담긴 다양한 프로젝트들을 만나보세요.
             </p>
           </div>
 
