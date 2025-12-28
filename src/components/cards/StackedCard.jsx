@@ -10,18 +10,18 @@ export default function StackedCard({project}) {
         src={project.thumbnail}
         alt={project.title}
         draggable={false}
-        className='h-45 w-full rounded object-cover outline-2 outline-neutral-200 md:h-61'
+        className='aspect-video w-full rounded object-cover outline-2 outline-neutral-200'
       />
 
       {/* 텍스트 - 제목, 설명, 멤버*/}
       <div className='mt-1 flex cursor-default flex-col'>
-        <p className='border-b border-[#D7D7D7] py-1.5 text-xl leading-7 text-[#2E61E0] md:py-2.5 md:text-2xl md:font-bold'>
+        <p className='border-b border-[#D7D7D7] py-1.5 text-xl leading-7 font-semibold text-[#2E61E0] md:py-2.5 md:text-2xl md:font-bold'>
           {project.title}
         </p>
-        <p className='mb-2 line-clamp-3 pt-2.5 pb-0.5 text-sm leading-4 font-normal md:line-clamp-4 lg:line-clamp-5'>
+        <p className='mb-2 line-clamp-3 pt-2.5 pb-0.5 text-sm leading-4 font-medium md:line-clamp-4 lg:line-clamp-5'>
           {project.description}
         </p>
-        <p className='flex flex-wrap gap-x-2 text-xs leading-4 font-normal text-[#8C8C8C] md:font-semibold'>
+        <p className='flex flex-wrap gap-x-2 text-xs leading-4 font-medium text-[#8C8C8C] md:font-semibold'>
           {project.members.map((member) => (
             <span key={member}>{member}</span>
           ))}
