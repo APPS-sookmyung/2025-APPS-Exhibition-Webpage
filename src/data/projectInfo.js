@@ -4,9 +4,12 @@ import dummyPavicon from '../assets/pavicon/project-pavicon.svg';
 //팀 프로젝트 썸네일
 import chattonerThumbnail from '../assets/thumbnail/chattoner-thumbnail.png';
 import devsongThumbnail from '../assets/thumbnail/devsong-thumbnail.png';
+import emoryThumbnail from '../assets/thumbnail/emory-thumbnail.png';
+
 //팀 프로젝트 파비콘
 import chattonerPavicon from '../assets/pavicon/chattoner-pavicon.png';
 import devsongPavicon from '../assets/pavicon/devsong-pavicon.png';
+import emoryPavicon from '../assets/pavicon/emory-pavicon.png';
 
 //개인 프로젝트 썸네일
 import bdayThumbnail from '../assets/thumbnail/b-day.png';
@@ -69,8 +72,8 @@ export const projectInfo = [
     slug: 'EMORY',
     title: 'EMORY',
     type: 'team',
-    thumbnail: dummyThumbnail,
-    pavicon: dummyPavicon,
+    thumbnail: emoryThumbnail,
+    pavicon: emoryPavicon,
     description: '인터랙티브 감정 피드백 서비스, EMORY',
     members: [
       '11기 윤지원',
