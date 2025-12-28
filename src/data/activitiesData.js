@@ -3,7 +3,7 @@ import basicStudy from '../assets/activities/basic-study.svg';
 import generalStudy from '../assets/activities/general-study.svg';
 import devtalk from '../assets/activities/devtalk.svg';
 import networking from '../assets/activities/networking.svg';
-import project from '../assets/activities/project.svg';
+import project from '../assets/activities/project.jpg';
 
 export const activitiesData = [
   {
