@@ -26,7 +26,7 @@ const CtaSection = () => {
           <div className='flex gap-6'>
             {/* 인스타그램 아이콘 */}
             <a
-              href='#'
+              href='https://www.instagram.com/sookmyung_apps/'
               target='_blank'
               rel='noopener noreferrer'
               className='transition-opacity hover:opacity-80'>
@@ -38,7 +38,7 @@ const CtaSection = () => {
             </a>
             {/* 링크드인 아이콘 */}
             <a
-              href='#'
+              href='https://kr.linkedin.com/company/sookmyung-apps'
               target='_blank'
               rel='noopener noreferrer'
               className='transition-opacity hover:opacity-80'>
@@ -56,7 +56,7 @@ const CtaSection = () => {
               LINKED FOR
             </span>
             <span className='text-xl font-bold tracking-wider md:text-2xl'>
-              @SOOKMYUNGAPPS
+              @SOOKMYUNG_APPS
             </span>
           </div>
         </div>
