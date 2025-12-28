@@ -52,7 +52,7 @@ const CtaSection = () => {
             </a>
             {/* 링크드인 */}
             <a
-              href='https://www.linkedin.com/company/sookmyung-apps/?viewAsMember=true'
+              href='https://kr.linkedin.com/company/sookmyung-apps'
               target='_blank'
               rel='noopener noreferrer'
               className='transition-opacity hover:opacity-80'>
