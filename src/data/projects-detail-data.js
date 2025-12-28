@@ -5,7 +5,8 @@ import KimDoyeonImg from '../assets/members/KimDoyeon.jpg';
 import EomDahyunImg from '../assets/members/EomDahyeon.jpg';
 import ShinJungeunImg from '../assets/members/ShinJeongeun.jpg';
 import KimYoungkyoImg from '../assets/members/KimYoungkyo.png';
-import SoIljeonImg from '../assets/members/SoIljeon.jpg';
+import soiljeonImg from '../assets/members/soiljeon.jpg';
+import JooSuyeonImg from '../assets/members/JooSuyeon.jpg';
 
 // ============================================
 // 2. Devsong Team Imports
@@ -35,11 +36,11 @@ import LimYujinImg from '../assets/members/LimYujin.jpeg';
 export const projects = {
   EMORY: {
     projectType: 'TEAM',
-    generation: [14],
+    generation: [11, 12],
     title: 'EMORY',
     subtitle: '인터랙티브 감정 피드백 서비스, EMORY',
     content:
-      'EMORY : 감정을 쏟아낼 곳이 없어 답답하셨나요? 이제 언제든지 편하게 털어놓을 수 있는 AI 감정 동반자를 경험해보세요! 나의 일정을 EMORY가 불러와 감정 기록을 남기고 싶은 일정에 대해 에이전트와 대화합니다. 사용자의 말투와 감정 표현 습관을 학습하여 당신에게 꼭 맞는 공감 코멘트를 제공해요. 기록만 쌓이던 기존 감정일기와는 전혀 다른 경험! 지금 바로 EMORY와 함께 감정 관리의 새로운 여정을 시작해보세요!',
+      'EMOTION & MEMORY\n\n감정을 쏟아낼 곳이 없어 답답하셨나요? 이제 언제든지 편하게 털어놓을 수 있는 AI 감정 동반자를 경험해보세요! 나의 일정을 EMORY가 불러와 감정 기록을 남기고 싶은 일정에 대해 에이전트와 대화합니다. 사용자의 말투와 감정 표현 습관을 학습하여 당신에게 꼭 맞는 공감 코멘트를 제공해요. 기록만 쌓이던 기존 감정일기와는 전혀 다른 경험! 지금 바로 EMORY와 함께 감정 관리의 새로운 여정을 시작해보세요!',
     feature: [
       '🔅 AI 감정 대화\n사용자가 음성 텍스트로 감정을 털어놓으면 AI가 공감하며 대화, 감정 진위와 톤 분석',
       '🔅 AI 일기 자동 생성\n대화 내용을 바탕으로 하루를 정리한 감정 일기 자동 생성',
@@ -57,6 +58,7 @@ export const projects = {
       'React',
       'TypeScript',
     ],
+    tags: ['2025 SW창업경진대회 대상'],
     links: [
       {
         type: 'CLIENT',
@@ -113,17 +115,24 @@ export const projects = {
       },
       {
         name: '소일전',
-        role: ['DESIGNER'],
+        role: ['디자이너'],
         description:
-          '디자인 경험은 여러번 해봤는데 이렇게 큰 프로젝트 디자인하는 거 처음이라 많이 서툴렀는데 팀원들과 피드백 주고받고 해서 덕분에 좋은 디자인 틀을 만들었습니다. 그리고 온라인 팀워크를 통해 더 자유롭게 소통과 작업을 이루어져 좋은 결과를 얻어서 좋은 경험이었습니다! 감사합니다~☺️',
-        profileImage: SoIljeonImg,
+          '디자인 경험은 여러번 해봤는데 이렇게 큰 프로젝트 디자인하는 거 처음이라 많이 서투렀는데 팀원들과 피드백 주고받고 해서 덕분에 좋은 디자인 틀을 만들었습니다. 그리고 온라인 팀워크를 통해 더 자유롭게 소통과 작업을 이루어져 좋은 결과를 얻어서 좋은 경험이었습니다! 감사합니다~',
+        profileImage: soiljeonImg,
+      },
+      {
+        name: '주수연',
+        role: ['디자이너'],
+        description:
+          '실제 서비스로 구현되어 사람들에게 다가간다는 매력에 이끌려 디자인을 전공하게 되었는데, 그 첫번째 결과물이 된 것 같아 기쁜 마음입니다. 온라인으로 진행되었다고 믿기 어려울정도로 소통이 잘 되었던 팀원분들 덕분에 좋은 프로젝트로 마무리된 것 같아 뿌듯합니다. 감사합니다.',
+        profileImage: JooSuyeonImg,
       },
     ],
   },
 
   Devsong: {
     projectType: 'TEAM',
-    generation: [14],
+    generation: [11, 12],
     title: 'Devsong',
     subtitle: '숙명여대 개발자들을 위한 커뮤니티',
     content:
@@ -181,12 +190,19 @@ export const projects = {
           '짧은 기간 동안 APPS분들과 협업해볼 수 있어서 좋았습니다. 작은 컴포넌트부터 큰 화면까지 모두 디자인하면서 스스로 많은 것을 얻어갈 수 있는 시간이였던 것 같습니다. 최종적으로 제가 한 디자인이 개발까지 된 모습을 볼 수 있어서 뿌듯한 시간이 된 것 같습니다!',
         profileImage: KimDoyeon2Img,
       },
+      {
+        name: '김도연',
+        role: ['디자이너'],
+        description:
+          '짧은 기간 동안 APPS분들과 협업해볼 수 있어서 좋았습니다. 작은 컴포넌트부터 큰 화면까지 모두 디자인하면서 스스로 많은 것을 얻어갈 수 있는 시간이였던 것 같습니다. 최종적으로 제가 한 디자인이 개발까지 된 모습을 볼 수 있어서 뿌듯한 시간이 된 것 같습니다!',
+        profileImage: soiljeonImg,
+      },
     ],
   },
 
   ChatToner: {
     projectType: 'TEAM',
-    generation: [14],
+    generation: [11, 12],
     title: 'ChatToner',
     subtitle:
       '기업의 비용과 시간을 아끼는, 최적의 신입사원 온보딩 툴 ChatToner',
@@ -207,6 +223,7 @@ export const projects = {
       'LangChain',
       'OpenAI',
     ],
+    tags: ['2025 오픈소스개발자대회 우수작 선정'],
     links: [
       {
         type: 'SERVER & CLIENT',
@@ -616,6 +633,78 @@ export const projects = {
         role: '프론트엔드',
         description: `개인 프로젝트는 사용자가 편지를 작성하고, 시간이 흐름에 따라 변화하는 화면을 보며 하나의 감정적 서사를 느낄 수 있도록 설계했습니다. 모든 과정을 단독으로 진행해야 했기 때문에 어려움이 많았지만, 문제를 스스로 해결해 나가며 서비스를 완성했다는 점에서 큰 성취감을 느꼈습니다. 감정이라는 추상적인 요소를 시각적으로 어떻게 표현할지 깊이 고민하며, 프론트엔드 개발자로서 성장할 수 있는 경험이었습니다💕`,
         profileImage: YoonSoyoungImg,
+      },
+    ],
+  },
+
+  dotdotdot: {
+    projectType: 'TEAM',
+    generation: [11, 12],
+    title: 'dotdotdot',
+    subtitle:
+      'APPS x 인천문화재단 협업 2025 문화예술특화거리 점점점 공동 프로젝트 웹사이트',
+    content:
+      '예술가들의 작업실이 정겨운 시골 마을로 변신합니다! 미추홀구, 중구, 동구 세 개 군구에 있는 10개의 문화공간에서 펼쳐지는 특별한 문화 체험에 여러분을 초대합니다.',
+    feature: [
+      '🎨 10개 문화공간 소개\n인천 미추홀구, 중구, 동구에 위치한 10개의 문화공간 정보를 제공합니다.',
+      '🎨 전시 정보 안내\n2025 문화예술특화거리 점점점 전시의 상세 정보를 확인할 수 있습니다.',
+      '🎨 Google Maps 연동\n각 문화공간의 위치를 지도에서 확인할 수 있습니다.',
+    ],
+    techStack: ['React', 'Tailwind CSS', 'Google Maps API'],
+    links: [
+      {
+        type: 'CLIENT',
+        url: 'https://github.com/APPS-sookmyung/2025-INCHEON-SITE.git',
+      },
+      {type: 'WEB', url: 'https://www.2025dotdotdot.com/'},
+    ],
+    members: [
+      {
+        name: '윤지원',
+        role: 'PM',
+        description:
+          '점점점 프로젝트 내 여러 창작공간이 잘 드러나도록 전체 구조와 흐름을 기획하고, 이를 재단 관계자분들의 요청 컨셉과 조율해 나가는 과정이 매우 뜻깊었습니다! 디자이너분들과 프론트엔드 개발자분들이 짧은 시간 안에 높은 완성도로 구현한 점이 너무 대단했습니다👏',
+        profileImage: YoonJeewonImg,
+      },
+      {
+        name: '백수민',
+        role: ['PM', '프론트엔드'],
+        description:
+          '인천문화재단에서 몇 년째 주관하고 있는 점점점 행사의 2025 전시 사이트 제작에 참여할 수 있어 정말 영광이었습니다 🙇‍♀️ 결과물은 너무 예쁘지만.. 저에게는 사실 좀 어려운 프로젝트였어요. 정적인 사이트라 복잡한 상태 관리나 로직 구현은 많지 않았지만, SVG 요소가 매우 많았고 반응형 구현도 까다로워서 디자이너분의 예쁜 디자인을 그대로 재현해 내는 과정이 쉽지 않았습니다 😅 그만큼 디테일에 더 신경 써야 했던 프로젝트였던 것 같아요. 하지만 덕분에 Tailwind CSS를 다루는 실력이 짧은 시간 안에 많이 늘었고, 그동안 잘 알지 못했던 다양한 CSS 속성들도 알게 돼서 좋았어요. 뿐만 아니라 Google Maps API 연동부터 GA4 설정까지 직접 경험해 볼 수 있어 재미있고 의미 있는 시간이었습니다 😆 사이트 공개 일정이 중간고사 기간과 겹쳐 많이 촉박했음에도, 모두가 포기하지 않고 끝까지 개발해 준 덕분에 완성도 있는 결과물을 낼 수 있었어요. 점점점 팀원분들 모두 정말 고생 많으셨고 함께 협업할 수 있어 좋았습니다. 모두 고마워요 💛',
+        profileImage: BaekSuminImg,
+      },
+      {
+        name: '하지민',
+        role: ['PM', '프론트엔드'],
+        description:
+          '인천문화재단 프로젝트는 실력 있는 디자이너와 처음으로 협업하며, 예쁜 디자인을 실제 화면으로 구현해보는 경험을 할 수 있었던 프로젝트였습니다. 그만큼 기대도 컸고, 동시에 디자인 퀄리티를 따라가는 것이 쉽지 않다는 점을 체감하기도 했습니다.\n특히 CSS에서는 디테일을 맞추기 위해 구조와 스타일을 끊임없이 고민해야 했고, 이렇게까지 깊게 파본 경험이 있었나 싶을 정도로 어려웠지만 그만큼 배운 것도 많았습니다. 어떻게든 디자인을 구현해내고 싶어서 관련 자료를 찾아보고 시도하는 과정 자체가 재미있게 느껴졌던 점도 기억에 남습니다.\n일정이 촉박해 당시에는 꽤 힘들었지만 결국 마감 안에 결과물을 완성했고, 이 경험 덕분에 이후 급한 상황에서도 "그래도 어떻게든 해낼 수 있다"는 마음가짐을 갖게 되었습니다.',
+        profileImage: HaJiminImg,
+      },
+      {
+        name: '김영교',
+        role: '프론트엔드',
+        description:
+          '2025 인천문화재단의 점점점 전시 사이트에 참여할 수 있어서 정말 큰 영광이었습니다. 순탄하게만은 흘러가진 않았지만 그 과정 속에서 보고 배울 수 있는 게 많았습니다. 디자이너분들께서 아름답게 디자인해주신 페이지를 구현해 나가는 과정이 즐거웠고, 모르는 부분이 많았지만 선배님들 덕분에 많은 것을 배울 수 있어 더욱 의미 있는 시간이었습니다. 🙇🏻‍♀️',
+        profileImage: KimYoungkyoImg,
+      },
+      {
+        name: '임유진',
+        role: '프론트엔드',
+        description:
+          '처음 참여하게 된 팀 프로젝트였는데 생각보다 규모가 커서 기억에 남네요. 컨셉 조율을 하는 것도 흥미로웠어요. 개발을 하면서 본격적으로 해가 뜰 때까지 컴퓨터 앞에 앉아 있던 건 처음이었는데, 당시에는 너무 힘들었지만 지금 생각해 보니 정말 좋은 경험이었던 것 같아요!  선배분들 코드 보면서도 많은 걸 배울 수 있었고 그렇게 또 한 단계 성장했네요ㅎㅎ 다들 수고하셨습니다~!',
+        profileImage: LimYujinImg,
+      },
+      {
+        name: '김지윤',
+        role: '디자이너',
+        description: '(소개글)',
+        profileImage: '',
+      },
+      {
+        name: '이다솔',
+        role: '디자이너',
+        description: '(소개글)',
+        profileImage: '',
       },
     ],
   },

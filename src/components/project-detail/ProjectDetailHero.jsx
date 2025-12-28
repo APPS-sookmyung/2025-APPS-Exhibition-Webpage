@@ -15,9 +15,10 @@ export default function ProjectDetailHero({project, links = []}) {
     const gens = Array.isArray(project.generation)
       ? project.generation.map((n) => `${n}기`)
       : [];
+    const tags = Array.isArray(project.tags) ? project.tags : [];
 
-    return [typeChip, ...gens];
-  }, [project.projectType, project.generation]);
+    return [typeChip, ...gens, ...tags];
+  }, [project.projectType, project.generation, project.tags]);
 
   const handleShare = async () => {
     const shareData = {
@@ -144,6 +145,7 @@ ProjectDetailHero.propTypes = {
     title: PropTypes.string,
     subtitle: PropTypes.string,
     content: PropTypes.string,
+    tags: PropTypes.arrayOf(PropTypes.string),
   }).isRequired,
   links: PropTypes.arrayOf(
     PropTypes.shape({

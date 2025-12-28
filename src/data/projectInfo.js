@@ -1,15 +1,14 @@
-import dummyThumbnail from '../assets/thumbnail/project-thumbnail.svg';
-import dummyPavicon from '../assets/pavicon/project-pavicon.svg';
-
 //팀 프로젝트 썸네일
 import chattonerThumbnail from '../assets/thumbnail/chattoner-thumbnail.png';
 import devsongThumbnail from '../assets/thumbnail/devsong-thumbnail.png';
 import emoryThumbnail from '../assets/thumbnail/emory-thumbnail.png';
+import dotdotdotThumbnail from '../assets/thumbnail/dotdotdot-thumbnail.png';
 
 //팀 프로젝트 파비콘
 import chattonerPavicon from '../assets/pavicon/chattoner-pavicon.png';
 import devsongPavicon from '../assets/pavicon/devsong-pavicon.png';
 import emoryPavicon from '../assets/pavicon/emory-pavicon.png';
+import dotdotdotPavicon from '../assets/pavicon/dotdotdot-pavicon.jpg';
 
 //개인 프로젝트 썸네일
 import bdayThumbnail from '../assets/thumbnail/b-day.png';
@@ -94,8 +93,30 @@ export const projectInfo = [
       '12기 김영교',
       '12기 엄다현',
       '12기 윤소영',
+      '디자이너 주수연',
+      '디자이너 소일전',
     ],
     link: 'https://apps-emory.netlify.app/',
+  },
+  {
+    id: 'dotdotdot',
+    slug: 'dotdotdot',
+    title: 'dotdotdot',
+    type: 'team',
+    thumbnail: dotdotdotThumbnail,
+    pavicon: dotdotdotPavicon,
+    description:
+      'APPS x 인천문화재단 협업 2025 문화예술특화거리 점점점 공동 프로젝트 웹사이트',
+    members: [
+      '11기 윤지원',
+      '11기 백수민',
+      '11기 하지민',
+      '12기 김영교',
+      '12기 임유진',
+      '디자이너 김지윤',
+      '디자이너 이다솔',
+    ],
+    link: 'https://www.2025dotdotdot.com/',
   },
 
   //   신입부원 프로젝트
