@@ -68,10 +68,10 @@ export const projects = {
     ],
     members: [
       {
-        name: '윤지원',
-        role: ['AI', '프론트엔드'],
+        name: '김영교',
+        role: ['PM', '프론트엔드'],
         description: '(소개글)',
-        profileImage: YoonJeewonImg,
+        profileImage: KimYoungkyoImg,
       },
       {
         name: '김도연',
@@ -92,16 +92,16 @@ export const projects = {
         profileImage: ShinJungeunImg,
       },
       {
+        name: '윤지원',
+        role: ['프론트엔드'],
+        description: '(소개글)',
+        profileImage: YoonJeewonImg,
+      },
+      {
         name: '윤소영',
         role: '프론트엔드',
         description: '(소개글)',
         profileImage: YoonSoyoungImg,
-      },
-      {
-        name: '김영교',
-        role: '프론트엔드',
-        description: '(소개글)',
-        profileImage: KimYoungkyoImg,
       },
     ],
   },
