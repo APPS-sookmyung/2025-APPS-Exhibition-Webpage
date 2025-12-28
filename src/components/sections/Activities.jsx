@@ -40,7 +40,7 @@ export default function Activities() {
           APPS에서 정기적으로 진행하는 다양한 활동들이 있어요
         </p>
       </div>
-      <div className='text-primary absolute top-24 text-[72px] font-bold select-none md:top-[120px] md:text-[150px]'>
+      <div className='absolute top-24 text-[72px] font-bold text-white/10 select-none md:top-[120px] md:text-[150px]'>
         ACTIVITIES
       </div>
 
@@ -63,7 +63,7 @@ export default function Activities() {
         </div>
       </div>
 
-      <div>
+      <div className='relative h-[282px]'>
         <img
           src={UnionIcon}
           className='absolute z-20 mx-37 -mt-10 scale-60 sm:scale-90 md:mx-53 md:-mt-12 md:scale-80'
@@ -71,10 +71,10 @@ export default function Activities() {
       </div>
 
       <div>
-        <img src={SimpleIcon} className='absolute z-10 -mt-30 ml-250' />
+        <img src={SimpleIcon} className='absolute z-10 -mt-90 ml-250' />
       </div>
 
-      <div className='relative mt-15 h-auto w-full overflow-visible md:h-82.5'>
+      <div className='relative mt-15 h-[100px] w-full overflow-visible sm:h-[150px] md:h-82.5'>
         <img
           src={Framec}
           className='absolute top-5 left-0 z-20 w-full md:top-45'
