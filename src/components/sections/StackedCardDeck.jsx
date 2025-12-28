@@ -60,7 +60,12 @@ export default function StackedCardDeck({projects, index}) {
                 zIndex,
               }}>
               <div
-                className={`pointer-events-auto relative ${overlayRadius} overflow-hidden`}>
+                className={`pointer-events-auto relative ${overlayRadius} overflow-hidden`}
+                style={{
+                  isolation: 'isolate',
+                  transform: 'translateZ(0)',
+                  WebkitMaskImage: '-webkit-radial-gradient(white, black)', // 사파리 둥근 모서리 버그 픽스
+                }}>
                 <StackedCard project={projects[targetIndex]} />
 
                 <div

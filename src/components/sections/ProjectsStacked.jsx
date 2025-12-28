@@ -1,11 +1,13 @@
-import {useState, useEffect} from 'react';
+import {useState, useEffect, useRef} from 'react';
 import PaviconCard from '../cards/PaviconCard';
 import {SlArrowLeft, SlArrowRight} from 'react-icons/sl';
 import StackedCardDeck from './StackedCardDeck';
 import {projectInfo as projects} from '../../data/projectInfo';
 
 const ProjectsStacked = () => {
+  const scrollRef = useRef(null);
   const [selectedIndex, setSelectedIndex] = useState(0);
+
   const handlePrev = () => {
     setSelectedIndex((prev) => (prev - 1 + projects.length) % projects.length);
   };
@@ -13,6 +15,7 @@ const ProjectsStacked = () => {
     setSelectedIndex((prev) => (prev + 1) % projects.length);
   };
 
+  // 키 입력으로 카드 넘기기
   useEffect(() => {
     const handleKeyPress = (e) => {
       if (e.key === 'ArrowRight') {
@@ -21,10 +24,29 @@ const ProjectsStacked = () => {
         handlePrev();
       }
     };
-
     window.addEventListener('keydown', handleKeyPress);
     return () => {
       window.removeEventListener('keydown', handleKeyPress);
+    };
+  }, []);
+
+  // 가로 스크롤 추가
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+
+    const onWheel = (e) => {
+      if (e.deltaY === 0) return;
+      e.preventDefault();
+      el.scrollTo({
+        left: el.scrollLeft + e.deltaY, // 가로 위치 + 세로 이동량
+        behavior: 'auto',
+      });
+    };
+    el.addEventListener('wheel', onWheel, {passive: false});
+
+    return () => {
+      el.removeEventListener('wheel', onWheel);
     };
   }, []);
 
@@ -57,7 +79,9 @@ const ProjectsStacked = () => {
 
       {/* 파비콘 섹션 */}
       <div className='flex w-full justify-center overflow-hidden'>
-        <div className='horizontal-scroll flex w-[80%] items-center overflow-x-auto md:h-25 md:w-[70%] lg:w-[60%]'>
+        <div
+          ref={scrollRef}
+          className='horizontal-scroll flex w-[80%] items-center overflow-x-auto md:h-25 md:w-[70%] lg:w-[60%]'>
           <div className='flex flex-nowrap items-center'>
             {projects.map((project, index) => (
               <PaviconCard

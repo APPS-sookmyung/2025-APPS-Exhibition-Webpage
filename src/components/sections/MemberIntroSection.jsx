@@ -171,7 +171,7 @@ const MemberIntroSection = () => {
               transform: 'translateY(-100%)',
             }}>
             <div className='animate-fade-in-up pointer-events-auto relative rounded-3xl bg-white p-5 text-center shadow-2xl'>
-              <p className='text-100 text-lg leading-relaxed font-medium break-keep'>
+              <p className='text-100 text-sm leading-relaxed font-medium break-keep'>
                 &quot;{selectedMember.message}&quot;
               </p>
             </div>

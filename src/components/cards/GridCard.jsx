@@ -39,9 +39,6 @@ export default function GridCard({project, index}) {
           <p className='line-clamp-1 text-[10px] leading-5 font-semibold md:text-sm'>
             {project.title}
           </p>
-          <p className='rounded-full bg-blue-100 px-3 text-xs text-[10px] leading-4 font-bold md:px-5 md:py-1.25'>
-            {project.platform}
-          </p>
         </div>
 
         {/* 콘텐츠 */}
