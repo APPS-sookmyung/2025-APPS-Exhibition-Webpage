@@ -51,7 +51,7 @@ export default function Header() {
           APPS
         </span>
       </div>
-      <div className='absolute left-1/2 hidden -translate-x-[70%] text-[20px] font-semibold tracking-[-0.025rem] text-[#99B5FD] lg:block'>
+      <div className='absolute left-1/2 hidden -translate-x-[70%] text-[20px] font-semibold tracking-[-0.025rem] text-[#99B5FD] min-[1200px]:block'>
         <span>2025 ONLINE EXHIBITION</span>
       </div>
       <div className='font-pretendard flex items-center gap-2 font-medium text-[#FFFFFF] md:gap-3.5 md:font-semibold'>
