@@ -5,6 +5,7 @@ import KimDoyeonImg from '../assets/members/KimDoyeon.jpg';
 import EomDahyunImg from '../assets/members/EomDahyeon.jpg';
 import ShinJungeunImg from '../assets/members/ShinJeongeun.jpg';
 import KimYoungkyoImg from '../assets/members/KimYoungkyo.png';
+import SoIljeonImg from '../assets/members/SoIljeon.jpg';
 
 // ============================================
 // 2. Devsong Team Imports
@@ -12,6 +13,7 @@ import BangJiheeImg from '../assets/members/BangJihee.jpg';
 import BaekSuminImg from '../assets/members/BaekSumin.jpeg';
 import WooChaeaImg from '../assets/members/WooChaea.jpg';
 import LeeEunchaeImg from '../assets/members/LeeEunchae.jpg';
+import KimDoyeon2Img from '../assets/members/KimDoyeon2.jpg';
 
 // ============================================
 // 3. ChatToner Team Imports
@@ -109,6 +111,13 @@ export const projects = {
           '처음으로 React 프론트를 맡아 개발을 해봤는데요! 이전에는 프론트엔드를 기능 구현 중심으로만 생각했는데 실제로 작업해 보니 디자인과 화면 구성 자체가 서비스의 인상을 크게 좌우한다는 점을 느꼈습니다..! 특히 창업 관점에서 볼 때 작은 UI 요소나 사용 흐름에 따라 사용자의 편의성이 달라졌고, 이를 팀원들과  함께 고민하며 설계하는 과정이 너무 흥미로웠습니다!! 결국 2025 SW창업경진대회 대상을 받아 더욱 뿌듯한 경험이었어요🥰',
         profileImage: YoonJeewonImg,
       },
+      {
+        name: '소일전',
+        role: ['DESIGNER'],
+        description:
+          '디자인 경험은 여러번 해봤는데 이렇게 큰 프로젝트 디자인하는 거 처음이라 많이 서툴렀는데 팀원들과 피드백 주고받고 해서 덕분에 좋은 디자인 틀을 만들었습니다. 그리고 온라인 팀워크를 통해 더 자유롭게 소통과 작업을 이루어져 좋은 결과를 얻어서 좋은 경험이었습니다! 감사합니다~☺️',
+        profileImage: SoIljeonImg,
+      },
     ],
   },
 
@@ -164,6 +173,13 @@ export const projects = {
         description:
           '이번 프로젝트를 통해 필요한 기능과 사이트 디자인 등 여러 요소를 직접 고민하며 개발을 진행할 수 있어 재밌었습니다! 평소에는 단순히 사용자의 입장에서 지나쳤던 부분들도 이번에는 개발자의 시선으로 구조와 흐름을 함께 고려하며 설계하는 과정에서 개발자로써 성장할 수 있는 기회가 된 것 같습니다. 팀원들과 함께 어떤 방향이 더 나은 프로젝트를 만들 수 있을까 고민하던 경험도 모두 정말 뜻깊은 경험이었습니다 힘든적도 많았지만 팀원들 덕분에 프로젝트를 무사히 마무리하게 되서 너무 기뻐요 고맙습니다!!❤️',
         profileImage: LeeEunchaeImg,
+      },
+      {
+        name: '김도연',
+        role: ['DESIGNER'],
+        description:
+          '짧은 기간 동안 APPS분들과 협업해볼 수 있어서 좋았습니다. 작은 컴포넌트부터 큰 화면까지 모두 디자인하면서 스스로 많은 것을 얻어갈 수 있는 시간이였던 것 같습니다. 최종적으로 제가 한 디자인이 개발까지 된 모습을 볼 수 있어서 뿌듯한 시간이 된 것 같습니다!',
+        profileImage: KimDoyeon2Img,
       },
     ],
   },
