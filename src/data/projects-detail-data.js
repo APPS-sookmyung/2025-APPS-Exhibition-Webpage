@@ -5,7 +5,7 @@ import KimDoyeonImg from '../assets/members/KimDoyeon.jpg';
 import EomDahyunImg from '../assets/members/EomDahyeon.jpg';
 import ShinJungeunImg from '../assets/members/ShinJeongeun.jpg';
 import KimYoungkyoImg from '../assets/members/KimYoungkyo.png';
-import soiljeonImg from '../assets/members/soiljeon.jpg';
+import soiljeonImg from '../assets/members/SoIljeon.jpg';
 import JooSuyeonImg from '../assets/members/JooSuyeon.jpg';
 import emory from '../assets/gif/emory.gif';
 
