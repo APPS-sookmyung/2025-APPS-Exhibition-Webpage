@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import AppsIcon from '../../assets/header/appsIcon.svg';
 import TreeIcon from '../../assets/header/tree.svg';
+import ShareIcon from '../../assets/project-detail/share.svg';
 
 export default function Header() {
   const [showShareMenu, setShowShareMenu] = useState(false);
@@ -55,9 +56,13 @@ export default function Header() {
       </div>
       <div className='font-pretendard flex items-center gap-2 font-medium text-[#FFFFFF] md:gap-3.5 md:font-semibold'>
         <div className='relative'>
+          <button onClick={handleShare} className='md:hidden'>
+            <img src={ShareIcon} alt='공유하기' className='h-6 w-6' />
+          </button>
+
           <button
             onClick={handleShare}
-            className='rounded-full border border-white px-3 py-1 text-xs transition-colors hover:bg-white/10 md:px-5 md:py-1.5 md:text-sm'>
+            className='hidden rounded-full border border-white px-3 py-1 text-xs transition-colors hover:bg-white/10 md:block md:px-5 md:py-1.5 md:text-sm'>
             {copySuccess ? '링크 복사됨!' : '링크 공유하기'}
           </button>
           {showShareMenu && (
@@ -70,7 +75,7 @@ export default function Header() {
             </div>
           )}
         </div>
-        <button className='rounded-full border border-white px-3 py-1 text-xs transition-colors hover:bg-white/10 md:px-5 md:py-1.5 md:text-sm'>
+        <button className='hidden rounded-full border border-white px-3 py-1 text-xs transition-colors hover:bg-white/10 md:block md:px-5 md:py-1.5 md:text-sm'>
           13기 알림 신청하기
         </button>
         <a
