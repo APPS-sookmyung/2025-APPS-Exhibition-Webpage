@@ -39,7 +39,7 @@ const MemberCard = ({data, onClick, isActive}) => {
         isActive ? 'bg-Primary z-50 text-white' : 'text-100 z-0 bg-white'
       } `}>
       {/* 아바타 이미지 영역 */}
-      <div className='h-10 w-10 sm:h-12 sm:w-12 shrink-0 overflow-hidden rounded-full bg-white'>
+      <div className='h-10 w-10 shrink-0 overflow-hidden rounded-full bg-white sm:h-12 sm:w-12'>
         <img
           src={avatarImage}
           alt={`${name} profile`}
