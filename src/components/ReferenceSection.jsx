@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import {Link} from 'react-router-dom';
 
 export default function ReferenceSection({references = []}) {
   if (!references || references.length === 0) return null;
@@ -10,9 +11,10 @@ export default function ReferenceSection({references = []}) {
 
       <div className='grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3'>
         {references.map((ref, index) => (
-          <div
+          <Link
             key={index}
-            className='overflow-hidden rounded-[20px] bg-[#F5F5F5]'>
+            to={`/projects/${ref.slug}`}
+            className='overflow-hidden rounded-[20px] bg-[#F5F5F5] transition-transform hover:scale-105'>
             {ref.image ? (
               <img
                 src={ref.image}
@@ -24,7 +26,7 @@ export default function ReferenceSection({references = []}) {
                 <span className='text-80/60 text-sm'>이미지</span>
               </div>
             )}
-          </div>
+          </Link>
         ))}
       </div>
     </div>
@@ -36,6 +38,7 @@ ReferenceSection.propTypes = {
     PropTypes.shape({
       image: PropTypes.string,
       title: PropTypes.string,
+      slug: PropTypes.string.isRequired,
     })
   ),
 };

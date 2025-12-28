@@ -5,6 +5,7 @@ import MemberCard from '../components/MemberCard';
 import ReferenceSection from '../components/ReferenceSection';
 import FlowerIcon from '../assets/flower.svg?react';
 import {projects, FALLBACK_PROJECT} from '../data/projects-detail-data';
+import {projectInfo} from '../data/projectInfo';
 
 export default function ProjectDetail() {
   const {slug} = useParams();
@@ -28,11 +29,14 @@ export default function ProjectDetail() {
     .filter((key) => key !== slug)
     .sort(() => Math.random() - 0.5)
     .slice(0, 3)
-    .map((key) => ({
-      title: projects[key].title,
-      slug: key,
-      image: '',
-    }));
+    .map((key) => {
+      const projectData = projectInfo.find((p) => p.slug === key);
+      return {
+        title: projects[key].title,
+        slug: key,
+        image: projectData?.thumbnail || '',
+      };
+    });
 
   return (
     <div className='w-full'>
