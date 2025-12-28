@@ -62,7 +62,7 @@ export default function LandingPage() {
               2025 APPS 전시회에 오신 것을 환영합니다!
             </p>
             <p className='font-pretendard tracking-wides text-1xl font-semibold text-white md:text-3xl lg:text-4xl'>
-              부원들의 열정과 노력이 담긴 다양한 프로젝트를 만나보세요.
+              부원들의 열정과 노력이 담긴 다양한 프로젝트들을 만나보세요.
             </p>
           </div>
 
