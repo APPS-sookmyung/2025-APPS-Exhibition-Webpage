@@ -70,9 +70,13 @@ export default function Header() {
             </div>
           )}
         </div>
-        <button className='rounded-full border border-white px-3 py-1 text-xs transition-colors hover:bg-white/10 md:px-5 md:py-1.5 md:text-sm'>
+        <a
+          href='https://forms.gle/3TsoVPNNABC3Zc5UA'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='rounded-full border border-white px-3 py-1 text-xs transition-colors hover:bg-white/10 md:px-5 md:py-1.5 md:text-sm'>
           13기 알림 신청하기
-        </button>
+        </a>
         <a
           href={LINKTREE_URL}
           target='_blank'
