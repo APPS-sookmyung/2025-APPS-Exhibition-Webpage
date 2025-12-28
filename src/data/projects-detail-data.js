@@ -35,11 +35,11 @@ import LimYujinImg from '../assets/members/LimYujin.jpeg';
 export const projects = {
   EMORY: {
     projectType: 'TEAM',
-    generation: [14],
+    generation: [11, 12],
     title: 'EMORY',
     subtitle: '인터랙티브 감정 피드백 서비스, EMORY',
     content:
-      'EMORY : 감정을 쏟아낼 곳이 없어 답답하셨나요? 이제 언제든지 편하게 털어놓을 수 있는 AI 감정 동반자를 경험해보세요! 나의 일정을 EMORY가 불러와 감정 기록을 남기고 싶은 일정에 대해 에이전트와 대화합니다. 사용자의 말투와 감정 표현 습관을 학습하여 당신에게 꼭 맞는 공감 코멘트를 제공해요. 기록만 쌓이던 기존 감정일기와는 전혀 다른 경험! 지금 바로 EMORY와 함께 감정 관리의 새로운 여정을 시작해보세요!',
+      'EMOTION & MEMORY\n\n감정을 쏟아낼 곳이 없어 답답하셨나요? 이제 언제든지 편하게 털어놓을 수 있는 AI 감정 동반자를 경험해보세요! 나의 일정을 EMORY가 불러와 감정 기록을 남기고 싶은 일정에 대해 에이전트와 대화합니다. 사용자의 말투와 감정 표현 습관을 학습하여 당신에게 꼭 맞는 공감 코멘트를 제공해요. 기록만 쌓이던 기존 감정일기와는 전혀 다른 경험! 지금 바로 EMORY와 함께 감정 관리의 새로운 여정을 시작해보세요!',
     feature: [
       '🔅 AI 감정 대화\n사용자가 음성 텍스트로 감정을 털어놓으면 AI가 공감하며 대화, 감정 진위와 톤 분석',
       '🔅 AI 일기 자동 생성\n대화 내용을 바탕으로 하루를 정리한 감정 일기 자동 생성',
@@ -57,6 +57,7 @@ export const projects = {
       'React',
       'TypeScript',
     ],
+    tags: ['2025 SW창업경진대회 대상'],
     links: [
       {
         type: 'CLIENT',
@@ -130,7 +131,7 @@ export const projects = {
 
   Devsong: {
     projectType: 'TEAM',
-    generation: [14],
+    generation: [11, 12],
     title: 'Devsong',
     subtitle: '숙명여대 개발자들을 위한 커뮤니티',
     content:
@@ -186,7 +187,7 @@ export const projects = {
 
   ChatToner: {
     projectType: 'TEAM',
-    generation: [14],
+    generation: [11, 12],
     title: 'ChatToner',
     subtitle:
       '기업의 비용과 시간을 아끼는, 최적의 신입사원 온보딩 툴 ChatToner',
@@ -207,6 +208,7 @@ export const projects = {
       'LangChain',
       'OpenAI',
     ],
+    tags: ['2025 오픈소스개발자대회 우수작 선정'],
     links: [
       {
         type: 'SERVER & CLIENT',
