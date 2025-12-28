@@ -98,7 +98,9 @@ export default function ProjectDetailHero({project, links = []}) {
             <div className='flex flex-wrap gap-4'>
               {links.map((item) => {
                 const isGithub =
-                  item.type === 'CLIENT' || item.type === 'SERVER';
+                  item.type === 'CLIENT' ||
+                  item.type === 'SERVER' ||
+                  item.type === 'SERVER & CLIENT';
                 const Icon = isGithub ? Github : Link;
                 const isEnabled = Boolean(item.url);
 
@@ -145,7 +147,7 @@ ProjectDetailHero.propTypes = {
   }).isRequired,
   links: PropTypes.arrayOf(
     PropTypes.shape({
-      type: PropTypes.oneOf(['CLIENT', 'SERVER', 'LINK']),
+      type: PropTypes.oneOf(['CLIENT', 'SERVER', 'SERVER & CLIENT', 'WEB']),
       url: PropTypes.string,
     })
   ),

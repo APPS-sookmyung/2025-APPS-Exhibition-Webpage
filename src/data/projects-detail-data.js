@@ -187,7 +187,7 @@ export const projects = {
     ],
     links: [
       {
-        type: 'CLIENT',
+        type: 'SERVER & CLIENT',
         url: 'https://github.com/APPS-sookmyung/CHAT-TONER.git',
       },
     ],
