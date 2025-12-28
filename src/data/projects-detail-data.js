@@ -7,6 +7,7 @@ import ShinJungeunImg from '../assets/members/ShinJeongeun.jpg';
 import KimYoungkyoImg from '../assets/members/KimYoungkyo.png';
 import soiljeonImg from '../assets/members/soiljeon.jpg';
 import JooSuyeonImg from '../assets/members/JooSuyeon.jpg';
+import emory from '../assets/gif/emory.gif';
 
 // ============================================
 // 2. Devsong Team Imports
@@ -15,6 +16,7 @@ import BaekSuminImg from '../assets/members/BaekSumin.jpeg';
 import WooChaeaImg from '../assets/members/WooChaea.jpg';
 import LeeEunchaeImg from '../assets/members/LeeEunchae.jpg';
 import KimDoyeon2Img from '../assets/members/KimDoyeon2.jpg';
+import devsong from '../assets/gif/devsong.gif';
 
 // ============================================
 // 3. ChatToner Team Imports
@@ -31,6 +33,17 @@ import HanJiminImg from '../assets/members/HanJimin.jpg';
 import MunYeseonImg from '../assets/members/MunYeseon.jpeg';
 import BaeSongyiImg from '../assets/members/BaeSongyi.jpeg';
 import LimYujinImg from '../assets/members/LimYujin.jpeg';
+import LeeYunaGif from '../assets/gif/LeeYuna.gif';
+import HanJiminGif from '../assets/gif/HanJimin.gif';
+import MunYeseonGif from '../assets/gif/MunYeseon.gif';
+import LimYujinGif from '../assets/gif/LimYujin.gif';
+import WooChaeaGif from '../assets/gif/WooChaea.gif';
+import KimYoungkyoGif from '../assets/gif/KimYoungkyo.gif';
+import YoonSoyoungGif from '../assets/gif/YoonSoyoung.gif';
+import KimDoyeonGif from '../assets/gif/KimDoyeon.gif';
+import EomDahyunGif from '../assets/gif/EomDahyun.gif';
+import LeeEunchaeGif from '../assets/gif/LeeEunchae.gif';
+import BaeSongyiGif from '../assets/gif/BaeSongyi.gif';
 
 // Project data
 export const projects = {
@@ -39,6 +52,7 @@ export const projects = {
     generation: [11, 12],
     title: 'EMORY',
     subtitle: '인터랙티브 감정 피드백 서비스, EMORY',
+    gif: emory,
     content:
       'EMOTION & MEMORY\n\n감정을 쏟아낼 곳이 없어 답답하셨나요? 이제 언제든지 편하게 털어놓을 수 있는 AI 감정 동반자를 경험해보세요! 나의 일정을 EMORY가 불러와 감정 기록을 남기고 싶은 일정에 대해 에이전트와 대화합니다. 사용자의 말투와 감정 표현 습관을 학습하여 당신에게 꼭 맞는 공감 코멘트를 제공해요. 기록만 쌓이던 기존 감정일기와는 전혀 다른 경험! 지금 바로 EMORY와 함께 감정 관리의 새로운 여정을 시작해보세요!',
     feature: [
@@ -135,6 +149,7 @@ export const projects = {
     generation: [11, 12],
     title: 'Devsong',
     subtitle: '숙명여대 개발자들을 위한 커뮤니티',
+    gif: devsong,
     content:
       "사이드 프로젝트를 시작하고 싶지만 에브리타임 같은 익명 커뮤니티에서 팀원을 구하기 망설여지셨나요? Devsong은 숙명여대 재학생 인증을 기반으로 개발자 송이들을 위한 안전하고 신뢰할 수 있는 커뮤니티 플랫폼입니다.✨\n\n단순히 사람을 모으는 것을 넘어, 서로의 개발 역량과 관심 분야를 확인하며 '진짜 잘 맞는 동료'를 찾을 수 있습니다. 프로젝트·대외활동 팀원 모집부터 전공 스터디, 그리고 교내 GitHub·백준 활동 랭킹 확인과 정보 공유까지! Devsong은 숙명의 개발자들이 서로 자극받으며 함께 성장할 수 있는 따뜻하고 건강한 개발자 커뮤니티를 꿈꿉니다.💙",
     feature: [
@@ -267,6 +282,7 @@ export const projects = {
     generation: [12],
     title: 'B-DAY',
     subtitle: '나만의 야구 직관 일기, B-DAY',
+    gif: WooChaeaGif,
     content:
       '그날의 함성과 날씨, 짜릿했던 승리의 순간을 생생하게 기록할 수 있습니다. 기록이 쌓일수록 나의 직관 승률을 알아볼 수 있는 재미까지! 지금 바로 당신의 추억을 기록해보세요.',
     feature: [
@@ -296,6 +312,7 @@ export const projects = {
     title: 'BudgetPilot',
     subtitle:
       '여행 정보와, 취향, 예산 비율을 바탕으로 여행 스팟을 자동 추천해 한번에 확인할 수 있는 개인 맞춤 여행 리포트 budgetpilot',
+    gif: KimDoyeonGif,
     content:
       'Budgetpilot: 여행 정보와 취향, 그리고 예산 비율까지만 입력하면, 예산에 딱 맞는 숙소, 식당, 관광 스팟을 자동으로 추천해 한 번에 리포트로 정리해드립니다. 엑셀로 계산하고, 후기까지 일일이 찾느라 지치지 않으셨나요? 이제 BudgetPilot에서 나에게 맞는 현실적인 여행 플랜을 한 번에 받아보세요!',
     feature: [
@@ -365,6 +382,7 @@ export const projects = {
     generation: [12],
     title: 'CommuTime',
     subtitle: '통학•통근 자기계발 서비스 CommuTime',
+    gif: KimYoungkyoGif,
     content:
       'CommTime: 매일 반복되는 통학•통근 시간, 그냥 흘러보내고 있진 않으신가요? CommuTime은 출발지와 목적지를 입력하면 이동시간 동안에 자기계발을 도와줍니다. 토익 공부, 뉴스레터 리스닝, 영단어 오디오 학습 등 원하는 목표를 설정하면, 언제 어떤 공부를 해야 할지 알려줘요. CommuTime과 함께 이동 시간을 성장 시간으로 바꿔보세요!',
     feature: [
@@ -395,6 +413,7 @@ export const projects = {
     title: 'F-list',
     subtitle:
       '나만의 옷 정보와 위시리스트를 아카이빙 할 수 있는 웹 서비스 F-list',
+    gif: LeeYunaGif,
     content:
       'F-list: 당신의 옷 정보와 위시리스트를 온라인에 아카이빙하고 언제든 꺼내보세요! 내가 가진 옷들의 스타일을 피드 형태로 한눈에 살펴보고, 여러 쇼핑몰 장바구니에 흩어져 있던 위시템들도 한 곳에 모아 정리 할 수 있어요. 당신의 취향을 기록하고, 아이템들을 하나씩 채워가나는 즐거움을 F-list에서 경험해 보세요!',
     feature: [
@@ -427,6 +446,7 @@ export const projects = {
     title: 'HelloGiraffe',
     subtitle:
       '비폭력 대화(NVC)를 기반으로 건강한 관계 형성을 돕는 AI 마음 대화 가이드, HelloGiraffe',
+    gif: MunYeseonGif,
     content: `4단계 대화법(관찰-느낌-욕구-부탁)을 통해 나의 마음을 들여다보고 솔직하게 표현하는 연습을 해보세요! 관계가 어려울 때, '기린' 코치가 당신의 마음을 공감해주고 더 나은 대화 방향을 제안합니다. 상황별 시나리오 가이드와 AI 코칭으로 건강한 소통 습관을 만들어보세요`,
     feature: [
       '🦒 상황별 맞춤 대화 시나리오\n약속에 늦은 친구, 가족과의 갈등 등 다양한 상황에 맞는 시나리오를 선택하여, 막막했던 대화의 물꼬를 쉽게 틀 수 있습니다.',
@@ -464,6 +484,7 @@ export const projects = {
     generation: [12],
     title: 'Podorush',
     subtitle: '티켓팅 연습 게임 Podorush',
+    gif: EomDahyunGif,
     content:
       '콘서트 티켓팅에 매번 실패하셨나요? 포도러시는 실제 티켓팅 과정을 구현한 시뮬레이션 환경을 제공하여 긴장감을 가지고 티켓팅 연습을 할 수 있도록 돕습니다. 최종 기록을 랭킹에 등록하여 자신의 실력을 확인하세요!',
     feature: [
@@ -492,6 +513,7 @@ export const projects = {
     generation: [12],
     title: 'PouchKeeper',
     subtitle: '내 모든 뷰티 아이템을 한 곳에 정리해주는 신개념 온라인 파우치',
+    gif: BaeSongyiGif,
     content:
       'PouchKeeper: 흩어져 있는 화장품 정보를 한 번에 정리하고, 메이크업·스킨케어 기록까지 자동으로 쌓아보세요! 어떤 화장품이 있는 지도 몰라 또 사고, 나만의 꿀조합을 까먹었던 적이 있으셨나요? PouchKeeper는 파우치 인벤토리, 메이크업 로그, 스킨케어 성분·루틴 기록을 한 곳에 모아, 어떤 조합이 잘 맞는지·어떤 성분이 트러블을 유발했는지 쉽게 확인할 수 있게 도와줍니다. 매일의 뷰티 데이터를 쌓아 두면, 앞으로는 “그때 좋았던 조합”과 “피해야 할 성분”을 몇 번의 클릭으로 다시 찾아볼 수 있어요. 지금 바로 나만의 뷰티 기록장을 PouchKeeper에서 시작해보세요!',
     feature: [
@@ -523,6 +545,7 @@ export const projects = {
     title: 'Starlist',
     subtitle:
       '매일의 작은 성취를 별로 쌓아 보상까지 이어주는 습관 형성 todolist',
+    gif: HanJiminGif,
     content:
       'Starlist는 하루의 할 일을 완료할 때마다 별을 적립하고  30개가 모이면 스스로 설정한 보상을 받을 수 있는 서비스입니다. 바쁜 하루 속에서도 Starlist와 함께 별을 채워가며 목표를 재밌게 달성해보세요 !',
     feature: [
@@ -550,6 +573,7 @@ export const projects = {
     generation: [12],
     title: 'Streco',
     subtitle: '단 한 번뿐인 방송 속 최고의 순간을 Streco에 기록해 보세요!',
+    gif: LimYujinGif,
     content:
       '방송 속 소중한 순간을 또 찾아보고 싶은데, 놓친 적 있으신가요? Streco가 그 고민을 해결해 드리겠습니다. 지나간 장면은 돌아오지 않아요! 스트리밍 속 중요한 순간을 실시간으로 기록하고 언제든지 다시 확인해보세요. 이미 방송이 시작된 것 같은데요? Streco를 사용할 때가 왔습니다!',
     feature: [
@@ -579,6 +603,7 @@ export const projects = {
     title: '시간표 메이커',
     subtitle:
       '사용자의 기호에 맞는 맞춤형 시간표를 자동으로 생성하는 대학생 맞춤 시간표 메이커 서비스',
+    gif: LeeEunchaeGif,
     content:
       '시간표 메이커 : 매 학기 반복되는 수강 신청 스트레스, 이제 그만. 여러분의 과목 선택과 기호에 따라, 충돌 없는 최적 시간표를 자동으로 설계해드립니다. 이제 클릭 한 번으로 당신의 한 학기를 계획해보세요!',
     feature: [
@@ -607,6 +632,7 @@ export const projects = {
     generation: [12],
     title: 'ULTS - Unsent Letters, To the Star',
     subtitle: '전하지 못한 마음을 밤하늘의 별로 띄워 보내는 공간, ULTS',
+    gif: YoonSoyoungGif,
     content:
       'ULTS(Unsent Letters, To the Star)는 전하지 못한 말을 기록하고, 그리움 속에서 마음을 조용히 치유하는 감성 편지 서비스입니다. 전하지 못한 말과 마음은 밤하늘의 별이 되어 떠올라, 당신의 감정이 흩어지지 않도록 안전하게 담아줍니다. 지금 바로, 잊지 못한 그 마음을 아름답게 남겨보세요.',
     feature: [
