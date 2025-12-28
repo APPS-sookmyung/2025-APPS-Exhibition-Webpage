@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import {useState} from 'react';
 import LinkedInIcon from '../../assets/footer/linkedIn.svg?react';
 import LinkedInIconHover from '../../assets/footer/linkedInHover.svg?react';
 import InstagramIcon from '../../assets/footer/instagram.svg?react';
@@ -46,8 +46,7 @@ const CtaSection = () => {
               rel='noopener noreferrer'
               className='transition-opacity'
               onMouseEnter={() => setInstaHovered(true)}
-              onMouseLeave={() => setInstaHovered(false)}
-            >
+              onMouseLeave={() => setInstaHovered(false)}>
               {isInstaHovered ? (
                 <InstagramIconHover className='h-auto w-[15cqw] drop-shadow-md md:w-20' />
               ) : (
@@ -61,8 +60,7 @@ const CtaSection = () => {
               rel='noopener noreferrer'
               className='transition-opacity'
               onMouseEnter={() => setLinkedinHovered(true)}
-              onMouseLeave={() => setLinkedinHovered(false)}
-            >
+              onMouseLeave={() => setLinkedinHovered(false)}>
               {isLinkedinHovered ? (
                 <LinkedInIconHover className='h-auto w-[15cqw] drop-shadow-md md:w-20' />
               ) : (
