@@ -33,14 +33,14 @@ export default function Activities() {
   return (
     <div className='bg-primary relative w-full overflow-hidden py-20 md:py-32'>
       <div className='relative z-10 mb-16 text-center md:mb-20'>
-        <p className='text-3xl font-semibold tracking-tight text-[#FFFFFF] md:text-5xl'>
+        <p className='text-3xl font-semibold tracking-tight text-white md:text-5xl'>
           ACTIVITIES
         </p>
-        <p className='mt-4 text-base font-semibold text-[#D9E3FC] md:mt-6 md:text-2xl'>
+        <p className='text-Blue_light mt-4 text-base font-semibold md:mt-6 md:text-2xl'>
           APPS에서 정기적으로 진행하는 다양한 활동들이 있어요
         </p>
       </div>
-      <div className='absolute top-24 text-[72px] font-bold text-[#4B48F5] select-none md:top-[120px] md:text-[150px]'>
+      <div className='text-primary absolute top-24 text-[72px] font-bold select-none md:top-[120px] md:text-[150px]'>
         ACTIVITIES
       </div>
 
