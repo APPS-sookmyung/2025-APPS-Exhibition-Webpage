@@ -15,6 +15,10 @@ import hellogiraffeThumbnail from '../assets/thumbnail/hellogiraffe.png';
 import podorushThumbnail from '../assets/thumbnail/podorush.png';
 import starlistThumbnail from '../assets/thumbnail/starlist.png';
 import strecoThumbnail from '../assets/thumbnail/streco.png';
+import budgetpilotThumbnail from '../assets/thumbnail/budgetpilot.png';
+import commutimeThumbnail from '../assets/thumbnail/commutime.png';
+import pouchkeeperThumbnail from '../assets/thumbnail/pouchkeeper.png';
+import timetablemakerThumbnail from '../assets/thumbnail/timetablemaker.png';
 
 //개인 프로젝트 파비콘
 import bdayPavicon from '../assets/pavicon/b-day.png';
@@ -23,6 +27,10 @@ import hellogiraffePavicon from '../assets/pavicon/hellogiraffe.png';
 import podorushPavicon from '../assets/pavicon/podorush.png';
 import starlistPavicon from '../assets/pavicon/starlist.png';
 import strecoPavicon from '../assets/pavicon/streco.png';
+import budgetpilotPavicon from '../assets/pavicon/budgetpilot.png';
+import commutimePavicon from '../assets/pavicon/commutime.png';
+import pouchkeeperPavicon from '../assets/pavicon/pouchkeeper.png';
+import timetablemakerPavicon from '../assets/pavicon/timetablemaker.png';
 
 //아직 Emory 파비콘, 썸네일 없음
 //아직 Devsong, Chattoner 배포 링크 없음
@@ -100,8 +108,8 @@ export const projectInfo = [
     slug: 'budgetpilot',
     title: 'BudgetPilot',
     type: 'rookie',
-    thumbnail: dummyThumbnail,
-    pavicon: dummyPavicon,
+    thumbnail: budgetpilotThumbnail,
+    pavicon: budgetpilotPavicon,
     description:
       '여행 정보와, 취향, 예산 비율을 바탕으로 여행 스팟을 자동 추천해 한번에 확인할 수 있는 개인 맞춤 여행 리포트 budgetpilot',
     members: ['12기 김도연'],
@@ -124,8 +132,8 @@ export const projectInfo = [
     slug: 'commutime',
     title: 'CommuTime',
     type: 'rookie',
-    thumbnail: dummyThumbnail,
-    pavicon: dummyPavicon,
+    thumbnail: commutimeThumbnail,
+    pavicon: commutimePavicon,
     description: '통학•통근 자기계발 서비스 CommuTime',
     members: ['12기 김영교'],
     link: 'https://commutime.vercel.app/',
@@ -170,8 +178,8 @@ export const projectInfo = [
     slug: 'pouch',
     title: 'Pouchkeeper',
     type: 'rookie',
-    thumbnail: dummyThumbnail,
-    pavicon: dummyPavicon,
+    thumbnail: pouchkeeperThumbnail,
+    pavicon: pouchkeeperPavicon,
     description:
       '내 모든 뷰티 아이템을 한 곳에 정리해주는 신개념 온라인 파우치',
     members: ['12기 배송이'],
@@ -179,7 +187,7 @@ export const projectInfo = [
   },
   {
     id: 'starlist',
-    slug: 'starlist',
+    slug: 'Starlist',
     title: 'Starlist',
     type: 'rookie',
     thumbnail: starlistThumbnail,
@@ -199,6 +207,18 @@ export const projectInfo = [
     description: '단 한 번뿐인 방송 속 최고의 순간을 Streco에 기록해 보세요!',
     members: ['12기 임유진'],
     link: 'https://2025-streco.vercel.app/',
+  },
+  {
+    id: 'timetablemaker',
+    slug: '시간표 메이커',
+    title: '시간표 메이커',
+    type: 'rookie',
+    thumbnail: timetablemakerThumbnail,
+    pavicon: timetablemakerPavicon,
+    description:
+      '사용자의 기호에 맞는 맞춤형 시간표를 자동으로 생성하는 대학생 맞춤 시간표 메이커 서비스',
+    members: ['12기 이은채'],
+    link: 'https://echae0111.github.io/timetable-maker/',
   },
   {
     id: 'ults',
