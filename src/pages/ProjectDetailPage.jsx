@@ -96,7 +96,7 @@ export default function ProjectDetail() {
                 <MemberCard key={index} member={member} />
               ))}
             </div>
-            <div className='flower-decoration absolute right-0 bottom-0 translate-x-1/2 translate-y-1/2'>
+            <div className='flower-decoration absolute right-0 bottom-0 translate-x-1/4 translate-y-1/2 md:translate-x-1/2'>
               <FlowerIcon className='h-20 w-20' />
             </div>
           </div>
