@@ -1,7 +1,7 @@
 <div align="center">
   <h1>Sookmyung APPS Exhibition 2025</h1>
   <p><a href='https://github.com/APPS-sookmyung'>숙명여자대학교 소프트웨어학부 학회 APPS</a>   온라인 전시회</p>
-  <img src="./readme_assets/img-mainpage.png" align="center" style="width: 600px" alt="APPS 소개" /> 
+  <img src="src/assets/readmeGif/appshome.png" align="center" style="width: 600px" alt="APPS 소개" /> 
 </div>
 
 <br />
