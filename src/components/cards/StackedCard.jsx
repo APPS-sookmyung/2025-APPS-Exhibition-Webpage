@@ -9,6 +9,8 @@ export default function StackedCard({project}) {
       <img
         src={project.thumbnail}
         alt={project.title}
+        loading='lazy'
+        decoding='async'
         draggable={false}
         className='aspect-video w-full rounded object-cover outline-2 outline-neutral-200'
       />

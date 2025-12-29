@@ -46,6 +46,8 @@ export default function GridCard({project, index}) {
           <img
             src={project.thumbnail}
             alt={project.title}
+            loading='lazy'
+            decoding='async'
             className='aspect-video w-full self-center rounded-[10px] object-cover outline-1 outline-blue-100'
           />
           <p className='line-clamp-3 pt-1 text-[10px] leading-4 font-medium text-zinc-800 md:pt-2 md:text-[14px] md:leading-5 md:font-semibold lg:pt-3 lg:text-sm'>
