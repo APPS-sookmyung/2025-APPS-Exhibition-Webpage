@@ -19,6 +19,8 @@ export default function ReferenceSection({references = []}) {
               <img
                 src={ref.image}
                 alt={ref.title || `참고 자료 ${index + 1}`}
+                loading='lazy'
+                decoding='async'
                 className='h-full w-full object-cover'
               />
             ) : (

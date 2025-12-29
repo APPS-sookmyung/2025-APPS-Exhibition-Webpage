@@ -43,6 +43,8 @@ export default function MemberCard({member}) {
         <img
           src={imageSrc}
           alt={member.name}
+          loading='lazy'
+          decoding='async'
           className='h-full w-full object-cover'
           onError={() => setHasImageError(true)}
         />
