@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react';
+import {useState, useEffect, useMemo} from 'react';
 import {useParams} from 'react-router-dom';
 import ProjectDetailHero from '../components/project-detail/ProjectDetailHero';
 import ProjectDetailBody from '../components/project-detail/ProjectDetailBody';
@@ -10,7 +10,7 @@ import {projectInfo} from '../data/projectInfo';
 
 export default function ProjectDetail() {
   const {slug} = useParams();
-  let project = projects[slug] || FALLBACK_PROJECT;
+  const baseProject = projects[slug] ?? FALLBACK_PROJECT;
 
   // lg breakpoint(1024px)를 기준으로 3개 또는 2개를 선택할지 결정
   const [numToSelect, setNumToSelect] = useState(
@@ -28,38 +28,53 @@ export default function ProjectDetail() {
     };
   }, []);
 
-  const features = Array.isArray(project.feature)
-    ? project.feature
-    : project.feature
-      ? [project.feature]
+  const thumbnailMap = useMemo(() => {
+    return projectInfo.reduce((acc, proj) => {
+      acc[proj.slug] = proj.thumbnail;
+      return acc;
+    }, {});
+  }, []);
+
+  const project = useMemo(() => {
+    const gif = baseProject?.gif || thumbnailMap[slug];
+    return {
+      ...baseProject,
+      gif,
+    };
+  }, [baseProject, thumbnailMap, slug]);
+
+  const features = useMemo(() => {
+    return Array.isArray(project.feature)
+      ? project.feature
+      : project.feature
+        ? [project.feature]
+        : [];
+  }, [project.feature]);
+
+  const techStack = useMemo(() => {
+    return Array.isArray(project.techStack)
+      ? project.techStack.map((tech) => ({
+          name: tech,
+          icon: String(tech).toLowerCase(),
+        }))
       : [];
-  const techStack = Array.isArray(project.techStack)
-    ? project.techStack.map((tech) => ({
-        name: tech,
-        icon: tech.toLowerCase(),
-      }))
-    : [];
-  const links = Array.isArray(project.links) ? project.links : [];
+  }, [project.techStack]);
 
-  const thumbnailMap = projectInfo.reduce((acc, proj) => {
-    acc[proj.slug] = proj.thumbnail;
-    return acc;
-  }, {});
+  const links = useMemo(() => {
+    return Array.isArray(project.links) ? project.links : [];
+  }, [project.links]);
 
-  if (project && !project.gif) {
-    project.gif = thumbnailMap[slug];
-  }
-
-  // 현재 프로젝트를 제외한 다른 프로젝트들 중에서 랜덤으로 N개 선택
-  const randomReferences = Object.keys(projects)
-    .filter((key) => key !== slug)
-    .sort(() => Math.random() - 0.5)
-    .slice(0, numToSelect)
-    .map((key) => ({
-      title: projects[key].title,
-      slug: key,
-      image: thumbnailMap[key],
-    }));
+  const randomReferences = useMemo(() => {
+    return Object.keys(projects)
+      .filter((key) => key !== slug)
+      .sort(() => Math.random() - 0.5)
+      .slice(0, numToSelect)
+      .map((key) => ({
+        title: projects[key].title,
+        slug: key,
+        image: thumbnailMap[key],
+      }));
+  }, [slug, numToSelect, thumbnailMap]);
 
   return (
     <div className='w-full'>
