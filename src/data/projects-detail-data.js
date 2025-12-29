@@ -158,7 +158,16 @@ export const projects = {
       '👩‍💻 GitHub·백준 활동량 비교\n숙명여대 개발자들의 GitHub 잔디와 백준 활동량을 확인하고, 순위로 비교해볼 수 있어요.',
       '👩‍💻 개발 프로필로 나만의 역량 어필\n실명 기반 프로필과 GitHub·백준 연동으로 나의 기술 스택과 개발 수준을 간단하고 신뢰 있게 보여줄 수 있어요.',
     ],
-    techStack: ['React', 'Spring Boot', 'docker', 'MySQL'],
+    techStack: [
+      'React',
+      'Spring Boot',
+      'docker',
+      'MySQL',
+      'AWS',
+      'Java',
+      'JavaScript',
+      'Vite',
+    ],
     links: [
       {
         type: 'CLIENT',
