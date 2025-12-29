@@ -5,11 +5,15 @@ import Link from '../../assets/project-detail/link.svg?react';
 import {useMemo} from 'react';
 import {useNavigate} from 'react-router-dom';
 import PropTypes from 'prop-types';
+import Skeleton from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css';
 
-export default function ProjectDetailHero({project, links = []}) {
+export default function ProjectDetailHero({project, links = [], loading}) {
   const navigate = useNavigate();
 
   const chips = useMemo(() => {
+    if (!project?.projectType) return [];
+
     const typeChip =
       project.projectType === 'TEAM' ? 'TEAM PROJECT' : 'INDIVIDUAL PROJECT';
     const gens = Array.isArray(project.generation)
@@ -18,7 +22,7 @@ export default function ProjectDetailHero({project, links = []}) {
     const tags = Array.isArray(project.tags) ? project.tags : [];
 
     return [typeChip, ...gens, ...tags];
-  }, [project.projectType, project.generation, project.tags]);
+  }, [project]);
 
   const handleShare = async () => {
     const shareData = {
@@ -66,7 +70,7 @@ export default function ProjectDetailHero({project, links = []}) {
           <button
             type='button'
             aria-label='Exit'
-            onClick={() => navigate('/')}
+            onClick={() => navigate('/#projects')}
             className='inline-flex h-10 w-10 cursor-pointer items-center justify-center'>
             <Exit className='h-10 w-10' />
           </button>
@@ -74,19 +78,24 @@ export default function ProjectDetailHero({project, links = []}) {
 
         {/* 썸네일 */}
         <div className='w-full max-w-[1200px] overflow-hidden rounded-[28px] bg-white/20'>
-          <div className='aspect-[16/9] w-full'>
-            {project.gif ? (
+          {loading ? (
+            <Skeleton
+              height='100%'
+              containerClassName='aspect-[16/9] w-full'
+              baseColor='#2A3143'
+              highlightColor='#4A5570'
+              duration={1.5}
+              enableAnimation={true}
+            />
+          ) : (
+            <div className='aspect-[16/9] w-full'>
               <img
                 src={project.gif}
                 alt={`${project.title} thumbnail`}
                 className='h-full w-full object-cover'
               />
-            ) : (
-              <div className='flex h-full w-full items-center justify-center'>
-                <span className='text-sm text-white/60'>프로젝트 썸네일</span>
-              </div>
-            )}
-          </div>
+            </div>
+          )}
         </div>
 
         {/* 텍스트 영역 */}
@@ -147,6 +156,7 @@ export default function ProjectDetailHero({project, links = []}) {
 }
 
 ProjectDetailHero.propTypes = {
+  loading: PropTypes.bool,
   project: PropTypes.shape({
     projectType: PropTypes.oneOf(['TEAM', 'INDIVIDUAL']),
     generation: PropTypes.arrayOf(PropTypes.number),
@@ -155,11 +165,17 @@ ProjectDetailHero.propTypes = {
     gif: PropTypes.string,
     content: PropTypes.string,
     tags: PropTypes.arrayOf(PropTypes.string),
-  }).isRequired,
+  }),
   links: PropTypes.arrayOf(
     PropTypes.shape({
       type: PropTypes.oneOf(['CLIENT', 'SERVER', 'SERVER & CLIENT', 'WEB']),
       url: PropTypes.string,
     })
   ),
+};
+
+ProjectDetailHero.defaultProps = {
+  loading: false,
+  project: {},
+  links: [],
 };

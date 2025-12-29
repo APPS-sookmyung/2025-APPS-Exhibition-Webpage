@@ -10,6 +10,7 @@ import {projectInfo} from '../data/projectInfo';
 
 export default function ProjectDetail() {
   const {slug} = useParams();
+  const [loading, setLoading] = useState(true);
   const baseProject = projects[slug] ?? FALLBACK_PROJECT;
 
   // lg breakpoint(1024px)를 기준으로 3개 또는 2개를 선택할지 결정
@@ -27,6 +28,15 @@ export default function ProjectDetail() {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+
+  useEffect(() => {
+    // 데이터가 동기식으로 로드되지만, 스켈레톤 UI를 잠시 보여주기 위해 타이머 사용
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 100); // 100ms 지연 후 로딩 상태 해제
+
+    return () => clearTimeout(timer);
+  }, [slug]); // slug가 바뀔 때마다 다시 로딩 시뮬레이션
 
   const thumbnailMap = useMemo(() => {
     return projectInfo.reduce((acc, proj) => {
@@ -79,7 +89,8 @@ export default function ProjectDetail() {
   return (
     <div className='w-full'>
       {/* HERO */}
-      <ProjectDetailHero project={project} links={links} />
+      <ProjectDetailHero project={project} links={links} loading={loading} />
+
       {/* BODY */}
       <ProjectDetailBody
         content={project.content}
