@@ -1,16 +1,73 @@
-# React + Vite
+# Sookmyung APPS Exhibition 2025
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[숙명여자대학교 소프트웨어학부 학회 APPS](https://2025-apps-exhibition-webpage.vercel.app/) 온라인 전시회
 
-Currently, two official plugins are available:
+## 🗂 목차
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. [웹 서비스 소개]
+2. [기술 스택]
+3. [데모 영상]
+4. [개발 기간]
+5. [Git Convention]
 
-## React Compiler
+## 💡 웹 서비스 소개
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+숙명여자대학교 소프트웨어학부 학회 2025 APPS 전시회에 오신 것을 환영합니다!</br>
+아래 링크에서 부원들의 열정과 노력이 담긴 다양한 프로젝트들을 만나보세요.
 
-## Expanding the ESLint configuration
+[🔗 웹 사이트 바로가기]
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠기술 스택
+
+### Front-end
+
+| <img src="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg" alt="HTML5" width="50px" height="50px" /> | <img src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg" alt="CSS3" width="50px" height="50px" /> | <img src="https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg" alt="React.js" width="50px" height="50px" /> | <img src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="JavaScript" width="50px" height="50px" /> | <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="Tailwind CSS" width="50px" height="50px" /> |
+| :----------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------: |
+|                                                              HTML                                                              |                                                             CSS                                                              |                                                               React                                                               |                                                         JavaScript(E26)                                                         |                                                Tailwind CSS                                                |
+
+### Back-end
+
+| <img src="https://cdn.simpleicons.org/vercel/000000" alt="Vercel" width="50px" height="50px" /> |
+| :---------------------------------------------------------------------------------------------: |
+|                                             Vercel                                              |
+
+### Version Control
+
+| <img src="https://profilinator.rishav.dev/skills-assets/git-scm-icon.svg" alt="Git" width="50px" height="50px" /> | <img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg" alt="GitHub" width="50px" height="50px" /> |
+| :---------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------: |
+|                                                        Git                                                        |                                                         Github                                                         |
+
+## 🎥 데모 영상
+
+|                             홈 화면                             |
+| :-------------------------------------------------------------: |
+| <img src="" align="center" style="width: 700px" alt="홈화면" /> |
+
+|                             프로젝트 소개                              |
+| :--------------------------------------------------------------------: |
+| <img src="" align="center" style="width: 700px" alt="프로젝트 소개" /> |
+
+|                             프로젝트 상세 페이지                              |
+| :---------------------------------------------------------------------------: |
+| <img src="" align="center" style="width: 700px" alt="프로젝트 상세 페이지" /> |
+
+|                             활동 소개                              |
+| :----------------------------------------------------------------: |
+| <img src="" align="center" style="width: 700px" alt="활동 소개" /> |
+
+|                             APPS 소개                              |
+| :----------------------------------------------------------------: |
+| <img src="" align="center" style="width: 700px" alt="APPS 소개" /> |
+
+## 💻 개발 팀 소개
+
+|                                      이미지                                       |                                        이름 (전공)                                        | 역할                    | 개발 내용                                                                                                                             |
+| :-------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------: | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | --- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ----------------------- | -------------------------------------------------------------------------------- | --- | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | --------- | -------------------------------------------------------- | --- | --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------ | --- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------ |
+| <img src="./src/assets/members/BaekSumin.jpeg" alt="백수민 이미지" width="80px"/> | <a href="https://github.com/suminb99" target="_blank">백수민<br />(소프트웨어학부 22)</a> | PM                      | 온라인 전시회 기획                                                                                                                    |
+|  <img src="./src/assets/members/HaJimin.jpg" alt="하지민 이미지" width="80px"/>   | <a href="https://github.com/JiiminHa" target="_blank">하지민<br />(소프트웨어학부 22)</a> | FRONT-END</br> BACK-END | 프로젝트 상세 페이지 구현</br> 반응형 구현</br> 프로젝트 시연 영상 gif 변환 및 추가</br> 전체적인 반응형 점검 및 디자인 수정<br> 배포 |     | <img src="./src/assets/members/YoonJeewon.jpeg" alt="윤지원 이미지" width="80px"/> | <a href="http://rosaze.github.io" target="_blank">윤지원<br />(소프트웨어학부 23)</a> | FRONT-END</br> BACK-END | 프로젝트 상세 페이지 구현</br> 반응형 구현</br> 팀 프로젝트 데이터 추가<br> 배포 |     | <img src="./src/assets/members/LimYujin.jpeg" alt="임유진 이미지" width="80px"/> | <a href="https://github.com/uuzjin" target="_blank">임유진<br />(소프트웨어학부 24)</a> | FRONT-END | 프로젝트 카드 캐러셀 구현</br> 프로젝트 카드 그리드 구현 |     | <img src="./src/assets/members/MunYeseon.jpeg" alt="문예선 이미지" width="80px"/> | <a href="깃허브: https://github.com/tjsl0607" target="_blank">문예선<br />(소프트웨어학부 25)</a> | FRONT-END | APPS 소개 섹션 구현</br> 부원들이 말하는 APPS 섹션 구현</br> Footer 구현 |     | <img src="./src/assets/members/HanJimin.jpg" alt="한지민 이미지" width="80px"/> | <a href="깃허브: https://github.com/jimin-25" target="_blank">한지민<br />(소프트웨어학부 25)</a> | FRONT-END | 홈 화면 페이지 구현</br> APPS 활동 소개 섹션 구현</br> Header 구현 |
+
+## 📅 개발 기간
+
+개발 기간 11월 10일 ~ 12월 29일 (약 2개월)
+
+## 📌 Git Convention
