@@ -245,7 +245,7 @@ export const projectInfo = [
   {
     id: 'ults',
     slug: 'ults',
-    title: 'ULTS - Unsent Letters, To the Star',
+    title: 'ULTS',
     type: 'rookie',
     thumbnail: ultsThumbnail,
     pavicon: ultsPavicon,
