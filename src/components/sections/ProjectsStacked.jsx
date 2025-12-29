@@ -6,7 +6,10 @@ import {projectInfo as projects} from '../../data/projectInfo';
 
 const ProjectsStacked = () => {
   const scrollRef = useRef(null);
-  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [selectedIndex, setSelectedIndex] = useState(() => {
+    const saved = sessionStorage.getItem('projectStackIndex');
+    return saved ? parseInt(saved, 10) : 0;
+  });
 
   const handlePrev = () => {
     setSelectedIndex((prev) => (prev - 1 + projects.length) % projects.length);
@@ -14,6 +17,28 @@ const ProjectsStacked = () => {
   const handleNext = () => {
     setSelectedIndex((prev) => (prev + 1) % projects.length);
   };
+
+  // selectedIndex 변경 시 sessionStorage에 저장
+  useEffect(() => {
+    sessionStorage.setItem('projectStackIndex', selectedIndex);
+  }, [selectedIndex]);
+
+  // 선택된 카드에 맞춰 파비콘 스크롤
+  useEffect(() => {
+    const container = scrollRef.current;
+    if (!container) return;
+
+    const faviconElements = container.querySelectorAll('[data-favicon]');
+    const selectedFavicon = faviconElements[selectedIndex];
+
+    if (selectedFavicon) {
+      selectedFavicon.scrollIntoView({
+        behavior: 'smooth',
+        block: 'nearest',
+        inline: 'center',
+      });
+    }
+  }, [selectedIndex]);
 
   // 키 입력으로 카드 넘기기
   useEffect(() => {
