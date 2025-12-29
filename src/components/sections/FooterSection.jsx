@@ -4,7 +4,6 @@ import miniFlower from '../../assets/footer/miniFlower.svg';
 const FooterSection = () => {
   // 개발자/디자이너 데이터 배열로 관리
   const developers = [
-    '백수민 (소프트웨어학부 22)',
     '하지민 (소프트웨어학부 22)',
     '윤지원 (소프트웨어학부 23)',
     '임유진 (소프트웨어학부 24)',
