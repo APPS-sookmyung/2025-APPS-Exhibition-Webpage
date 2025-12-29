@@ -63,7 +63,7 @@ export default function Activities() {
         </div>
       </div>
 
-      <div className='relative h-[282px]'>
+      <div className='relative h-[20vw]'>
         <img
           src={UnionIcon}
           className='absolute z-20 mx-37 -mt-10 scale-60 sm:scale-90 md:mx-53 md:-mt-12 md:scale-80'
