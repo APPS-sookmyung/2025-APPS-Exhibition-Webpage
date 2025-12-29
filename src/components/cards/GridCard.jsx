@@ -24,11 +24,11 @@ export default function GridCard({project, index}) {
           {project.slug ? (
             <Link
               to={`/projects/${project.slug}`}
-              className='z-10 flex h-10 w-40 cursor-pointer items-center justify-center rounded-full bg-fuchsia-500 text-lg font-bold text-white shadow-lg transition-transform duration-300'>
+              className='bg-secondary z-10 flex h-10 w-40 cursor-pointer items-center justify-center rounded-full text-lg font-bold text-white shadow-lg transition-transform duration-300'>
               자세히 보기
             </Link>
           ) : (
-            <button className='z-10 h-10 w-40 cursor-pointer rounded-full bg-fuchsia-500 text-lg font-bold text-white shadow-lg transition-transform duration-300'>
+            <button className='bg-secondary z-10 h-10 w-40 cursor-pointer rounded-full text-lg font-bold text-white shadow-lg transition-transform duration-300'>
               자세히 보기
             </button>
           )}
