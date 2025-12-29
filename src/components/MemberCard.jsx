@@ -57,7 +57,7 @@ export default function MemberCard({member}) {
   );
 
   return (
-    <div className='group bg-gray_light hover:bg-secondary rounded-[20px] p-4 shadow-none transition-all duration-300 hover:shadow-[inset_0px_0px_6px_1px_rgba(0,0,0,0.25)] sm:rounded-[30px] sm:p-8'>
+    <div className='group bg-gray_light hover:bg-secondary rounded-[20px] p-4 shadow-none transition-all duration-300 sm:rounded-[30px] sm:p-8'>
       {/* --- Mobile Layout (sm 미만) --- */}
       <div className='sm:hidden'>
         <div className='flex items-center gap-4'>
