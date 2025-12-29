@@ -1,5 +1,5 @@
 import {useState, useEffect, useRef} from 'react';
-import PaviconCard from '../cards/PaviconCard';
+import FaviconCard from '../cards/FaviconCard';
 import {SlArrowLeft, SlArrowRight} from 'react-icons/sl';
 import StackedCardDeck from './StackedCardDeck';
 import {projectInfo as projects} from '../../data/projectInfo';
@@ -84,7 +84,7 @@ const ProjectsStacked = () => {
           className='horizontal-scroll flex w-[80%] items-center overflow-x-auto md:h-25 md:w-[70%] lg:w-[60%]'>
           <div className='flex flex-nowrap items-center'>
             {projects.map((project, index) => (
-              <PaviconCard
+              <FaviconCard
                 key={project.id}
                 projectInfo={project}
                 isSelected={selectedIndex === index}

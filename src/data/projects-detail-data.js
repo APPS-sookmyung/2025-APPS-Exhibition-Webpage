@@ -48,7 +48,7 @@ import LimYujinGif from '../assets/gif/LimYujin.gif';
 import WooChaeaGif from '../assets/gif/WooChaea.gif';
 import KimYoungkyoGif from '../assets/gif/KimYoungkyo.gif';
 import YoonSoyoungGif from '../assets/gif/YoonSoyoung.gif';
-// import KimDoyeonGif from '../assets/gif/KimDoyeon.gif';
+import KimDoyeonGif from '../assets/gif/KimDoyeon.gif';
 import EomDahyunGif from '../assets/gif/EomDahyun.gif';
 import LeeEunchaeGif from '../assets/gif/LeeEunchae.gif';
 import BaeSongyiGif from '../assets/gif/BaeSongyi.gif';
@@ -331,7 +331,7 @@ export const projects = {
     title: 'BudgetPilot',
     subtitle:
       '여행 정보와, 취향, 예산 비율을 바탕으로 여행 스팟을 자동 추천해 한번에 확인할 수 있는 개인 맞춤 여행 리포트 budgetpilot',
-    // gif: KimDoyeonGif,
+    gif: KimDoyeonGif,
     content:
       'Budgetpilot: 여행 정보와 취향, 그리고 예산 비율까지만 입력하면, 예산에 딱 맞는 숙소, 식당, 관광 스팟을 자동으로 추천해 한 번에 리포트로 정리해드립니다. 엑셀로 계산하고, 후기까지 일일이 찾느라 지치지 않으셨나요? 이제 BudgetPilot에서 나에게 맞는 현실적인 여행 플랜을 한 번에 받아보세요!',
     feature: [
