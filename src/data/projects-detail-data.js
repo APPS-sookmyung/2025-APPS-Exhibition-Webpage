@@ -27,7 +27,14 @@ import KwonYujinImg from '../assets/members/KwonYujin.jpg';
 import JeongJieunImg from '../assets/members/JeongJieun.png';
 
 // ============================================
-// 4. 신입부원 프로젝트 Imports
+// 4. dotdotdot Team Imports
+// 윤지원, 백수민, 하지민, 김영교는 위에서 import 함
+// 임유진은 아래에서 import 함
+import KimJiyoonImg from '../assets/members/KimJiyoon.jpg';
+import LeeDasolImg from '../assets/members/LeeDasol.jpg';
+
+// ============================================
+// 5. 신입부원 프로젝트 Imports
 import LeeYunaImg from '../assets/members/LeeYuna.jpg';
 import HanJiminImg from '../assets/members/HanJimin.jpg';
 import MunYeseonImg from '../assets/members/MunYeseon.jpeg';
@@ -725,14 +732,16 @@ export const projects = {
       {
         name: '김지윤',
         role: '디자이너',
-        description: '(소개글)',
-        profileImage: '',
+        description:
+          '처음으로 개발자분들과 함께한 프로젝트라 모든 게 낯설었지만, 그만큼 정말 재밌게 참여할 수 있었습니다. 작업을 진행하면서 제 부족한 점이나 미처 생각하지 못했던 부분들도 알게되어서, 그 과정 자체가 의미 있게 느껴졌습니다! 이번 경험을 통해 더 성장할 수 있는 계기가 되었다고 생각합니다:) 다들 수고많으셨습니다!!',
+        profileImage: KimJiyoonImg,
       },
       {
         name: '이다솔',
         role: '디자이너',
-        description: '(소개글)',
-        profileImage: '',
+        description:
+          '길지 않은 시간동안 모든 팀원이 함께 좋은 결과를 낼 수 있어서 너무 기쁩니다! 시행착오가 있음에도 별 탈 없이 의견을 모아 작업을 한 게 아직도 새록새록 합니다. 뜻 깊은 기회를 주신 인천문화재단과 APPS에 다시 한 번 감사드립니다!',
+        profileImage: LeeDasolImg,
       },
     ],
   },
