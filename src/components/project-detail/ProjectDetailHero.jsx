@@ -70,7 +70,10 @@ export default function ProjectDetailHero({project, links = [], loading}) {
           <button
             type='button'
             aria-label='Exit'
-            onClick={() => navigate('/#projects')}
+            onClick={() => {
+              sessionStorage.setItem('scrollToProjects', 'true');
+              navigate('/');
+            }}
             className='inline-flex h-10 w-10 cursor-pointer items-center justify-center'>
             <Exit className='h-10 w-10' />
           </button>

@@ -8,7 +8,9 @@ export default function FaviconCard({projectInfo, isSelected, onSelect}) {
   const opacityClass = isSelected ? 'opacity-100' : 'opacity-60';
 
   return (
-    <div className='mx-1 shrink-0 md:scale-85 lg:mx-2.5 lg:scale-100'>
+    <div
+      className='mx-1 shrink-0 md:scale-85 lg:mx-2.5 lg:scale-100'
+      data-favicon>
       <img
         src={projectInfo.favicon}
         alt={projectInfo.title}
