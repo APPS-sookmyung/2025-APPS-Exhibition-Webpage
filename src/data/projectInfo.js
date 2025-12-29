@@ -69,7 +69,13 @@ export const projectInfo = [
     thumbnail: devsongThumbnail,
     pavicon: devsongPavicon,
     description: '숙명여대 개발자들을 위한 커뮤니티',
-    members: ['12기 우채아', '11기 백수민', '11기 방지희', '12기 이은채'],
+    members: [
+      '12기 우채아',
+      '11기 백수민',
+      '11기 방지희',
+      '12기 이은채',
+      '디자이너 김도연',
+    ],
     link: 'https://example.com',
   },
   {
