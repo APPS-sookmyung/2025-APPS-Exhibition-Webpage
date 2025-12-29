@@ -25,6 +25,7 @@ import HaJiminImg from '../assets/members/HaJimin.jpg';
 import KimJiminImg from '../assets/members/KimJimin.jpg';
 import KwonYujinImg from '../assets/members/KwonYujin.jpg';
 import JeongJieunImg from '../assets/members/JeongJieun.png';
+import chattoner from '../assets/gif/chattoner.gif';
 
 // ============================================
 // 4. dotdotdot Team Imports
@@ -42,7 +43,7 @@ import BaeSongyiImg from '../assets/members/BaeSongyi.jpeg';
 import LimYujinImg from '../assets/members/LimYujin.jpeg';
 import LeeYunaGif from '../assets/gif/LeeYuna.gif';
 import HanJiminGif from '../assets/gif/HanJimin.gif';
-// import MunYeseonGif from '../assets/gif/MunYeseon.gif';
+import MunYeseonGif from '../assets/gif/MunYeseon.gif';
 import LimYujinGif from '../assets/gif/LimYujin.gif';
 import WooChaeaGif from '../assets/gif/WooChaea.gif';
 import KimYoungkyoGif from '../assets/gif/KimYoungkyo.gif';
@@ -51,6 +52,7 @@ import YoonSoyoungGif from '../assets/gif/YoonSoyoung.gif';
 import EomDahyunGif from '../assets/gif/EomDahyun.gif';
 import LeeEunchaeGif from '../assets/gif/LeeEunchae.gif';
 import BaeSongyiGif from '../assets/gif/BaeSongyi.gif';
+import dotdotdotGif from '../assets/gif/dotdotdot.gif';
 
 // Project data
 export const projects = {
@@ -230,6 +232,7 @@ export const projects = {
     title: 'ChatToner',
     subtitle:
       '기업의 비용과 시간을 아끼는, 최적의 신입사원 온보딩 툴 ChatToner',
+    gif: chattoner,
     content:
       '조직의 커뮤니케이션 스타일을 통일하고 텍스트 품질을 완벽하게 다듬어주는 AI 커뮤니케이션 어시스턴트입니다. 상황에 딱 맞는 톤앤매너 변환부터 사내 규정 준수 여부 분석까지, Chat-Toner로 팀의 커뮤니케이션 효율을 극대화하세요!',
     feature: [
@@ -462,7 +465,7 @@ export const projects = {
     title: 'HelloGiraffe',
     subtitle:
       '비폭력 대화(NVC)를 기반으로 건강한 관계 형성을 돕는 AI 마음 대화 가이드, HelloGiraffe',
-    // gif: MunYeseonGif,
+    gif: MunYeseonGif,
     content: `4단계 대화법(관찰-느낌-욕구-부탁)을 통해 나의 마음을 들여다보고 솔직하게 표현하는 연습을 해보세요! 관계가 어려울 때, '기린' 코치가 당신의 마음을 공감해주고 더 나은 대화 방향을 제안합니다. 상황별 시나리오 가이드와 AI 코칭으로 건강한 소통 습관을 만들어보세요`,
     feature: [
       '🦒 상황별 맞춤 대화 시나리오\n약속에 늦은 친구, 가족과의 갈등 등 다양한 상황에 맞는 시나리오를 선택하여, 막막했던 대화의 물꼬를 쉽게 틀 수 있습니다.',
@@ -678,6 +681,7 @@ export const projects = {
     title: 'dotdotdot',
     subtitle:
       'APPS x 인천문화재단 협업 2025 문화예술특화거리 점점점 공동 프로젝트 웹사이트',
+    gif: dotdotdotGif,
     content:
       '예술가들의 작업실이 정겨운 시골 마을로 변신합니다! 미추홀구, 중구, 동구 세 개 군구에 있는 10개의 문화공간에서 펼쳐지는 특별한 문화 체험에 여러분을 초대합니다.',
     feature: [
