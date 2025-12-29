@@ -71,7 +71,7 @@ const AboutSection = () => {
 
       <div className='mt-31 text-center'>
         <div className='text-Blue_light inline-flex items-center gap-4 text-[20px] font-bold tracking-widest md:text-[30px]'>
-          OVER 10 YEAR
+          10+ YEARS
         </div>
       </div>
     </section>
