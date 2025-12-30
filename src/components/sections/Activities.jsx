@@ -1,4 +1,4 @@
-import {useRef, useEffect} from 'react';
+import {useRef} from 'react';
 import {motion} from 'framer-motion';
 import {activitiesData} from '../../data/activitiesData.js';
 import UnionIcon from '../../assets/activities/Union.svg';
@@ -6,29 +6,13 @@ import SimpleIcon from '../../assets/activities/simple-icons_suno.svg';
 import Framec from '../../assets/activities/Frame-c.svg';
 import Frame0 from '../../assets/activities/Frame-0.svg';
 import ActivityCard from '../cards/ActivityCard.jsx';
+import {useHorizontalScroll} from '../../hooks/useHorizontalScroll.js';
 
 export default function Activities() {
   const scrollRef = useRef(null);
 
   //가로 스크롤 추가
-  useEffect(() => {
-    const el = scrollRef.current;
-    if (!el) return;
-
-    const onWheel = (e) => {
-      if (e.deltaY === 0) return;
-      e.preventDefault();
-      el.scrollTo({
-        left: el.scrollLeft + e.deltaY, // 가로 위치 + 세로 이동량
-        behavior: 'auto',
-      });
-    };
-    el.addEventListener('wheel', onWheel, {passive: false});
-
-    return () => {
-      el.removeEventListener('wheel', onWheel);
-    };
-  }, []);
+  useHorizontalScroll(scrollRef);
 
   return (
     <div className='bg-primary relative w-full overflow-hidden py-20 md:py-32'>
