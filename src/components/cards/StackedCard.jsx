@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 
 export default function StackedCard({project}) {
   return (
-    <div className='grid h-115 w-full grid-rows-[auto_1fr_auto] bg-white px-5 py-8 md:h-138.25 md:w-99 md:px-6.5 md:py-9.5'>
+    <div className='flex h-auto min-h-100 w-full flex-col bg-white px-5 py-8 md:h-120 md:w-77 md:px-6.5 md:py-9.5 lg:h-125 lg:w-88'>
       {/* 이미지 */}
       <img
         src={project.thumbnail}
@@ -16,8 +16,8 @@ export default function StackedCard({project}) {
       />
 
       {/* 텍스트 - 제목, 설명, 멤버*/}
-      <div className='mt-1 flex cursor-default flex-col'>
-        <p className='border-b border-[#D7D7D7] py-1.5 text-xl leading-7 font-semibold text-[#2E61E0] md:py-2.5 md:text-2xl md:font-bold'>
+      <div className='mt-1 flex w-full flex-1 cursor-default flex-col'>
+        <p className='text-primary-light border-b border-[#D7D7D7] py-1.5 text-xl leading-7 font-semibold md:py-2.5 md:text-2xl md:font-bold'>
           {project.title}
         </p>
         <p className='mb-2 line-clamp-3 pt-2.5 pb-0.5 text-sm leading-4 font-medium md:line-clamp-4 lg:line-clamp-5'>
@@ -31,31 +31,33 @@ export default function StackedCard({project}) {
       </div>
 
       {/* 이동 버튼 */}
-      {project.slug ? (
-        <Link
-          to={`/projects/${project.slug}`}
-          className='cursor-pointer self-end justify-self-start'>
-          <div className='bg-Blue_light flex items-center justify-center rounded-full px-4 py-1 md:px-5.5 md:py-1.5'>
-            <p className='text-sm leading-5 font-semibold text-blue-600 md:text-base'>
-              자세히 보기
-            </p>
-            <div className='mt-0.5 align-middle text-xl text-[#2E61E0]'>
-              <GoArrowUpRight />
+      <div className='flex justify-start pt-4'>
+        {project.slug ? (
+          <Link
+            to={`/projects/${project.slug}`}
+            className='cursor-pointer self-end justify-self-start'>
+            <div className='bg-Blue_light flex items-center justify-center rounded-full px-4 py-1 md:px-5.5 md:py-1.5'>
+              <p className='text-sm leading-5 font-semibold text-blue-600 md:text-base'>
+                자세히 보기
+              </p>
+              <div className='mt-0.5 align-middle text-xl text-[#2E61E0]'>
+                <GoArrowUpRight />
+              </div>
+            </div>
+          </Link>
+        ) : (
+          <div className='cursor-pointer self-end justify-self-start'>
+            <div className='bg-Blue_light flex items-center justify-center rounded-full px-4 py-1 md:px-5.5 md:py-1.5'>
+              <p className='text-sm leading-5 font-semibold text-blue-600 md:text-base'>
+                자세히 보기
+              </p>
+              <div className='mt-0.5 align-middle text-xl text-[#2E61E0]'>
+                <GoArrowUpRight />
+              </div>
             </div>
           </div>
-        </Link>
-      ) : (
-        <div className='cursor-pointer self-end justify-self-start'>
-          <div className='bg-Blue_light flex items-center justify-center rounded-full px-4 py-1 md:px-5.5 md:py-1.5'>
-            <p className='text-sm leading-5 font-semibold text-blue-600 md:text-base'>
-              자세히 보기
-            </p>
-            <div className='mt-0.5 align-middle text-xl text-[#2E61E0]'>
-              <GoArrowUpRight />
-            </div>
-          </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }

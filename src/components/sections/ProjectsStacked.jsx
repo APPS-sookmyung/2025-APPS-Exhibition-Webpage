@@ -53,7 +53,7 @@ const ProjectsStacked = () => {
   return (
     <div>
       {/* 카드 섹션 */}
-      <div className='relative overflow-hidden md:mb-8 lg:mb-20'>
+      <div className='relative overflow-hidden md:h-auto lg:mb-20'>
         {/* 배경 텍스트 #4B48F5 */}
         <div className='pointer-events-none absolute inset-0 z-0 flex items-center justify-center'>
           <p className='pb-4 text-[60px] leading-none font-bold whitespace-nowrap text-white/10 select-none md:text-[80px] lg:text-[150px]'>
@@ -62,7 +62,7 @@ const ProjectsStacked = () => {
         </div>
 
         {/* 콘텐츠 */}
-        <div className='relative z-10 mx-5 flex items-center justify-between md:mx-18 lg:mx-28'>
+        <div className='relative z-10 mx-5 flex h-75 items-center justify-between md:mx-18 md:h-auto lg:mx-28'>
           <button
             className='z-50 cursor-pointer text-white'
             onClick={handlePrev}>
