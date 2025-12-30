@@ -3,6 +3,7 @@ import FaviconCard from '../cards/FaviconCard';
 import {SlArrowLeft, SlArrowRight} from 'react-icons/sl';
 import StackedCardDeck from './StackedCardDeck';
 import {projectInfo as projects} from '../../data/projectInfo';
+import {useHorizontalScroll} from '../../hooks/useHorizontalScroll.js';
 
 const ProjectsStacked = () => {
   const scrollRef = useRef(null);
@@ -56,24 +57,7 @@ const ProjectsStacked = () => {
   }, []);
 
   // 가로 스크롤 추가
-  useEffect(() => {
-    const el = scrollRef.current;
-    if (!el) return;
-
-    const onWheel = (e) => {
-      if (e.deltaY === 0) return;
-      e.preventDefault();
-      el.scrollTo({
-        left: el.scrollLeft + e.deltaY, // 가로 위치 + 세로 이동량
-        behavior: 'auto',
-      });
-    };
-    el.addEventListener('wheel', onWheel, {passive: false});
-
-    return () => {
-      el.removeEventListener('wheel', onWheel);
-    };
-  }, []);
+  useHorizontalScroll(scrollRef);
 
   return (
     <div>
