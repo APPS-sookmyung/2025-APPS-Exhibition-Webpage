@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 
 export default function ProjectViewerTitle({isMainTitle, titleText}) {
   const titleClass = isMainTitle
-    ? 'lg:text-5xl md:text-4xl text-2xl'
-    : 'lg:text-4xl md:text-3xl pt-7 mb-4 md:mb-0';
+    ? 'lg:text-4xl md:text-3xl text-2xl'
+    : 'pt-7 mb-4 md:mb-0';
 
   return (
     <div>

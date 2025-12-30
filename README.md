@@ -25,7 +25,7 @@
 아래 링크에서 부원들의 열정과 노력이 담긴 다양한 프로젝트들을 만나보세요.
 
 [**🔗 배포된 웹 사이트 바로가기 Click !**](https://2025-apps-exhibition-webpage.vercel.app/) 👈 <br>
-[**🔗 Linktree Click !**](https://linktr.ee/sookmyung_apps) 👈 <br>
+[**🔗 Linktree 바로가기 Click !**](https://linktr.ee/sookmyung_apps) 👈 <br>
 
 > 새 창 열기 방법 : CTRL+click (on Windows and Linux) | CMD+click (on MacOS)
 
@@ -84,7 +84,7 @@
 | <img src="./src/assets/members/BaekSumin.jpeg" alt="백수민 이미지" width="80px"/>  |     <a href="https://github.com/suminb99" target="_blank">백수민<br />(소프트웨어학부 22)</a>     |    PM     |                                                          온라인 전시회 기획                                                           |
 |   <img src="./src/assets/members/HaJimin.jpg" alt="하지민 이미지" width="80px"/>   |     <a href="https://github.com/JiiminHa" target="_blank">하지민<br />(소프트웨어학부 22)</a>     | FRONT-END | 프로젝트 상세 페이지 구현</br> 반응형 구현</br> 프로젝트 시연 영상 gif 변환 및 추가</br> 전체적인 반응형 점검 및 디자인 수정<br> 배포 |
 | <img src="./src/assets/members/YoonJeewon.jpeg" alt="윤지원 이미지" width="80px"/> |       <a href="http://rosaze.github.io" target="_blank">윤지원<br />(소프트웨어학부 23)</a>       | FRONT-END |                           프로젝트 상세 페이지 구현</br> 반응형 구현</br> 팀 프로젝트 데이터 추가<br> 배포                            |
-|  <img src="./src/assets/members/LimYujin.jpeg" alt="임유진 이미지" width="80px"/>  |      <a href="https://github.com/uuzjin" target="_blank">임유진<br />(소프트웨어학부 24)</a>      | FRONT-END |                                       프로젝트 카드 캐러셀 구현</br> 프로젝트 카드 그리드 구현                                        |
+|  <img src="./src/assets/members/LimYujin.jpeg" alt="임유진 이미지" width="80px"/>  |      <a href="https://github.com/uuzjin" target="_blank">임유진<br />(소프트웨어학부 24)</a>      | FRONT-END |                프로젝트 카드 캐러셀 구현</br> 프로젝트 카드 그리드 구현 </br> APPS 활동 데이터 추가 </br> 반응형 구현                 |
 | <img src="./src/assets/members/MunYeseon.jpeg" alt="문예선 이미지" width="80px"/>  | <a href="깃허브: https://github.com/tjsl0607" target="_blank">문예선<br />(소프트웨어학부 25)</a> | FRONT-END |       APPS 소개 섹션 구현</br> 부원들이 말하는 APPS 섹션 구현</br> Footer 구현</br> 반응형 구현</br> 개인 프로젝트 데이터 추가        |
 |  <img src="./src/assets/members/HanJimin.jpg" alt="한지민 이미지" width="80px"/>   | <a href="깃허브: https://github.com/jimin-25" target="_blank">한지민<br />(소프트웨어학부 25)</a> | FRONT-END |             랜딩페이지 구현</br> APPS 활동 소개 섹션 구현</br> Header 구현</br> 반응형 구현</br> 팀 프로젝트 데이터 추가              |
 

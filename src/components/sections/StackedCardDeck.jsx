@@ -36,7 +36,7 @@ export default function StackedCardDeck({projects, index}) {
 
   return (
     <div
-      className='relative flex h-100 w-80 scale-60 justify-center md:h-125 md:w-150 md:scale-80 lg:h-138.25 lg:scale-100'
+      className='relative flex h-85 w-80 scale-60 justify-center px-5 md:h-125 md:w-150 md:scale-80 lg:h-138.25 lg:scale-100'
       style={{perspective: '1000px', transformStyle: 'preserve-3d'}}>
       <div className='relative w-full' style={{transformStyle: 'preserve-3d'}}>
         {/* 카드 렌더링 */}
@@ -49,7 +49,7 @@ export default function StackedCardDeck({projects, index}) {
 
           // 뒤쪽 카드들 색, 반경 스타일 지정
           const overlayColor = absDepth === 1 ? 'bg-[#C8C8C8]' : 'bg-[#ADADAD]';
-          const overlayRadius = step === 0 ? 'rounded-[10px]' : 'rounded-2xl';
+          const overlayRadius = step === 0 ? 'rounded-2xl' : 'rounded-[10px]';
 
           return (
             <div
