@@ -23,12 +23,14 @@ export default function LandingPage() {
                 </div>
               </div>
             </div>
-            <div className='relative right-1/2 left-1/2 -mx-[50vw] -mt-2 w-screen border-b border-dotted border-white md:mt-2' />
+            <div className='relative right-1/2 left-1/2 -mx-[50vw] -mt-2 w-screen border-b border-dotted border-white md:-mt-2 md:mb-2' />
             <div className='-mt-10 flex flex-nowrap items-center justify-start md:-mt-2'>
-              <p className='shrink-0 leading-none'>EXHIBITI</p>
-              <p className='text-secondary shrink-0 leading-none'>O</p>
-              <h1 className='shrink-0 leading-none'>N</h1>
-              <div className='ml-2 flex shrink-0 translate-y-2 items-center md:ml-6 md:translate-y-4 lg:-space-x-4'>
+              <div className='flex items-center'>
+                <p className='shrink-0 leading-none'>EXHIBITI</p>
+                <p className='text-secondary shrink-0 leading-none'>O</p>
+                <p className='shrink-0 leading-none'>N</p>
+              </div>
+              <div className='ml-2 flex shrink-0 items-center md:ml-6 lg:-space-x-4'>
                 <div className='hidden w-auto origin-left md:block md:scale-75 lg:scale-100'>
                   <img src={MaterialIcon} />
                 </div>
@@ -37,7 +39,7 @@ export default function LandingPage() {
                 </div>
               </div>
             </div>
-            <div className='relative right-1/2 left-1/2 -mx-[50vw] -mt-9 w-screen border-b border-dotted border-white md:mt-2' />
+            <div className='relative right-1/2 left-1/2 -mx-[50vw] -mt-9 w-screen border-b border-dotted border-white md:mt-0.5 md:mb-2.5' />
             <div className='flex justify-end pr-4 md:pr-1'>
               <p className='pr-10 leading-none tracking-tighter md:-mt-2 md:pr-40'>
                 2025
@@ -47,10 +49,10 @@ export default function LandingPage() {
 
           <img
             src={LinearIcon}
-            className='absolute top-[9%] -left-35 z-0 h-90 w-130 scale-50 md:scale-100 lg:top-[25.8%] lg:-left-14'
+            className='absolute top-[9%] -left-35 z-0 h-90 w-130 scale-50 md:scale-100 lg:top-[24.8%] lg:-left-14'
           />
 
-          <div className='absolute right-6 bottom-50 z-20 flex items-center gap-3 md:right-45 md:bottom-75 md:gap-5'>
+          <div className='absolute right-6 bottom-50 z-20 flex items-center gap-3 md:right-75 md:bottom-80 md:mt-30 md:gap-5'>
             <img src={UnionIcon} className='scale-78 md:scale-100' />
             <div className='font-pretendard bg-Blue_light text-80 flex h-10 w-36 items-center justify-center rounded-full text-center text-sm leading-[2] font-bold tracking-[0.025rem] md:-mr-40 md:h-13 md:w-63 md:text-2xl'>
               WEB & APP
@@ -68,7 +70,7 @@ export default function LandingPage() {
 
           <div className='md:bottom[-100px] pointer-events-none absolute -right-4 bottom-[-120px] z-0 origin-bottom origin-right scale-[0.3] min-[1025px]:right-[90px] min-[1025px]:bottom-[-75px] md:-mr-25 md:-mb-40 md:scale-[0.7] lg:scale-100'>
             <div className='relative flex items-center justify-end'>
-              <p className='font-pretendard absolute z-20 -translate-x-[110px] translate-y-[100px] transform text-[50px] leading-none font-black tracking-[1em] text-white md:-translate-x-79 md:translate-y-15 md:text-[50px]'>
+              <p className='font-pretendard absolute z-20 -translate-x-[110px] translate-y-[100px] transform text-[50px] leading-none font-semibold tracking-[1em] text-white md:-translate-x-79 md:translate-y-15 md:text-[50px]'>
                 APPS
               </p>
               <img
