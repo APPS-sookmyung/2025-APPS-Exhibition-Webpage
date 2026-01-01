@@ -23,8 +23,8 @@ export default function LandingPage() {
                 </div>
               </div>
             </div>
-            <div className='relative right-1/2 left-1/2 -mx-[50vw] -mt-2 w-screen border-b border-dotted border-white md:-mt-2 md:mb-2' />
-            <div className='-mt-10 flex flex-nowrap items-center justify-start md:-mt-2'>
+            <div className='relative right-1/2 left-1/2 -mx-[50vw] -mt-4 w-screen border-b border-dotted border-white md:-mt-2 md:mb-2' />
+            <div className='-mt-11.5 flex flex-nowrap items-center justify-start md:-mt-2'>
               <div className='flex items-center'>
                 <p className='shrink-0 leading-none'>EXHIBITI</p>
                 <p className='text-secondary shrink-0 leading-none'>O</p>
@@ -39,7 +39,7 @@ export default function LandingPage() {
                 </div>
               </div>
             </div>
-            <div className='relative right-1/2 left-1/2 -mx-[50vw] -mt-9 w-screen border-b border-dotted border-white md:mt-0.5 md:mb-2.5' />
+            <div className='relative right-1/2 left-1/2 -mx-[50vw] -mt-11.5 mb-1 w-screen border-b border-dotted border-white md:mt-0.5 md:mb-2.5' />
             <div className='flex justify-end pr-4 md:pr-1'>
               <p className='pr-10 leading-none tracking-tighter md:-mt-2 md:pr-40'>
                 2025
@@ -52,30 +52,30 @@ export default function LandingPage() {
             className='absolute top-[9%] -left-35 z-0 h-90 w-130 scale-50 md:scale-100 lg:top-[24.8%] lg:-left-14'
           />
 
-          <div className='absolute right-6 bottom-50 z-20 flex items-center gap-3 md:right-75 md:bottom-80 md:mt-30 md:gap-5'>
-            <img src={UnionIcon} className='scale-78 md:scale-100' />
-            <div className='font-pretendard bg-Blue_light text-80 flex h-10 w-36 items-center justify-center rounded-full text-center text-sm leading-[2] font-bold tracking-[0.025rem] md:-mr-40 md:h-13 md:w-63 md:text-2xl'>
+          <div className='absolute right-6 bottom-50 z-20 flex items-center md:right-50 md:bottom-70 md:gap-5 lg:right-75 lg:bottom-80'>
+            <img src={UnionIcon} className='scale-60 md:scale-100' />
+            <div className='font-pretendard bg-Blue_light text-80 -ml-3 flex h-8 w-35 scale-80 items-center justify-center rounded-full text-center text-sm leading-[2] font-bold tracking-[0.025rem] md:-mr-40 md:h-13 md:w-63 md:scale-100 md:text-2xl'>
               WEB & APP
             </div>
           </div>
 
           <div className='mt-20 mb-20 space-y-4 md:mt-40'>
-            <p className='font-pretendard text-1xl leading-tight font-semibold tracking-wide md:text-3xl lg:text-4xl'>
+            <p className='font-pretendard text-sm leading-tight font-semibold tracking-wide md:text-3xl lg:text-4xl'>
               2025 APPS 전시회에 오신 것을 환영합니다!
             </p>
-            <p className='font-pretendard tracking-wides text-1xl font-semibold text-white md:text-3xl lg:text-4xl'>
+            <p className='font-pretendard tracking-wides text-sm font-semibold text-white md:text-3xl lg:text-4xl'>
               부원들의 열정과 노력이 담긴 다양한 프로젝트들을 만나보세요.
             </p>
           </div>
 
-          <div className='md:bottom[-100px] pointer-events-none absolute -right-4 bottom-[-120px] z-0 origin-bottom origin-right scale-[0.3] min-[1025px]:right-[90px] min-[1025px]:bottom-[-75px] md:-mr-25 md:-mb-40 md:scale-[0.7] lg:scale-100'>
+          <div className='md:bottom[-100px] pointer-events-none absolute -right-4 bottom-[-130px] z-0 origin-bottom origin-right scale-[0.3] min-[1025px]:right-[90px] min-[1025px]:bottom-[-75px] md:-mr-25 md:-mb-40 md:scale-[0.7] lg:scale-100'>
             <div className='relative flex items-center justify-end'>
               <p className='font-pretendard absolute z-20 -translate-x-[110px] translate-y-[100px] transform text-[50px] leading-none font-semibold tracking-[1em] text-white md:-translate-x-79 md:translate-y-15 md:text-[50px]'>
                 APPS
               </p>
               <img
                 src={VectorIcon}
-                className='relative z-10 pr-10 pb-10 md:pr-20 md:pb-30'
+                className='relative z-10 pr-10 pb-10 opacity-50 md:pr-20 md:pb-30'
               />
             </div>
           </div>
@@ -86,7 +86,7 @@ export default function LandingPage() {
             </p>
           </div>
 
-          <div className='absolute -bottom-6 left-2.5 h-[100px] origin-left scale-75 md:-bottom-40 md:left-10 md:scale-90 lg:-bottom-30 lg:left-10 lg:scale-100'>
+          <div className='absolute -bottom-18 left-2.5 h-[100px] origin-left scale-75 md:-bottom-40 md:left-10 md:scale-90 lg:-bottom-30 lg:left-10 lg:scale-100'>
             <div className='bg-accent-blue h-8 w-32 rounded-full md:h-10 md:w-40 lg:h-13 lg:w-50'></div>
             <div className='bg-tertiary -mt-2 ml-6 h-8 w-32 rounded-full md:-mt-3 md:ml-8 md:h-10 md:w-40 lg:ml-10 lg:h-13 lg:w-50'></div>
           </div>
