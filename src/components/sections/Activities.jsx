@@ -20,7 +20,7 @@ export default function Activities() {
         <p className='text-3xl font-semibold tracking-tight text-white md:text-5xl'>
           ACTIVITIES
         </p>
-        <p className='text-Blue_light mt-4 text-base font-semibold md:mt-6 md:text-2xl'>
+        <p className='text-Blue_light mt-2 text-base md:mt-4 md:text-2xl md:font-medium lg:mt-5 lg:font-semibold'>
           APPS에서 정기적으로 진행하는 다양한 활동들이 있어요
         </p>
       </div>
@@ -30,7 +30,7 @@ export default function Activities() {
 
       <motion.div
         ref={scrollRef}
-        className='horizontal-scroll relative z-20 flex items-stretch gap-6 overflow-x-auto px-4 md:gap-8 md:px-8 md:py-3'>
+        className='horizontal-scroll relative z-20 -mt-5 flex items-stretch gap-2 overflow-x-auto px-4 md:mt-0 md:gap-8 md:px-8 md:py-3'>
         {activitiesData.map((card) => (
           <ActivityCard key={card.id} card={card} />
         ))}
@@ -38,19 +38,17 @@ export default function Activities() {
 
       <div className='absolute z-30 hidden origin-top-right lg:top-15 lg:right-40 lg:block lg:scale-100'>
         <div className='relative'>
-          <div className='bg-tertiary text-primary h-11 w-45 rounded-full text-center text-lg leading-[2] font-bold tracking-[0.025rem] md:h-13 md:w-60 md:text-2xl'>
+          <div className='bg-tertiary text-primary flex h-11 w-45 items-center justify-center rounded-full text-lg leading-[2] font-semibold tracking-[0.025rem] md:h-13 md:w-60 md:text-2xl'>
             PROGRAMMING
           </div>
-          <div className='bg-accent-blue text-primary absolute left-18 mt-3 h-11 w-45 rounded-full text-center text-lg leading-[2] font-bold tracking-[0.025rem] md:h-13 md:w-60 md:text-2xl'>
-            DEVELOP
-          </div>
+          <div className='bg-accent-blue absolute left-18 mt-3 h-11 w-45 rounded-full md:h-13 md:w-60'></div>
         </div>
       </div>
 
       <div className='relative h-[20vw]'>
         <img
           src={UnionIcon}
-          className='absolute z-20 mx-37 -mt-10 scale-60 sm:scale-90 md:mx-53 md:-mt-12 md:scale-80'
+          className='absolute left-5 z-20 -mt-13 scale-60 sm:scale-90 md:mx-50 md:-mt-17 md:scale-80'
         />
       </div>
 
@@ -58,14 +56,14 @@ export default function Activities() {
         <img src={SimpleIcon} className='absolute z-10 -mt-90 ml-250' />
       </div>
 
-      <div className='relative mt-15 h-[100px] w-full overflow-visible sm:h-[150px] md:h-82.5'>
+      <div className='relative -mt-4 h-[50px] w-full overflow-visible md:-mt-25 md:h-[100px] lg:h-82.5'>
         <img
           src={Framec}
-          className='absolute top-5 left-0 z-20 w-full md:top-45'
+          className='absolute top-5 left-0 z-20 w-full md:top-10 lg:top-45'
         />
         <img
           src={Frame0}
-          className='absolute top-0 left-0 z-10 w-full md:top-24'
+          className='absolute top-0 left-0 z-10 w-full lg:top-24'
         />
       </div>
     </div>
