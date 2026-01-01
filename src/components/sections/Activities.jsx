@@ -30,7 +30,7 @@ export default function Activities() {
 
       <motion.div
         ref={scrollRef}
-        className='horizontal-scroll relative z-20 -mt-5 flex items-stretch gap-2 overflow-x-auto px-4 md:mt-0 md:gap-8 md:px-8 md:py-3'>
+        className='horizontal-scroll relative z-20 -mt-5 flex items-stretch gap-2 overflow-x-auto px-4 md:mt-0 md:gap-5 md:px-8 md:py-3'>
         {activitiesData.map((card) => (
           <ActivityCard key={card.id} card={card} />
         ))}
